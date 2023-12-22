@@ -11,27 +11,65 @@
 <body>
     <header>
         <!-- #popup_frm 태블릿 및 모바일 colunm -->
-        <form action="#" method="get" id="popup_frm">
-            <fieldset>
-                <legend class="skip">언어 양식</legend>
-                <p>ARE YOU IN THE RIGHT PLACE?</p>
-                <div class="lang_sel">
-                    <a href="#"><img src="/images/icon_row.svg" alt=""> ROW</a>
-                    <span>or</span>
-                    <a href="#"><img src="/images/icon_row.svg" alt=""> ROW</a>
-                </div>
-                <button type="submit" value="lang_sub" id="lang_sub">CONFIRM</button>
-                <a href="#" class="exit"><img src="./images/icon/icon_exit.png" alt="exit"></a>
-            </fieldset>
-        </form>
+        <div class="popup">
+            <form action="#" method="get" id="lang_frm">
+                <fieldset>
+                    <legend class="skip">언어 양식</legend>
+                    <p>ARE YOU IN THE RIGHT PLACE?</p>
+                    <div class="lang_sel">
+                        <div class="lang_left">
+                            <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW</a>
+                            <ul class="lang">
+                                <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
+                                <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
+                                <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
+                                <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
+                                <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
+                                <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
+                                <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
+                                <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
+                                <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
+                                <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
+                                <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
+                                <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
+                                <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
+                                <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
+                            </ul>
+                        </div>
+                        <span>or</span>
+                        <div class="lang_right">
+                            <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW</a>
+                            <ul class="lang">
+                                <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
+                                <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
+                                <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
+                                <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
+                                <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
+                                <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
+                                <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
+                                <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
+                                <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
+                                <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
+                                <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
+                                <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
+                                <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
+                                <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="submit" value="lang_sub" id="lang_sub">CONFIRM</button>
+                </fieldset>
+            </form>
+            <a href="#" class="exit"><img src="./images/icon/icon_exit.png" alt="exit"></a>
+        </div>
         <!-- .top 태블릿 및 모바일에서 메뉴 안으로 들어감 -->
         <div class="top">
-            <a href="#"><img src="./images/icon/icon_mypage.png" alt="">Account</a>
+            <a href="#"><img src="./images/icon/icon_mypage.png" alt="account">Account</a>
             <a href="#">Accessibility Statement</a>
             <a href="#">Help</a>
             <a href="#">Email Sign Up</a>
             <a href="#">Blog</a>
-            <a href="#"><img src="./images/icon_row.svg" alt=""> ROW</a>
+            <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW</a>
             <ul class="lang">
                 <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
                 <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
@@ -50,239 +88,301 @@
             </ul>
         </div>
         <div class="bottom">
-            <!-- .icon 데스크탑에서 숨김 -->
+            <!-- .left_icon 데스크탑에서 숨김 -->
             <div class="left_icon">
                 <a href="#"><img src="./images/icon/icon_menu.png" alt="menu"></a>
                 <a href="#"><img src="./images/icon/icon_search.png" alt="search"></a>
             </div>
+            <!-- 태블릿 및 모바일에서 메인 로고 중앙으로 위치 변경 -->
             <h1><a href="index.html"><img src="images/icon_logo.svg" alt="GYMSHARK"></a></h1>
             <!-- nav 태블릿 및 모바일에서 숨김 -->
             <nav>
-                <a href="#">WOMEN</a>
-                <a href="#">MEN</a>
-                <a href="#">ACCESSORIES</a>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">WOMEN</a>
+                        <ul class="lnb">
+                            <li>
+                                <h3>TRENDING</h3>
+                                <a href="#">New Releases</a>
+                                <a href="#">Graphics</a>
+                                <a href="#">Athleisure</a>
+                                <a href="#">Best Sellers</a>
+                                <a href="#">Cosy Season</a>
+                                <a href="#">Matching Sets</a>
+                                <a href="#">Oversized</a>
+                                <a href="#">Seamless</a>
+                                <a href="#">Training Ready</a>
+                            </li>
+                            <li>
+                                <h3>GIFTING</h3>
+                                <a href="#">Gifts For Her</a>
+                                <a href="#">Gifts Under $35</a>
+                                <a href="#">Gifts Under $70</a>
+                                <a href="#">Gifts For Gym Lovers</a>
+                                <a href="#">Gift For Weightlifters</a>
+                                <a href="#">Gift For Runners</a>
+                                <a href="#">E-Gift Card</a>
+                            </li>
+                            <li>
+                                <h3>PRODUCTS</h3>
+                                <a href="#">All Products</a>
+                                <a href="#">All In One</a>
+                                <a href="#">Crop Tops</a>
+                                <a href="#">Joggers</a>
+                                <a href="#">Leggings</a>
+                                <a href="#">Gym Jackets</a>
+                                <a href="#">Hoodies</a>
+                                <a href="#">Pullovers</a>
+                                <a href="#">Shorts</a>
+                                <a href="#">Sports Bras</a>
+                                <a href="#">T-Shirts & Tops</a>
+                                <a href="#">Underwear</a>
+                                <a href="#">Vests</a>
+                            </li>
+                            <li>
+                                <h3>COLLECTIONS</h3>
+                                <a href="#">Seamless</a>
+                                <a href="#">Adapt</a>
+                                <a href="#">Essentials</a>
+                                <a href="#">Elevate</a>
+                                <a href="#">Legacy</a>
+                                <a href="#">Power</a>
+                                <a href="#">Sweat</a>
+                                <a href="#">Graphics</a>
+                                <a href="#">Key Fits</a>
+                                <a href="#">Vital Seamless</a>
+                            </li>
+                            <li>
+                                <h3>HOW DO YOU TRAIN?</h3>
+                                <a href="#">Running</a>
+                                <a href="#">Lifting Essentials</a>
+                                <a href="#">Rest Day</a>
+                                <a href="#">Pump Cover</a>
+                                <a href="#">Functional Fitness</a>
+                            </li>
+                        </ul>
+                        <div class="featured">
+                            <h3>FEATURED</h3>
+                            <div class="top">
+                                <a href="#"><img src="images/nav.webp" alt="lift seamless"></a>
+                                <span>LIFT SEAMLESS</span>
+                            </div>
+                            <div class="bottom">
+                                <a href="#"><img src="images/nav.webp" alt="new releases"></a>
+                            <span>NEW RELEASES</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">MEN</a>
+                        <ul class="lnb">
+                            <li>
+                                <h3>TRENDING</h3>
+                                <a href="#">New Releases</a>
+                                <a href="#">Graphics</a>
+                                <a href="#">Athleisure</a>
+                                <a href="#">Best Sellers</a>
+                                <a href="#">Matching Sets</a>
+                                <a href="#">Cosy Season</a>
+                                <a href="#">Oversized</a>
+                                <a href="#">Training Ready</a>
+                            </li>
+                            <li>
+                                <h3>GIFTING</h3>
+                                <a href="#">Gifts For Him</a>
+                                <a href="#">Gifts Under $35</a>
+                                <a href="#">Gifts Under $70</a>
+                                <a href="#">Gifts For Gym Lovers</a>
+                                <a href="#">Gift For Weightlifters</a>
+                                <a href="#">Gift For Runners</a>
+                                <a href="#">E-Gift Card</a>
+                            </li>
+                            <li>
+                                <h3>PRODUCTS</h3>
+                                <a href="#">All Products</a>
+                                <a href="#">Base Layers</a>
+                                <a href="#">Joggers</a>
+                                <a href="#">Leggings</a>
+                                <a href="#">Gym Jackets</a>
+                                <a href="#">Hoodies</a>
+                                <a href="#">Pullovers</a>
+                                <a href="#">Shorts</a>
+                                <a href="#">Stringers</a>
+                                <a href="#">Swimwear</a>
+                                <a href="#">Tanks</a>
+                                <a href="#">T-Shirts & Tops</a>
+                                <a href="#">Underwear</a>
+                            </li>
+                            <li>
+                                <h3>COLLECTIONS</h3>
+                                <a href="#">315 Collection</a>
+                                <a href="#">Apex</a>
+                                <a href="#">Essentials</a>
+                                <a href="#">Legacy</a>
+                                <a href="#">Power</a>
+                                <a href="#">Sport</a>
+                                <a href="#">Heritage</a>
+                                <a href="#">Graphics</a>
+                            </li>
+                            <li>
+                                <h3>HOW DO YOU TRAIN?</h3>
+                                <a href="#">Running</a>
+                                <a href="#">Lifting Essentials</a>
+                                <a href="#">Rest Day</a>
+                                <a href="#">Pump Cover</a>
+                                <a href="#">Functional Fitness</a>
+                            </li>
+                        </ul>
+                        <div class="featured">
+                            <h3>FEATURED</h3>
+                            <div class="top">
+                                <a href="#"><img src="images/nav.webp" alt="lift seamless"></a>
+                                <span>LIFT SEAMLESS</span>
+                            </div>
+                            <div class="bottom">
+                                <a href="#"><img src="images/nav.webp" alt="new releases"></a>
+                                <span>NEW RELEASES</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">ACCESSORIES</a>
+                        <ul class="lnb">
+                            <li>
+                                <h3>TRENDING</h3>
+                                <a href="#">All Accessories</a>
+                                <a href="#">New Releases</a>
+                                <a href="#">Winter Essentials</a>
+                                <a href="#">Sale Accessories</a>
+                            </li>
+                            <li>
+                                <h3>SOCKS</h3>
+                                <a href="#">All Socks</a>
+                                <a href="#">Crew Socks</a>
+                                <a href="#">No Show Socks</a>
+                                <a href="#">Quarter Socks</a>
+                            </li>
+                            <li>
+                                <h3>BAGS</h3>
+                                <a href="#">All Bags</a>
+                                <a href="#">Gym Backpacks</a>
+                                <a href="#">Small Bags</a>
+                            </li>
+                            <li>
+                                <h3>HEADWEAR</h3>
+                                <a href="#">All Headwear</a>
+                                <a href="#">Caps</a>
+                                <a href="#">Beanies</a>
+                                <a href="#">Hair Accessories</a>
+                            </li>
+                            <li>
+                                <h3>FOOTWEAR</h3>
+                                <a href="#">Slides</a>
+                            </li>
+                            <li>
+                                <h3>UNDERWEAR</h3>
+                                <a href="#">Women's Underwear</a>
+                                <a href="#">Men's Underwear</a>
+                            </li>
+                            <li>
+                                <h3>EQUIPMENT</h3>
+                                <a href="#">All Equipment</a>
+                                <a href="#">All Bottles</a>
+                            </li>
+                        </ul>
+                        <div class="featured">
+                            <h3>FEATURED</h3>
+                            <div class="bottom">
+                                <a href="#"><img src="images/nav.webp" alt="training app"></a>
+                                <span>TRAINING APP</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </nav>
-            <!-- .category 태블릿 및 모바일 구조 변경 -->
-            <div class="women_category">
-                <div class="left">
-                    <ul>
-                        <li>
-                            <h3>TRENDING</h3>
-                            <a href="#">New Releases</a>
-                            <a href="#">Graphics</a>
-                            <a href="#">Athleisure</a>
-                            <a href="#">Best Sellers</a>
-                            <a href="#">Cosy Season</a>
-                            <a href="#">Matching Sets</a>
-                            <a href="#">Oversized</a>
-                            <a href="#">Seamless</a>
-                            <a href="#">Training Ready</a>
-                        </li>
-                        <li>
-                            <h3>GIFTING</h3>
-                            <a href="#">Gifts For Her</a>
-                            <a href="#">Gifts Under $35</a>
-                            <a href="#">Gifts Under $70</a>
-                            <a href="#">Gifts For Gym Lovers</a>
-                            <a href="#">Gift For Weightlifters</a>
-                            <a href="#">Gift For Runners</a>
-                            <a href="#">E-Gift Card</a>
-                        </li>
-                        <li>
-                            <h3>PRODUCTS</h3>
-                            <a href="#">All Products</a>
-                            <a href="#">All In One</a>
-                            <a href="#">Crop Tops</a>
-                            <a href="#">Joggers</a>
-                            <a href="#">Leggings</a>
-                            <a href="#">Gym Jackets</a>
-                            <a href="#">Hoodies</a>
-                            <a href="#">Pullovers</a>
-                            <a href="#">Shorts</a>
-                            <a href="#">Sports Bras</a>
-                            <a href="#">T-Shirts & Tops</a>
-                            <a href="#">Underwear</a>
-                            <a href="#">Vests</a>
-                        </li>
-                        <li>
-                            <h3>COLLECTIONS</h3>
-                            <a href="#">Seamless</a>
-                            <a href="#">Adapt</a>
-                            <a href="#">Essentials</a>
-                            <a href="#">Elevate</a>
-                            <a href="#">Legacy</a>
-                            <a href="#">Power</a>
-                            <a href="#">Sweat</a>
-                            <a href="#">Graphics</a>
-                            <a href="#">Key Fits</a>
-                            <a href="#">Vital Seamless</a>
-                        </li>
-                        <li>
-                            <h3>HOW DO YOU TRAIN?</h3>
-                            <a href="#">Running</a>
-                            <a href="#">Lifting Essentials</a>
-                            <a href="#">Rest Day</a>
-                            <a href="#">Pump Cover</a>
-                            <a href="#">Functional Fitness</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <h3>FEATURED</h3>
-                    <div class="top">
-                        <a href="#"><img src="images/nav.webp" alt=""></a>
-                        <span>LIFT SEAMLESS</span>
-                    </div>
-                    <div class="bottom">
-                        <a href="#"><img src="images/nav.webp" alt=""></a>
-                    <span>NEW RELEASES</span>
-                    </div>
-                </div>
-            </div>
-            <div class="men_category">
-                <div class="left">
-                    <ul>
-                        <li>
-                            <h3>TRENDING</h3>
-                            <a href="#">New Releases</a>
-                            <a href="#">Graphics</a>
-                            <a href="#">Athleisure</a>
-                            <a href="#">Best Sellers</a>
-                            <a href="#">Matching Sets</a>
-                            <a href="#">Cosy Season</a>
-                            <a href="#">Oversized</a>
-                            <a href="#">Training Ready</a>
-                        </li>
-                        <li>
-                            <h3>GIFTING</h3>
-                            <a href="#">Gifts For Him</a>
-                            <a href="#">Gifts Under $35</a>
-                            <a href="#">Gifts Under $70</a>
-                            <a href="#">Gifts For Gym Lovers</a>
-                            <a href="#">Gift For Weightlifters</a>
-                            <a href="#">Gift For Runners</a>
-                            <a href="#">E-Gift Card</a>
-                        </li>
-                        <li>
-                            <h3>PRODUCTS</h3>
-                            <a href="#">All Products</a>
-                            <a href="#">Base Layers</a>
-                            <a href="#">Joggers</a>
-                            <a href="#">Leggings</a>
-                            <a href="#">Gym Jackets</a>
-                            <a href="#">Hoodies</a>
-                            <a href="#">Pullovers</a>
-                            <a href="#">Shorts</a>
-                            <a href="#">Stringers</a>
-                            <a href="#">Swimwear</a>
-                            <a href="#">Tanks</a>
-                            <a href="#">T-Shirts & Tops</a>
-                            <a href="#">Underwear</a>
-                        </li>
-                        <li>
-                            <h3>COLLECTIONS</h3>
-                            <a href="#">315 Collection</a>
-                            <a href="#">Apex</a>
-                            <a href="#">Essentials</a>
-                            <a href="#">Legacy</a>
-                            <a href="#">Power</a>
-                            <a href="#">Sport</a>
-                            <a href="#">Heritage</a>
-                            <a href="#">Graphics</a>
-                        </li>
-                        <li>
-                            <h3>HOW DO YOU TRAIN?</h3>
-                            <a href="#">Running</a>
-                            <a href="#">Lifting Essentials</a>
-                            <a href="#">Rest Day</a>
-                            <a href="#">Pump Cover</a>
-                            <a href="#">Functional Fitness</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <h3>FEATURED</h3>
-                    <div class="top">
-                        <a href="#"><img src="images/nav.webp" alt=""></a>
-                        <span>LIFT SEAMLESS</span>
-                    </div>
-                    <div class="bottom">
-                        <a href="#"><img src="images/nav.webp" alt=""></a>
-                        <span>NEW RELEASES</span>
-                    </div>
-                </div>
-            </div>
-            <div class="accessories category">
-                <div class="left">
-                    <ul>
-                        <li>
-                            <h3>TRENDING</h3>
-                            <a href="#">All Accessories</a>
-                            <a href="#">New Releases</a>
-                            <a href="#">Winter Essentials</a>
-                            <a href="#">Sale Accessories</a>
-                        </li>
-                        <li>
-                            <h3>SOCKS</h3>
-                            <a href="#">All Socks</a>
-                            <a href="#">Crew Socks</a>
-                            <a href="#">No Show Socks</a>
-                            <a href="#">Quarter Socks</a>
-                        </li>
-                        <li>
-                            <h3>BAGS</h3>
-                            <a href="#">All Bags</a>
-                            <a href="#">Gym Backpacks</a>
-                            <a href="#">Small Bags</a>
-                        </li>
-                        <li>
-                            <h3>HEADWEAR</h3>
-                            <a href="#">All Headwear</a>
-                            <a href="#">Caps</a>
-                            <a href="#">Beanies</a>
-                            <a href="#">Hair Accessories</a>
-                        </li>
-                        <li>
-                            <h3>FOOTWEAR</h3>
-                            <a href="#">Slides</a>
-                        </li>
-                        <li>
-                            <h3>UNDERWEAR</h3>
-                            <a href="#">Women's Underwear</a>
-                            <a href="#">Men's Underwear</a>
-                        </li>
-                        <li>
-                            <h3>EQUIPMENT</h3>
-                            <a href="#">All Equipment</a>
-                            <a href="#">All Bottles</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <h3>FEATURED</h3>
-                    <div class="bottom">
-                        <a href="#"><img src="images/nav.webp" alt=""></a>
-                        <span>TRAINING APP</span>
-                    </div>
-                </div>
-            </div>
-            <!-- 검색 상자를 누르면 검색 창으로 이동 (검색 아이콘도 동일) -->
-            <div class="search">
+            <div class="right_icon">
+                <!-- 검색 상자를 누르면 검색 창으로 이동 (검색 아이콘도 동일) -->
                 <a href="#"><img src="./images/icon/icon_search.png" alt="search">Search for a Product</a>
-            </div>
-            <!-- 검색 창 -->
-            <!-- 태블릿 및 모바일 뒤로가기 버튼 -->
-            <!-- 데스크탑 닫기 버튼 -->
-            <form action="#" method="get" id="search_frm">
-                <fieldset>
-                    <legend class="skip">검색 양식</legend>
+                <!-- 태블릿 창에서 검색 상자가 지워지고 검색 아이콘이 생김 -->
+                <a href="#"><img src="./images/icon/icon_search.png" alt="search"></a>
+                <!-- 검색 창 -->
+                <!-- 태블릿 및 모바일 뒤로가기 버튼 -->
+                <!-- 데스크탑 닫기 버튼 -->
+                <div class="search page">
                     <a href="#"><img src="./images/icon/icon_left.png" alt="back"></a>
-                    <div class="search_box">
-                        <a href="#"><img src="./images/icon/icon_search.png" alt="search"></a>
-                        <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
-                    </div>
+                    <form action="#" method="get" id="search_frm">
+                        <fieldset>
+                            <legend class="skip">검색 양식</legend>
+                            <a href="#"><img src="./images/icon/icon_search.png" alt="search"></a>
+                            <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
+                        </fieldset>
+                    </form>
                     <a href="#"><img src="./images/icon/icon_close.png" alt="close"></a>
-                </fieldset>
+                    <div class="trending_searches">
+                        <h3>TRENDING SEARCHES</h3>
+                        <div class="algorithm">
+                            <h3><img src="#" alt="result"></h3>
+                            <a href="#">HOODIE</a>
+                            <a href="#">SHORTS</a>
+                            <a href="#">LEGGINGS</a>
+                            <a href="#">T-SHIRT</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .wishlist 태블릿 및 모바일에서 숨김 -->
+                <a href="#" class="wishlist"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                <a href="#"><img src="./images/icon/icon_mypage.png" alt="mypage"></a>
+                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+            </div>
+        </div>
+        <!-- .event 태블릿은 상단으로 옮기고 모바일은 숨김 -->
+        <div class="event">
+            <a href="#">10% STUDENT DISCOUNT</a>
+        </div>
+        <!-- 태블릿 및 모바일 메뉴 창 -->
+        <div class="menu_m">
+            <div class="header">
+                <div class="icon_exit">
+                    <div class="left">
+                        <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                        <div class="lang_m">
+                            <ul class="lang">
+                                <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
+                                <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
+                                <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
+                                <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
+                                <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
+                                <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
+                                <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
+                                <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
+                                <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
+                                <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
+                                <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
+                                <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
+                                <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
+                                <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
+                                <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#"><img src="./images/icon/icon_exit.png" alt="exit"></a>
+                </div>
+                <h2>SHOP</h2>
+                <!-- 데스크탑과 동일하게 검색 박스를 누르면 검색 창으로 이동 -->
+                <div class="search">
+                    <a href="#"><img src="./images/icon/icon_search.png" alt="search">Search for a Product</a>
+                </div>
+                <form action="#" method="get" id="search_frm">
+                    <fieldset>
+                        <legend class="skip">검색 양식</legend>
+                        <a href="#"><img src="./images/icon/icon_left.png" alt="back"></a>
+                        <div class="search_box">
+                            <a href="#"><img src="./images/icon/icon_search.png" alt="search"></a>
+                            <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
+                        </div>
+                        <a href="#"><img src="./images/icon/icon_close.png" alt="close"></a>
+                    </fieldset>
+                </form>
                 <div class="trending_searches">
                     <h3>TRENDING SEARCHES</h3>
                     <div class="algorithm">
@@ -293,86 +393,174 @@
                         <a href="#">T-SHIRT</a>
                     </div>
                 </div>
-            </form>
-            <div class="right_icon">
-                <!-- .wishlist 태블릿 및 모바일에서 숨김 -->
-                <a href="#" class="wishlist"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                <a href="#"><img src="./images/icon/icon_mypage.png" alt="mypage"></a>
-                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
             </div>
-        </div>
-        <!-- 태블릿 및 모바일 메뉴 창 -->
-        <!-- <div class="menu_m">
-            <div class="top">
-                <div class="icon_exit">
-                    <div class="left">
-                        <a href="#"><img src="./images/icon/icon_wishlist.png" alt=""></a>
-                        <a href="#"><img src="./images/icon_row.svg" alt=""> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
-                    </div>
-                    <a href="#"><img src="./images/icon/icon_exit.png" alt="exit"></a>
-                </div>
-                <h2>SHOP</h2>
-                데스크탑과 동일하게 검색 박스를 누르면 검색 창으로 이동
-                <div class="search">
-                    <a href="#"><img src="./images/icon/icon_search.png" alt="search">Search for a Product</a>
-                </div>
+            <div class="main">
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">WOMEN</a>
+                            <ul class="lnb">
+                                <li class="featured">
+                                    <h3>FEATURED</h3>
+                                    <div class="top">
+                                        <a href="#"><img src="images/nav.webp" alt=""></a>
+                                        <span>LIFT SEAMLESS</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="#"><img src="images/nav.webp" alt=""></a>
+                                    <span>NEW RELEASES</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>TRENDING<span><img src="./images/icon/icon_more.png" alt=""></span></h3>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">New Releases</a>
+                                            <a href="#">Graphics</a>
+                                            <a href="#">Athleisure</a>
+                                            <a href="#">Best Sellers</a>
+                                            <a href="#">Cosy Season</a>
+                                            <a href="#">Matching Sets</a>
+                                            <a href="#">Oversized</a>
+                                            <a href="#">Seamless</a>
+                                            <a href="#">Training Ready</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>GIFTING</h3><span><img src="./images/icon/icon_more.png" alt=""></span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Gifts For Her</a>
+                                            <a href="#">Gifts Under $35</a>
+                                            <a href="#">Gifts Under $70</a>
+                                            <a href="#">Gifts For Gym Lovers</a>
+                                            <a href="#">Gift For Weightlifters</a>
+                                            <a href="#">Gift For Runners</a>
+                                            <a href="#">E-Gift Card</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>PRODUCTS</h3><span><img src="./images/icon/icon_more.png" alt=""></span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">All Products</a>
+                                            <a href="#">All In One</a>
+                                            <a href="#">Crop Tops</a>
+                                            <a href="#">Joggers</a>
+                                            <a href="#">Leggings</a>
+                                            <a href="#">Gym Jackets</a>
+                                            <a href="#">Hoodies</a>
+                                            <a href="#">Pullovers</a>
+                                            <a href="#">Shorts</a>
+                                            <a href="#">Sports Bras</a>
+                                            <a href="#">T-Shirts & Tops</a>
+                                            <a href="#">Underwear</a>
+                                            <a href="#">Vests</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>COLLECTIONS</h3><span><img src="./images/icon/icon_more.png" alt=""></span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Seamless</a>
+                                            <a href="#">Adapt</a>
+                                            <a href="#">Essentials</a>
+                                            <a href="#">Elevate</a>
+                                            <a href="#">Legacy</a>
+                                            <a href="#">Power</a>
+                                            <a href="#">Sweat</a>
+                                            <a href="#">Graphics</a>
+                                            <a href="#">Key Fits</a>
+                                            <a href="#">Vital Seamless</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>HOW DO YOU TRAIN?</h3><span><img src="./images/icon/icon_more.png" alt=""></span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Running</a>
+                                            <a href="#">Lifting Essentials</a>
+                                            <a href="#">Rest Day</a>
+                                            <a href="#">Pump Cover</a>
+                                            <a href="#">Functional Fitness</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                            <a href="#">MEN</a>
+                            <a href="#">ACCESSORIES</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div> -->
-        <!-- .event 태블릿은 상단으로 옮기고 모바일은 숨김 -->
-        <div class="event">
-            <a href="#">10% STUDENT DISCOUNT</a>
         </div>
     </header>
     <main>
         <!-- .visual 태블릿에서 배경 이미지 사이즈 축소, 모바일은 이미지 축소와 텍스트가 하단으로 내려가며 흰색 컬러 변경 -->
         <section class="visual">
-            <h2>
-                LIFT SEAMLESS. IT's<br>
-                GIVING SNATCHED.
-            </h2>
-            <p>Even the baddest of baddies needs a little lift sometimes…</p>
-            <a href="#">SHOP NOW</a>
+            <!-- 백그라운드 이미지 사용 -->
+            <div class="text_button">
+                <h2>
+                    LIFT SEAMLESS. IT's<br>
+                    GIVING SNATCHED.
+                </h2>
+                <p>Even the baddest of baddies needs a little lift sometimes…</p>
+                <a href="#">SHOP NOW</a>
+            </div>
         </section>
         <section class="recommend">
             <div class="title">
                 <p>WOMENS</p>
-                <h2>LIFT SEAMLESS</h2>
-                <!-- View All 태블릿과 모바일에서 우측 이동 -->
-                <a href="#">View All</a>
-                <!-- .move 태블릿 및 모바일에서 숨김 -->
-                <div class="move">
-                    <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
-                    <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
+                <div class="title sub">
+                    <h2>LIFT SEAMLESS</h2>
+                    <!-- View All 태블릿과 모바일에서 우측 이동 -->
+                    <a href="#">View All</a>
+                    <!-- .move 태블릿 및 모바일에서 숨김 -->
+                    <div class="move">
+                        <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
+                        <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
+                    </div>
                 </div>
             </div>
             <ul class="recommend_product">
                 <li>
-                    <div class="product">
-                        <a href="#"><img src="./images/product_1_01.jpg" alt="photo"></a>
+                    <a href="#"><img src="./images/product_1_01.jpg" alt="photo"></a>
+                    <div class="icon">
                         <!-- cart 테스크탑에서 숨김 -->
                         <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                         <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
                     </div>
-                    <div class="product_info">
-                        <p>
-                            <a href="#">
-                                Lift Contour Seamless Leggings<br>
-                                Slate Teal/White Marl<br>
-                                <em>US$70</em>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.3</span>
-                            </a>
-                        </p>
+                    <!-- .size 태블릿 및 모바일에서 숨김 -->
+                    <div class="size">
+                        <a href="#">XS</a>
+                        <a href="#">S</a>
+                        <a href="#">M</a>
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                        <a href="#">XXL</a>
                     </div>
+                    <a href="#">
+                        <h3>Lift Contour Seamless Leggings</h3>
+                        <p>Slate Teal/White Marl</p>
+                        <p class="price">US$70</p>
+                        <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
+                        <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    </a>
                 </li>
             </ul>
         </section>
