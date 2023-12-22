@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <a href="#"><img src="./images/icon/icon_chat.png" alt="chat"></a>
+    <div class="chat">
+        <a href="#"><img src="./images/icon/icon_chat.png" alt="chat"></a>
+    </div>
     <header>
         <!-- #popup_frm 태블릿 및 모바일 colunm -->
         <div class="popup">
@@ -360,8 +362,8 @@
                     <div class="left">
                         <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                         <div class="lang_m">
+                            <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
                             <ul class="lang">
-                                <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
                                 <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
                                 <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
                                 <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
@@ -385,28 +387,6 @@
                 <!-- 데스크탑과 동일하게 검색 박스를 누르면 검색 창으로 이동 -->
                 <div class="search">
                     <a href="#"><img src="./images/icon/icon_search.png" alt="search">Search for a Product</a>
-                </div>
-                <!-- 검색 창 -->
-                <div class="search page">
-                    <a href="#"><img src="./images/icon/icon_left.png" alt="back"></a>
-                    <form action="#" method="get" id="search_frm">
-                        <fieldset>
-                            <legend class="skip">검색 양식</legend>
-                            <a href="#"><img src="./images/icon/icon_search.png" alt="search"></a>
-                            <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
-                        </fieldset>
-                    </form>
-                    <a href="#"><img src="./images/icon/icon_close.png" alt="close"></a>
-                    <div class="trending_searches">
-                        <h3>TRENDING SEARCHES</h3>
-                        <div class="algorithm">
-                            <h3><img src="#" alt="result"></h3>
-                            <a href="#">HOODIE</a>
-                            <a href="#">SHORTS</a>
-                            <a href="#">LEGGINGS</a>
-                            <a href="#">T-SHIRT</a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="main">
@@ -516,7 +496,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
                             <a href="#">MEN</a>
                             <a href="#">ACCESSORIES</a>
                         </li>
