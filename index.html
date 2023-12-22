@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
+    <a href="#"><img src="./images/icon/icon_chat.png" alt="chat"></a>
     <header>
         <!-- #popup_frm 태블릿 및 모바일 colunm -->
         <div class="popup">
@@ -332,7 +333,20 @@
                 <!-- .wishlist 태블릿 및 모바일에서 숨김 -->
                 <a href="#" class="wishlist"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                 <a href="#"><img src="./images/icon/icon_mypage.png" alt="mypage"></a>
+                <!-- 장바구니 버튼을 누르면 장바구니 페이지로 이동 -->
                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                <!-- 장바구니 페이지 -->
+                <div class="cart_page">
+                    <div class="cart_photo">
+                        <img src="./images/cart.svg" alt="cart">
+                    </div>
+                    <div class="cart_info">
+                        <h2>YOUR BAG IS EMPTY</h2>
+                        <p>There are no products in your bag</p>
+                        <a href="#">SHOP MENS</a>
+                        <a href="#">SHOP WOMENS</a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- .event 태블릿은 상단으로 옮기고 모바일은 숨김 -->
@@ -538,6 +552,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 데스크탑 4개 / 태블릿 3개 / 모바일 1개 노출 -->
             <ul class="recommend_product">
                 <li>
                     <a href="#"><img src="./images/product_1_01.jpg" alt="photo"></a>
@@ -567,10 +582,13 @@
         </section>
         <!-- .bnr 태블릿에서 배경 이미지 사이즈 축소, 모바일은 이미지 축소와 텍스트가 하단으로 내려가며 흰색 컬러 변경 -->
         <section class="bnr">
-            <h2><img src="/images/bnr_text.webp" alt="WALKING IN A GYM-TER WONDERLAND"></h2>
-            <p>The perfect cosy fits to help you rep into Christmas in comfort & style.</p>
-            <a href="#">SHOP WOMEN</a>
-            <a href="#">SHOP MEN</a>
+            <!-- 백그라운드 이미지 사용 -->
+            <div class="text_button">
+                <h2><img src="/images/bnr_text.webp" alt="WALKING IN A GYM-TER WONDERLAND"></h2>
+                <p>The perfect cosy fits to help you rep into Christmas in comfort & style.</p>
+                <a href="#">SHOP WOMEN</a>
+                <a href="#">SHOP MEN</a>
+            </div>
         </section>
         <section class="recommend_02">
             <div class="title">
@@ -585,43 +603,42 @@
             </div>
             <ul class="recommend_product">
                 <li>
-                    <div class="product">
-                        <a href="#"><img src="/images/product_2_01.jpg" alt="photo"></a>
+                    <a href="#"><img src="/images/product_2_01.jpg" alt="photo"></a>
+                    <div class="icon">
                         <!-- cart 테스크탑에서 숨김 -->
                         <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                         <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
                     </div>
-                    <div class="product_info">
-                        <p>
-                            <a href="#">
-                                Built Oversized Sweatshirt<br>
-                                Oversized Fit<br>
-                                Black<br>
-                                <em>US$55</em>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
-                            </a>
-                        </p>
+                    <!-- .size 태블릿 및 모바일에서 숨김 -->
+                    <div class="size">
+                        <a href="#">XS</a>
+                        <a href="#">S</a>
+                        <a href="#">M</a>
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                        <a href="#">XXL</a>
                     </div>
+                    <a href="#">
+                        <h3>Built Oversized Sweatshirt</h3>
+                        <p>Oversized Fit</p>
+                        <p>Black</p>
+                        <p class="price">US$55</p>
+                        <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
+                        <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    </a>
                 </li>
             </ul>
         </section>
         <section class="bnr_02">
-            <h2>
-                ‘TIS THE SEASON FOR<br>
-                SOME HEAVY GIFTING.
-            </h2>
-            <p>Treat them to something they’ll actually want this year.</p>
-            <a href="#">EXPLORE GIFTS</a>
+            <!-- 백그라운드 이미지 사용 -->
+            <div class="text_button">
+                <h2>
+                    ‘TIS THE SEASON FOR<br>
+                    SOME HEAVY GIFTING.
+                </h2>
+                <p>Treat them to something they’ll actually want this year.</p>
+                <a href="#">EXPLORE GIFTS</a>
+            </div>
         </section>
         <section class="recommend_03">
             <div class="title">
@@ -651,26 +668,27 @@
                             <a href="#">XXL</a>
                         </div>
                     </div>
-                    <div class="product_info">
-                        <p>
-                            <a href="#">
-                                Everyday Seamless Leggings<br>
-                                Body Fit<br>
-                                Black<br>
-                                <em>US$50</em>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </a>
-                        </p>
-                    </div>
+                    <a href="#">
+                        <h3>Everyday Seamless Leggings</h3>
+                        <p>Body Fit</p>
+                        <p>Black</p>
+                        <p class="price">US$50</p>
+                        <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
+                        <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
+                    </a>
                 </li>
             </ul>
         </section>
         <section class="bnr_03">
-            <h2>PREPARED FOR PROGRESS</h2>
-            <p>These fits will make sure you’re 100% prepared to get 1% better every day.</p>
-            <a href="#">SHOP WOMEN</a>
-            <a href="#">SHOP MEN</a>
+            <!-- 백그라운드 이미지 사용 -->
+            <div class="text_button">
+                <h2>PREPARED FOR PROGRESS</h2>
+                <p>These fits will make sure you’re 100% prepared to get 1% better every day.</p>
+                <div class="button">
+                    <a href="#">SHOP WOMEN</a>
+                    <a href="#">SHOP MEN</a>
+                </div>
+            </div>
         </section>
         <section class="recommend_04">
             <div class="title">
@@ -700,18 +718,14 @@
                             <a href="#">XXL</a>
                         </div>
                     </div>
-                    <div class="product_info">
-                        <p>
-                            <a href="#">
-                                Sport 7" Short<br>
-                                Regular Fit<br>
-                                Linen Brown/Black<br>
-                                <em>US$40</em>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </a>
-                        </p>
-                    </div>
+                    <a href="#">
+                        <h3>Sport 7" Short</h3>
+                        <p>Regular Fit</p>
+                        <p>Linen Brown/Black</p>
+                        <p class="price">US$40</p>
+                        <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
+                        <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -1036,13 +1050,29 @@
         <div class="bottom">
             <p class="copyright">© 2023 | Gymshark Limited | All Rights Reserved. | United We Sweat</p>
             <!-- .company_info 태블릿 및 모바일에서 .top으로 올라감 -->
-            <div class="company_info">
+            <div class="bottom_info">
                 <a href="#">Terms and Conditions</a>
                 <a href="#">Terms of Use</a>
                 <a href="#">Privacy Notice</a>
                 <a href="#">Cookie Policy</a>
                 <a href="#">Modern Slavery</a>
-                <a href="#"><img src="./images/icon_row.svg" alt="ROW"> ROW <img src="#" alt="lang"></a>
+                <a href="#"><img src="./images/icon_row.svg" alt="ROW"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
+                <ul class="lang">
+                    <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
+                    <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
+                    <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
+                    <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
+                    <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
+                    <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
+                    <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
+                    <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
+                    <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
+                    <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
+                    <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
+                    <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
+                    <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
+                    <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
+                </ul>
             </div>
         </div>
     </footer>
