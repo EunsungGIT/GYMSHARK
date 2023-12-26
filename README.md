@@ -14,3 +14,4 @@
 6. main 상품 정보 수정
 7. webp 파일 jpg로 변환
 8. footer 의미없는 줄 줄이기
+9. id 및 class 이름 수정
