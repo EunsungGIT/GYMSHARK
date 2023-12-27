@@ -15,3 +15,7 @@
 7. webp 파일 jpg로 변환
 8. footer 의미없는 줄 줄이기
 9. id 및 class 이름 수정
+# 23.12.27
+1. header 모바일 메뉴 nav 구조 수정
+2. footer 언어 선택 창 구조 수정
+3. CSS 시작
