@@ -1,7 +1,12 @@
+body {position: relative;}
 /* chat icon */
-#chat {}
-#chat a {}
-#chat a img {}
+#chat {
+    width: 50px; height: 50px;
+    display: flex; justify-content: center; align-items: center;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed; right: 60px; bottom: 60px;}
+#chat img {}
 
 /* header */
 /* header popup */
@@ -12,14 +17,20 @@ header .popup {
     display: flex; justify-content: center; align-items: center;
 }
 header .popup #lang_frm {}
-header .popup #lang_frm fieldset {display: flex;}
+header .popup #lang_frm fieldset {
+    width: 1400px;
+    display: flex; justify-content: center; align-items: center;
+    border: none;
+}
 header .popup #lang_frm fieldset p {
+    margin-right: 40px;
     color: #fff; font-size: 0.875rem; font-weight: 700;
 }
 header .popup #lang_frm fieldset .lang_sel {display: flex; justify-content: space-between;}
 header .popup #lang_frm fieldset .lang_sel .lang_left {}
 header .popup #lang_frm fieldset .lang_sel .lang_left > a {
-    width: 135px;
+    margin-right: 20px; padding: 5px 40px;
+    border-radius: 5px;
     background-color: #2c2c2e; color: #fff;
 }
 header .popup #lang_frm fieldset .lang_sel .lang_left > a img {}
@@ -29,17 +40,19 @@ header .popup #lang_frm fieldset .lang_sel .lang_left .lang {display: none;}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a img {}
-header .popup #lang_frm fieldset .lang_sel span {color: #fff;}
+header .popup #lang_frm fieldset .lang_sel span {color: #fff; margin-right: 20px;}
 header .popup #lang_frm fieldset .lang_sel .lang_right {}
 header .popup #lang_frm fieldset .lang_sel .lang_right a {
-    width: 135px;
+    margin-right: 20px; padding: 5px 40px;
+    border-radius: 5px;
     background-color: #2c2c2e; color: #fff;
 }
 header .popup #lang_frm fieldset .lang_sel .lang_right a img {}
 /* ROW 버튼 클릭 시 ENGLISH로 변함 */
 header .popup #lang_frm fieldset .lang_sel .lang_right span {display: none;}
 header .popup #lang_frm fieldset #lang_sub {
-    width: 92px;
+    font-size: 0.875rem;
+    padding: 8px 12px;
     border-radius: 20px;
 }
 header .popup > a {background-color: #fff;}
@@ -50,6 +63,7 @@ header .top {
     height: 35px; padding: 0 60px;
     background-color: #ebebeb;
     display: flex; justify-content: flex-end; align-items: center;
+    position: relative;
 }
 header .top > a {
     height: 100%; padding: 0 10px;
@@ -57,13 +71,21 @@ header .top > a {
     font-size: 0.875rem;
     border-right: 1px solid #aaa; color: #53565a;
 }
+header .top > a:nth-of-type(6) {border: none;}
 header .top > a .account {width: 13px; margin-right: 8px;}
 header .top > a img {width: 16px;}
 header .top > a .more {width: 12px;}
-header .top .lang {display: none;}
-header .top .lang li {}
-header .top .lang li a {}
-header .top .lang li a img {}
+/* ROW 클릭 시 목록 나옴 */
+header .top .lang {
+    display: none;
+    width: 250px; height: 300px;
+    background-color: #fff;
+    position: absolute; right: 70px; top: 40px;
+    overflow-y: auto;
+}
+header .top .lang li {padding: 20px 15px;}
+header .top .lang li a {font-size: 0.875rem;}
+header .top .lang li a img {width: 16px; margin-right: 10px;}
 
 /* header bottom */
 /* left icon */
@@ -81,24 +103,33 @@ header .bottom h1 a img {width: 100%;}
 /* nav */
 header .bottom nav {}
 header .bottom nav .gnb {}
-header .bottom nav .gnb li {}
-header .bottom nav .gnb li > a {font-weight: 700;}
-header .bottom nav .gnb li .women_category {display: none;}
+header .bottom nav .gnb li {display: inline-block;}
+header .bottom nav .gnb li > a {
+    font-weight: 700; font-size: 0.875rem;
+    margin: 0 20px;
+}
+header .bottom nav .gnb li .women_category {
+    width: 1449px; height: 400px;
+    position: absolute; top: 169px; left: 0;
+    display: flex;
+}
 header .bottom nav .gnb li .women_category .left {}
 header .bottom nav .gnb li .women_category .left ul {}
 header .bottom nav .gnb li .women_category .left ul li {}
 header .bottom nav .gnb li .women_category .left ul li h3 {}
 header .bottom nav .gnb li .women_category .left ul li a {}
-header .bottom nav .gnb li .women_category .right {}
+header .bottom nav .gnb li .women_category .right {
+    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
 header .bottom nav .gnb li .women_category .right .featured {}
 header .bottom nav .gnb li .women_category .right .featured h3 {}
 header .bottom nav .gnb li .women_category .right .featured .top {}
-header .bottom nav .gnb li .women_category .right .featured .top a {}
-header .bottom nav .gnb li .women_category .right .featured .top a img {}
-header .bottom nav .gnb li .women_category .right .featured .top span {}
+header .bottom nav .gnb li .women_category .right .featured .top a {position: relative;}
+header .bottom nav .gnb li .women_category .right .featured .top a img {width: 200px;}
+header .bottom nav .gnb li .women_category .right .featured .top span {position: absolute; bottom: 10px; left: 10px;}
 header .bottom nav .gnb li .women_category .right .featured .bottom {}
 header .bottom nav .gnb li .women_category .right .featured .bottom a {}
-header .bottom nav .gnb li .women_category .right .featured .bottom a img {}
+header .bottom nav .gnb li .women_category .right .featured .bottom a img {width: 200px;}
 header .bottom nav .gnb li .women_category .right .featured .bottom span {}
 header .bottom nav .gnb li .men_category {display: none;}
 header .bottom nav .gnb li .men_category .left {}
@@ -176,3 +207,18 @@ header .event {
     height: 47px; background-color: #f5f5f5;
     font-size: 0.813rem; font-weight: 700;
 }
+/* 태블릿 및 모바일 메뉴 창 */
+header .menu_m {}
+header .menu_m .header_m {}
+header .menu_m .top_m {}
+header .menu_m .top_m .left_m {}
+header .menu_m .top_m .left_m a {}
+header .menu_m .top_m .left_m a img {}
+header .menu_m .top_m .left_m .lang_m {}
+header .menu_m .top_m .left_m .lang_m a {}
+header .menu_m .top_m.left_m .lang_m a img {}
+header .menu_m .top_m .left_m .lang_m .lang {}
+header .menu_m .top_m.left_m .lang_m .lang li {}
+header .menu_m .top_m .left_m .lang_m .lang li a {}
+header .menu_m .top_m .left_m .lang_m .lang li a img {}
+header .menu_m .top_m > a img {}
