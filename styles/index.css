@@ -1,0 +1,15 @@
+/* main */
+main {}
+main .visual {
+    background-image: url(/images/visual.jpg);
+    height: 608px; padding-top: 100px;
+}
+main .visual .text_button {}
+main .visual .text_button h2 {font-size: 2.5rem; font-weight: 700;}
+main .visual .text_button p {}
+main .visual .text_button a {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #000; color: #fff;
+}

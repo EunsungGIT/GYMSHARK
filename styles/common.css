@@ -103,34 +103,48 @@ header .bottom h1 a img {width: 100%;}
 /* nav */
 header .bottom nav {}
 header .bottom nav .gnb {}
-header .bottom nav .gnb li {display: inline-block;}
-header .bottom nav .gnb li > a {
+header .bottom nav .gnb > li {display: inline-block;}
+header .bottom nav .gnb > li > a {
     font-weight: 700; font-size: 0.875rem;
     margin: 0 20px;
 }
+/* nav women category */
 header .bottom nav .gnb li .women_category {
-    width: 1449px; height: 400px;
-    position: absolute; top: 169px; left: 0;
-    display: flex;
+    height: 500px;
+    background-color: #fff;
+    position: absolute; top: 169px;
+    display: none;
 }
-header .bottom nav .gnb li .women_category .left {}
-header .bottom nav .gnb li .women_category .left ul {}
-header .bottom nav .gnb li .women_category .left ul li {}
-header .bottom nav .gnb li .women_category .left ul li h3 {}
+header .bottom nav .gnb li .women_category .left {display: flex;}
+header .bottom nav .gnb li .women_category .left ul {margin-right: 20px;}
+header .bottom nav .gnb li .women_category .left ul li {margin-bottom: 10px;}
+header .bottom nav .gnb li .women_category .left ul li h3 {font-weight: 700;}
 header .bottom nav .gnb li .women_category .left ul li a {}
 header .bottom nav .gnb li .women_category .right {
-    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+    background-color: #ebebeb;
+    padding: 40px; width: 300px; margin: 0 auto;
+
 }
-header .bottom nav .gnb li .women_category .right .featured {}
-header .bottom nav .gnb li .women_category .right .featured h3 {}
-header .bottom nav .gnb li .women_category .right .featured .top {}
-header .bottom nav .gnb li .women_category .right .featured .top a {position: relative;}
-header .bottom nav .gnb li .women_category .right .featured .top a img {width: 200px;}
-header .bottom nav .gnb li .women_category .right .featured .top span {position: absolute; bottom: 10px; left: 10px;}
-header .bottom nav .gnb li .women_category .right .featured .bottom {}
-header .bottom nav .gnb li .women_category .right .featured .bottom a {}
-header .bottom nav .gnb li .women_category .right .featured .bottom a img {width: 200px;}
-header .bottom nav .gnb li .women_category .right .featured .bottom span {}
+header .bottom nav .gnb li .women_category .right .featured {display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center;}
+header .bottom nav .gnb li .women_category .right .featured h3 {
+    margin-bottom: 20px;
+    font-size: 0.875rem; font-weight: 700;
+}
+header .bottom nav .gnb li .women_category .right .featured .f_top {position: relative; margin-bottom: 20px;}
+header .bottom nav .gnb li .women_category .right .featured .f_top a {}
+header .bottom nav .gnb li .women_category .right .featured .f_top a img {width: 250px;}
+header .bottom nav .gnb li .women_category .right .featured .f_top span {
+    color: #fff; font-weight: 700;
+    position: absolute; bottom: 10px; left: 10px;
+}
+header .bottom nav .gnb li .women_category .right .featured .f_bottom {position: relative;}
+header .bottom nav .gnb li .women_category .right .featured .f_bottom a {}
+header .bottom nav .gnb li .women_category .right .featured .f_bottom a img {width: 250px;}
+header .bottom nav .gnb li .women_category .right .featured .f_bottom span {
+    color: #fff; font-weight: 700;
+    position: absolute; bottom: 10px; left: 10px;
+}
+/* nav men category */
 header .bottom nav .gnb li .men_category {display: none;}
 header .bottom nav .gnb li .men_category .left {}
 header .bottom nav .gnb li .men_category .left ul {}
@@ -148,6 +162,7 @@ header .bottom nav .gnb li .men_category .right .featured .bottom {}
 header .bottom nav .gnb li .men_category .right .featured .bottom a {}
 header .bottom nav .gnb li .men_category .right .featured .bottom a img {}
 header .bottom nav .gnb li .men_category .right .featured .bottom span {}
+/* nav acc category */
 header .bottom nav .gnb li .acc_category {display: none;}
 header .bottom nav .gnb li .acc_category .left {}
 header .bottom nav .gnb li .acc_category .left ul {}
@@ -208,7 +223,7 @@ header .event {
     font-size: 0.813rem; font-weight: 700;
 }
 /* 태블릿 및 모바일 메뉴 창 */
-header .menu_m {}
+header .menu_m {display: none;}
 header .menu_m .header_m {}
 header .menu_m .top_m {}
 header .menu_m .top_m .left_m {}
@@ -221,4 +236,6 @@ header .menu_m .top_m .left_m .lang_m .lang {}
 header .menu_m .top_m.left_m .lang_m .lang li {}
 header .menu_m .top_m .left_m .lang_m .lang li a {}
 header .menu_m .top_m .left_m .lang_m .lang li a img {}
+header .menu_m .top_m > a {}
 header .menu_m .top_m > a img {}
+header .menu_m h2 {}
