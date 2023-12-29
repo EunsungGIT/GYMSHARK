@@ -240,15 +240,26 @@ header .menu_m h2 {}
 /* footer */
 footer {}
 /* footer top */
-footer .top {display: flex;}
+footer .top {
+    display: flex; justify-content: space-between;
+    height: 380px; padding: 30px 60px;
+}
 footer .top .left {display: flex;}
-footer .top .left dl {}
-footer .top .left dl dt {}
-footer .top .left dl dt img {}
-footer .top .left dl dd {}
+footer .top .left dl {width: 120px;}
+footer .top .left dl dt {
+    margin-bottom: 15px;
+    font-size: 0.875rem; font-weight: 700;
+}
+footer .top .left dl dd {font-size: 0.875rem;}
 footer .top .left dl dd a {}
+/* mobile dl */
+footer .top .left .mobile {display: none;}
+footer .top .left .mobile dt {font-size: 0.875rem; font-weight: 700;}
+footer .top .left .mobile dt img {}
+footer .top .left .mobile dd {}
+footer .top .left .mobile dd a {}
 footer .top .left .card {width: 42px; display: flex;}
-footer .top .left .card img {width: 100%;}
+footer .top .left .card img {width: 100%; margin-right: 10px;}
 footer .top .right {}
 footer .top .right dl {display: flex;}
 footer .top .right dl dt {}
@@ -261,19 +272,20 @@ footer .top .contents a {width: 28px;}
 footer .top .contents a img {width: 100%;}
 /* footer bottom */
 footer .bottom {
-    display: flex;
+    padding: 15px 60px;
+    display: flex; justify-content: space-between; align-items: center;
     border-top: 1px solid #aaa;
 }
-footer .bottom .copyright {}
+footer .bottom .copyright {font-size: 0.875rem;}
 footer .bottom .bottom_info {display: flex;}
-footer .bottom .bottom_info a {}
+footer .bottom .bottom_info a {font-size: 0.875rem;}
 footer .bottom .bottom_info .lang_sel {position: relative;}
-footer .bottom .bottom_info .lang_sel a {}
-footer .bottom .bottom_info .lang_sel a img {}
+footer .bottom .bottom_info .lang_sel a {border-left: 1px solid #aaa;}
+footer .bottom .bottom_info .lang_sel a img {width: 16px;}
 footer .bottom .bottom_info .lang_sel .lang {
     width: 250px; height: 300px;
     background-color: #fff;
-    position: absolute; right: 70px; top: 40px;
+    position: absolute; bottom: 35px; right: 0;
     overflow-y: auto;
 }
 footer .bottom .bottom_info .lang_sel .lang li {padding: 20px 15px;}
