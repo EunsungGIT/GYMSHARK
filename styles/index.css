@@ -1,15 +1,408 @@
 /* main */
-main {}
+main {font-family: 'Roboto';}
+/* main visual */
 main .visual {
+    height: 608px; padding: 200px 0 0 60px;
     background-image: url(/images/visual.jpg);
-    height: 608px; padding-top: 100px;
 }
 main .visual .text_button {}
-main .visual .text_button h2 {font-size: 2.5rem; font-weight: 700;}
-main .visual .text_button p {}
+main .visual .text_button h2 {
+    font-size: 2.5rem; font-weight: 700;
+    margin-bottom: 20px;
+}
+main .visual .text_button p {margin-bottom: 20px;}
 main .visual .text_button a {
     display: inline-block;
-    padding: 10px 25px;
-    border-radius: 20px;
+    padding: 10px 30px; border-radius: 20px;
     background-color: #000; color: #fff;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .visual .text_button a:hover {background-color: #222;}
+/* main recommend */
+main .recommend {padding-top: 80px;}
+main .recommend .title {margin: 0 60px 24px;}
+main .recommend .title .cat {color: #444; margin-bottom: 8px;}
+main .recommend .title .title_sub {display: flex; justify-content: space-between; align-items: center;}
+main .recommend .title .title_sub h2 {font-size: 1.5rem; font-weight: 700;}
+main .recommend .title .title_sub > a {font-weight: 700;}
+main .recommend .title .title_sub .move {}
+main .recommend .title .title_sub .move a {
+    width: 32px; height: 32px;
+    background-color: #e7e7e7; border-radius: 50%;
+}
+main .recommend .title .title_sub .move a img {width: 13px;}
+main .recommend .recommend_product {padding: 0 0 30px 60px;}
+main .recommend .recommend_product li {position: relative; width: 326px;}
+main .recommend .recommend_product li .photo {}
+main .recommend .recommend_product li .photo img {width: 100%;}
+main .recommend .recommend_product li .icon {}
+main .recommend .recommend_product li .icon a {
+    width: 32px; height: 32px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+main .recommend .recommend_product li .icon a:first-child {position: absolute; top: 10px; left: 10px;}
+main .recommend .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
+main .recommend .recommend_product li .icon a img {width: 16px;}
+main .recommend .recommend_product li .size {
+    background-color: #e7e7e7; padding: 40px 20px;
+}
+main .recommend .recommend_product li .size a {
+    width: 32px; height: 32px;
+    background-color: #fff;
+}
+main .recommend .recommend_product li .info {padding: 8px;}
+main .recommend .recommend_product li .info .name_review {
+    margin-bottom: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend .recommend_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
+main .recommend .recommend_product li .info .name_review span {font-size: 0.75rem; color: font-weight: 700; #6e6e6e;}
+main .recommend .recommend_product li .info .name_review span img {width: 15px;}
+main .recommend .recommend_product li .info p {
+    margin-bottom: 2px;
+    font-size: 0.875rem; color: #6e6e6e;
+}
+main .recommend .recommend_product li .info .price {}
+/* main bnr */
+main .bnr {
+    margin-top: 80px; padding: 200px 0 0 60px; height: 608px;
+    background-image: url(../images/bnr.jpg);
+}
+main .bnr .text_button {}
+main .bnr .text_button h2 {margin-bottom: 20px;}
+main .bnr .text_button h2 img {}
+main .bnr .text_button p {margin-bottom: 20px; color: #fff;}
+main .bnr .text_button a {
+    display: inline-block;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #fff; color: #000;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .bnr .text_button a:last-child {background-color: #53565a; color: #fff;}
+main .bnr .text_button a:hover {background-color: #f5f5f5;}
+main .bnr .text_button a:last-child:hover {background-color: #6e6e6e;}
+/* main recommend second */
+main .recommend_second {padding-top: 80px;}
+main .recommend_second .title {
+    margin: 0 60px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_second .title h2 {font-size: 1.5rem; font-weight: 700;}
+main .recommend_second .title > a {font-weight: 700;}
+main .recommend_second .title .move {}
+main .recommend_second .title .move a {
+    width: 32px; height: 32px;
+    background-color: #e7e7e7; border-radius: 50%;
+}
+main .recommend_second .title .move a img {width: 13px;}
+main .recommend_second .recommend_product {padding: 0 0 30px 60px;}
+main .recommend_second .recommend_product li {position: relative; width: 326px;}
+main .recommend_second .recommend_product li .photo {}
+main .recommend_second .recommend_product li .photo img {width: 100%;}
+main .recommend_second .recommend_product li .icon {}
+main .recommend_second .recommend_product li .icon a {
+    width: 32px; height: 32px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+main .recommend_second .recommend_product li .icon a:first-child {position: absolute; top: 10px; left: 10px;}
+main .recommend_second .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
+main .recommend_second .recommend_product li .icon a img {width: 16px;}
+main .recommend_second .recommend_product li .size {
+    background-color: #e7e7e7; padding: 40px 20px;
+}
+main .recommend_second .recommend_product li .size a {
+    width: 32px; height: 32px;
+    background-color: #fff;
+}
+main .recommend_second .recommend_product li .info {padding: 8px;}
+main .recommend_second .recommend_product li .info .name_review {
+    margin-bottom: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_second .recommendd_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
+main .recommend_second .recommend_product li .info .name_review span {font-size: 0.75rem; font-weight: 700; color: #6e6e6e;}
+main .recommend_second .recommend_product li .info .name_review span img {width: 15px;}
+main .recommend_second .recommend_product li .info p {
+    margin-bottom: 2px;
+    font-size: 0.875rem; color: #6e6e6e;
+}
+main .recommend_second .recommend_product li .info .price {}
+/* main bnr second */
+main .bnr_second {
+    height: 608px; padding: 200px 0 0 60px;
+    background-image: url(../images/bnr_02.jpg);
+}
+main .bnr_second .text_button {}
+main .bnr_second .text_button h2 {
+    font-size: 2.5rem; font-weight: 700; color: #fff;
+    margin-bottom: 20px;
+}
+main .bnr_second .text_button p {margin-bottom: 20px; color: #fff;}
+main .bnr_second .text_button a {
+    display: inline-block;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #fff; color: #000;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .bnr_second .text_button a:hover {background-color: #f5f5f5;}
+/* main recommend third */
+main .recommend_third {padding-top: 80px;}
+main .recommend_third .title {
+    margin: 0 60px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_third .title h2 {font-size: 1.5rem; font-weight: 700;}
+main .recommend_third .title > a {font-weight: 700;}
+main .recommend_third .title .move {}
+main .recommend_third .title .move a {
+    width: 32px; height: 32px;
+    background-color: #e7e7e7; border-radius: 50%;
+}
+main .recommend_third .title .move a img {width: 13px;}
+main .recommend_third .recommend_product {padding: 0 0 30px 60px;}
+main .recommend_third .recommend_product li {position: relative; width: 326px;}
+main .recommend_third .recommend_product li .photo {}
+main .recommend_third .recommend_product li .photo img {width: 100%;}
+main .recommend_third .recommend_product li .icon {}
+main .recommend_third .recommend_product li .icon a {
+    width: 32px; height: 32px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+main .recommend_third .recommend_product li .icon a:first-child {position: absolute; top: 10px; left: 10px;}
+main .recommend_third .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
+main .recommend_third .recommend_product li .icon a img {width: 16px;}
+main .recommend_third .recommend_product li .size {
+    background-color: #e7e7e7; padding: 40px 20px;
+}
+main .recommend_third .recommend_product li .size a {
+    width: 32px; height: 32px;
+    background-color: #fff;
+}
+main .recommend_third .recommend_product li .info {padding: 8px;}
+main .recommend_third .recommend_product li .info .name_review {
+    margin-bottom: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_third .recommendd_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
+main .recommend_third .recommend_product li .info .name_review span {font-size: 0.75rem; font-weight: 700; color: #6e6e6e;}
+main .recommend_third .recommend_product li .info .name_review span img {width: 15px;}
+main .recommend_third .recommend_product li .info p {
+    margin-bottom: 2px;
+    font-size: 0.875rem; color: #6e6e6e;
+}
+main .recommend_third .recommend_product li .info .price {}
+/* main bnr third */
+main .bnr_third {
+    height: 608px; padding: 200px 0 0 60px;
+    background-image: url(../images/bnr_03.jpg);
+}
+main .bnr_third .text_button {}
+main .bnr_third .text_button h2 {
+    font-size: 2.5rem; font-weight: 700; color: #fff;
+    margin-bottom: 20px;
+}
+main .bnr_third .text_button p {margin-bottom: 20px; color: #fff;}
+main .bnr_third .text_button a {
+    display: inline-block;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #fff; color: #000;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .bnr_third .text_button a:last-child {background-color: #53565a; color: #fff;}
+main .bnr_third .text_button a:hover {background-color: #f5f5f5;}
+main .bnr_third .text_button a:last-child:hover {background-color: #6e6e6e;}
+/* main recommend fourth */
+main .recommend_fourth {padding-top: 80px;}
+main .recommend_fourth .title {
+    margin: 0 60px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_fourth .title h2 {font-size: 1.5rem; font-weight: 700;}
+main .recommend_fourth .title > a {font-weight: 700;}
+main .recommend_fourth .title .move {}
+main .recommend_fourth .title .move a {
+    width: 32px; height: 32px;
+    background-color: #e7e7e7; border-radius: 50%;
+}
+main .recommend_fourth .title .move a img {width: 13px;}
+main .recommend_fourth .recommend_product {padding: 0 0 30px 60px;}
+main .recommend_fourth .recommend_product li {position: relative; width: 326px;}
+main .recommend_fourth .recommend_product li .photo {}
+main .recommend_fourth .recommend_product li .photo img {width: 100%;}
+main .recommend_fourth .recommend_product li .icon {}
+main .recommend_fourth .recommend_product li .icon a {
+    width: 32px; height: 32px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+main .recommend_fourth .recommend_product li .icon a:first-child {position: absolute; top: 10px; left: 10px;}
+main .recommend_fourth .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
+main .recommend_fourth .recommend_product li .icon a img {width: 16px;}
+main .recommend_fourth .recommend_product li .size {
+    background-color: #e7e7e7; padding: 40px 20px;
+}
+main .recommend_fourth .recommend_product li .size a {
+    width: 32px; height: 32px;
+    background-color: #fff;
+}
+main .recommend_fourth .recommend_product li .info {padding: 8px;}
+main .recommend_fourth .recommend_product li .info .name_review {
+    margin-bottom: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_fourth .recommendd_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
+main .recommend_fourth .recommend_product li .info .name_review span {font-size: 0.75rem; font-weight: 700; color: #6e6e6e;}
+main .recommend_fourth .recommend_product li .info .name_review span img {width: 15px;}
+main .recommend_fourth .recommend_product li .info p {
+    margin-bottom: 2px;
+    font-size: 0.875rem; color: #6e6e6e;
+}
+main .recommend_fourth .recommend_product li .info .price {}
+/* bnr fourth (삭제됨) */
+/* recommend fifth */
+main .recommend_fifth {padding-top: 80px;}
+main .recommend_fifth .title {
+    margin: 0 60px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_fifth .title h2 {font-size: 1.5rem; font-weight: 700;}
+main .recommend_fifth .title > a {font-weight: 700;}
+main .recommend_fifth .title .move {}
+main .recommend_fifth .title .move a {
+    width: 32px; height: 32px;
+    background-color: #e7e7e7; border-radius: 50%;
+}
+main .recommend_fifth .title .move a img {width: 13px;}
+main .recommend_fifth .recommend_product {padding: 0 0 30px 60px;}
+main .recommend_fifth .recommend_product li {position: relative; width: 326px;}
+main .recommend_fifth .recommend_product li .photo {}
+main .recommend_fifth .recommend_product li .photo img {width: 100%;}
+main .recommend_fifth .recommend_product li .icon {}
+main .recommend_fifth .recommend_product li .icon a {
+    width: 32px; height: 32px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+main .recommend_fifth .recommend_product li .icon a:first-child {position: absolute; top: 10px; left: 10px;}
+main .recommend_fifth .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
+main .recommend_fifth .recommend_product li .icon a img {width: 16px;}
+main .recommend_fifth .recommend_product li .size {
+    background-color: #e7e7e7; padding: 40px 20px;
+}
+main .recommend_fifth .recommend_product li .size a {
+    width: 32px; height: 32px;
+    background-color: #fff;
+}
+main .recommend_fifth .recommend_product li .info {padding: 8px;}
+main .recommend_fifth .recommend_product li .info .name_review {
+    margin-bottom: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .recommend_fifth .recommendd_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
+main .recommend_fifth .recommend_product li .info .name_review span {font-size: 0.75rem; font-weight: 700; color: #6e6e6e;}
+main .recommend_fifth .recommend_product li .info .name_review span img {width: 15px;}
+main .recommend_fifth .recommend_product li .info p {
+    margin-bottom: 2px;
+    font-size: 0.875rem; color: #6e6e6e;
+}
+main .recommend_fifth .recommend_product li .info .price {}
+/* main bnr fifth */
+main .bnr_fifth {
+    height: 608px;
+    background-image: url(../images/gymshark66_01.jpg);
+    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
+main .bnr_fifth p {margin-bottom: 20px;}
+main .bnr_fifth a {
+    display: inline-block;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #000; color: #fff;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .bnr_fifth a:hover {background-color: #222;}
+/* main app */
+main .app {padding: 80px 60px 110px;}
+main .app h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem; font-weight: 700;
+}
+main .app .app_link {display: flex; justify-content: space-around; align-items: center;}
+main .app .app_link .app_left {width: 665px; position: relative;}
+main .app .app_link .app_left img {width: 100%;}
+main .app .app_link .app_left .app_info {position: absolute; bottom: 20px; z-index: 1;}
+main .app .app_link .app_left .app_info h3 {
+    margin-bottom: 20px; color: #fff;
+    font-size: 1.5rem; font-weight: 700;
+}
+main .app .app_link .app_left .app_info p {margin-bottom: 20px; color: #fff;}
+main .app .app_link .app_left .app_info a {
+    display: inline-block;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #fff; color: #000;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .app .app_link .app_left .app_info a:hover {background-color: #f5f5f5;}
+main .app .app_link .app_right {width: 665px; position: relative;}
+main .app .app_link .app_right img {width: 100%;}
+main .app .app_link .app_right .app_info {position: absolute; bottom: 20px; z-index: 1;}
+main .app .app_link .app_right .app_info h3 {
+    margin-bottom: 20px; color: #fff;
+    font-size: 1.5rem; font-weight: 700;
+}
+main .app .app_link .app_right .app_info p {margin-bottom: 20px; color: #fff;}
+main .app .app_link .app_right .app_info a {
+    display: inline-block;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #fff; color: #000;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .app .app_link .app_right .app_info a:hover {background-color: #f5f5f5;}
+/* main photo cat */
+main .photo_cat {
+    padding: 80px 60px 110px;
+    display: flex; justify-content: space-around; align-items: center;
+}
+main .photo_cat .photo_button {width: 441px; position: relative;}
+main .photo_cat .photo_button img {width: 100%;}
+main .photo_cat .photo_button a {
+    display: inline-block; z-index: 1;
+    position: absolute; bottom: 20px; left: 20px;
+    padding: 10px 30px; border-radius: 20px;
+    background-color: #fff; color: #000;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .photo_cat .photo_button a:hover {background-color: #f5f5f5;}
+/* main trending collections */
+main .trending_collections {
+    padding: 80px 60px 40px;
+    display: flex; justify-content: space-between;
+}
+main .trending_collections li {width: 314px;}
+main .trending_collections li h3 {
+    font-size: 1.125rem; font-weight: 700;
+    margin-bottom: 16px;
+}
+main .trending_collections li ul {}
+main .trending_collections li ul li {}
+main .trending_collections li ul li a {font-size: 0.875rem; color: #444;}
+/* main company info */
+main .company_info {
+    padding: 40px 60px 80px;
+    border-bottom: 1px solid #aaa;
+}
+main .company_info p {
+    font-size: 0.875rem; color: #444;
+    margin-bottom: 16px;
+}
+main .company_info p:first-child {
+    border-top: 1px solid #aaa;
+    padding-top: 40px;
+}
+main .company_info p a {font-size: 0.875rem; font-weight: 700;}
+main .company_info h3 {
+    font-size: 1.25rem; font-weight: 700;
+    margin-bottom: 16px;
 }
