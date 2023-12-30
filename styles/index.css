@@ -2,10 +2,11 @@
 main {font-family: 'Roboto';}
 /* main visual */
 main .visual {
-    height: 608px; padding: 200px 0 0 60px;
+    height: 608px;
+    position: relative;
     background-image: url(/images/visual.jpg);
 }
-main .visual .text_button {}
+main .visual .text_button {position: absolute; left: 60px; top: 208px;}
 main .visual .text_button h2 {
     font-size: 2.5rem; font-weight: 700;
     margin-bottom: 20px;
@@ -21,14 +22,24 @@ main .visual .text_button a:hover {background-color: #222;}
 /* main recommend */
 main .recommend {padding-top: 80px;}
 main .recommend .title {margin: 0 60px 24px;}
-main .recommend .title .cat {color: #444; margin-bottom: 8px;}
+main .recommend .title .cat {color: #444; margin-bottom: 8px; font-weight: 700;}
 main .recommend .title .title_sub {display: flex; justify-content: space-between; align-items: center;}
-main .recommend .title .title_sub h2 {font-size: 1.5rem; font-weight: 700;}
-main .recommend .title .title_sub > a {font-weight: 700;}
-main .recommend .title .title_sub .move {}
+main .recommend .title .title_sub .title_view {display: flex; align-items: center;}
+main .recommend .title .title_sub .title_view h2 {font-size: 1.5rem; font-weight: 700; margin-right: 20px;}
+main .recommend .title .title_sub .title_view a {
+    font-weight: 700; border-bottom: 1px solid #000;
+}
+main .recommend .title .title_sub .move {
+    display: flex;
+}
 main .recommend .title .title_sub .move a {
-    width: 32px; height: 32px;
+    display: flex; justify-content: center; align-items: center;
+    width: 32px; height: 32px; margin-right: 10px;
     background-color: #e7e7e7; border-radius: 50%;
+}
+main .recommend .title .title_sub .move a:last-child {
+    margin: 0;
+    background-color: #000;
 }
 main .recommend .title .title_sub .move a img {width: 13px;}
 main .recommend .recommend_product {padding: 0 0 30px 60px;}
@@ -57,8 +68,12 @@ main .recommend .recommend_product li .info .name_review {
     display: flex; justify-content: space-between; align-items: center;
 }
 main .recommend .recommend_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
-main .recommend .recommend_product li .info .name_review span {font-size: 0.75rem; color: font-weight: 700; #6e6e6e;}
-main .recommend .recommend_product li .info .name_review span img {width: 15px;}
+main .recommend .recommend_product li .info .name_review span {
+    width: 15px;
+    display: flex; align-items: center;
+    font-size: 0.75rem; color: font-weight: 700; #6e6e6e;
+}
+main .recommend .recommend_product li .info .name_review span img {width: 100%;}
 main .recommend .recommend_product li .info p {
     margin-bottom: 2px;
     font-size: 0.875rem; color: #6e6e6e;

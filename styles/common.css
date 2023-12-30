@@ -1,61 +1,68 @@
-body {position: relative;}
-/* chat icon */
+/* body */
+body {position: relative; font-family: 'Roboto';}
+
+/* chat */
 #chat {
     width: 50px; height: 50px;
     display: flex; justify-content: center; align-items: center;
-    background-color: #000;
-    border-radius: 50%;
-    position: fixed; right: 60px; bottom: 60px;}
+    background-color: #000; border-radius: 50%;
+    position: fixed; right: 60px; bottom: 60px;
+}
 #chat img {}
+
 /* header */
 header {}
 /* header popup */
 header .popup {
     height: 65px; padding: 0 16px;
     background-color: #000;
-    display: flex; justify-content: center; align-items: center;
+    display: flex; justify-content: space-between; align-items: center;
 }
 header .popup #lang_frm {}
 header .popup #lang_frm fieldset {
     width: 1400px;
-    display: flex; justify-content: center; align-items: center;
+    display: flex; justify-content: flex-end; align-items: center;
     border: none;
 }
 header .popup #lang_frm fieldset p {
     margin-right: 40px;
     color: #fff; font-size: 0.875rem; font-weight: 700;
 }
-header .popup #lang_frm fieldset .lang_sel {display: flex; justify-content: space-between;}
+header .popup #lang_frm fieldset .lang_sel {display: flex; justify-content: space-between; align-items: center;}
 header .popup #lang_frm fieldset .lang_sel .lang_left {}
 header .popup #lang_frm fieldset .lang_sel .lang_left > a {
-    margin-right: 20px; padding: 5px 40px;
+    margin-right: 15px; padding: 8px 40px;
+    display: flex; align-items: center;
+    font-size: 0.875rem; font-weight: 700;
     border-radius: 5px;
     background-color: #2c2c2e; color: #fff;
 }
-header .popup #lang_frm fieldset .lang_sel .lang_left > a img {}
+header .popup #lang_frm fieldset .lang_sel .lang_left > a img {margin-right: 10px;}
 /* ROW 버튼 클릭 시 more 나옴 */
 header .popup #lang_frm fieldset .lang_sel .lang_left > a .more {display: none;}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang {display: none;}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a img {}
-header .popup #lang_frm fieldset .lang_sel span {color: #fff; margin-right: 20px;}
+header .popup #lang_frm fieldset .lang_sel span {color: #fff; margin-right: 15px;}
 header .popup #lang_frm fieldset .lang_sel .lang_right {}
 header .popup #lang_frm fieldset .lang_sel .lang_right a {
-    margin-right: 20px; padding: 5px 40px;
+    margin-right: 30px; padding: 8px 40px;
+    display: flex; align-items: center;
+    font-size: 0.875rem; font-weight: 700;
     border-radius: 5px;
     background-color: #2c2c2e; color: #fff;
 }
-header .popup #lang_frm fieldset .lang_sel .lang_right a img {}
+header .popup #lang_frm fieldset .lang_sel .lang_right a img {margin-right: 10px;}
 /* ROW 버튼 클릭 시 ENGLISH로 변함 */
 header .popup #lang_frm fieldset .lang_sel .lang_right span {display: none;}
 header .popup #lang_frm fieldset #lang_sub {
-    font-size: 0.875rem;
-    padding: 8px 12px;
-    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.875rem; font-weight: 700; color: #53565a;
+    border: none; border-radius: 20px;
 }
-header .popup > a {background-color: #fff;}
-header .popup > a img {}
+header .popup .close {width: 24px;}
+header .popup .close img {width: 100%;}
 /* header top */
 header .top {
     height: 35px; padding: 0 60px;
@@ -66,13 +73,13 @@ header .top {
 header .top > a {
     height: 100%; padding: 0 10px;
     display: flex; align-items: center;
-    font-size: 0.875rem;
+    font-size: 0.875rem; font-weight: 500;
     border-right: 1px solid #aaa; color: #53565a;
 }
 header .top > a:nth-of-type(6) {border: none;}
 header .top > a .account {width: 13px; margin-right: 8px;}
-header .top > a img {width: 16px;}
-header .top > a .more {width: 12px;}
+header .top > a img {width: 16px; margin-right: 5px;}
+header .top > a .more {width: 12px; margin-left: 5px;}
 /* ROW 클릭 시 목록 나옴 */
 header .top .lang {
     display: none;
@@ -87,7 +94,7 @@ header .top .lang li a img {width: 16px; margin-right: 10px;}
 /* header bottom */
 /* left icon */
 header .bottom {
-    height: 69px; padding: 0 40px;
+    height: 69px; padding: 0 60px;
     display: flex; justify-content: space-between; align-items: center;
 }
 /* 태블릿 및 모바일 용 */
@@ -95,7 +102,7 @@ header .bottom .left_icon {display: none;}
 header .bottom .left_icon a {}
 header .bottom .left_icon a img {}
 header .bottom h1 {width: 46px;}
-header .bottom h1 a {}
+header .bottom h1 a {width: 100%;}
 header .bottom h1 a img {width: 100%;}
 /* nav */
 header .bottom nav {}
@@ -174,13 +181,14 @@ header .bottom nav .gnb li .acc_category .right .featured .bottom a {}
 header .bottom nav .gnb li .acc_category .right .featured .bottom a img {}
 header .bottom nav .gnb li .acc_category .right .featured .bottom span {}
 /* right icon */
-header .bottom .right_icon {}
+header .bottom .right_icon {display: flex; align-items: center;}
 header .bottom .right_icon .search_box {
     width: 250px; padding: 12px 16px; margin-right: 16px;
+    display: flex; align-items: center;
     font-size: 0.875rem;
     background-color: #f5f5f5; color: #6e6e6e;
 }
-header .bottom .right_icon .search_box img {}
+header .bottom .right_icon .search_box img {margin-right: 10px; width: 25px;}
 /* 태블릿 용 */
 header .bottom .right_icon .search {display: none;}
 header .bottom .right_icon .search img {}
