@@ -1,0 +1,29 @@
+@media screen and (max-width:1440px){
+    header .bottom .right_icon .search_box {display: none;}
+    header .bottom .right_icon .search {
+        display: block;
+        margin: 0 12px;
+    }
+    header .bottom .right_icon .search img {width: 23px;}
+}
+
+@media screen and (max-width:1024px){
+    /* header */
+    header .popup {height: 151px;}
+    header .popup #lang_frm fieldset {flex-flow: column nowrap;}
+    header .top {display: none; position: relative;}
+    header .bottom .left_icon {display: flex;}
+    header .bottom .left_icon a {margin: 0 12px;}
+    header .bottom .left_icon a img {width: 23px;}
+    header .bottom nav {display: none;}
+    header .bottom .right_icon .search {display: none;}
+    header .bottom .right_icon .wishlist {display: none;}
+    header .event {
+        width: 100%;
+        position: absolute; bottom: 69px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
