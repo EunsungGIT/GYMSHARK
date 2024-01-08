@@ -9,8 +9,13 @@
 
 @media screen and (max-width:1024px){
     /* header */
-    header .popup {height: 151px;}
+    header .popup {
+        height: 151px;
+        flex-flow: column nowrap; justify-content: space-between; align-items: flex-start;
+    }
     header .popup #lang_frm fieldset {flex-flow: column nowrap;}
+    header .popup #lang_frm fieldset .lang_sel {}
+    header .popup #lang_frm fieldset #lang_sub {width: 100%;}
     header .top {display: none; position: relative;}
     header .bottom .left_icon {display: flex;}
     header .bottom .left_icon a {margin: 0 12px;}
@@ -20,7 +25,6 @@
     header .bottom .right_icon .wishlist {display: none;}
     header .event {
         width: 100%;
-        position: absolute; bottom: 69px;
     }
     /* 장바구니 페이지 */
     header .bottom .right_icon .cart_bg {display: none;}
