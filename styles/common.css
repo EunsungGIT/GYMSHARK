@@ -32,7 +32,7 @@ header .popup #lang_frm fieldset p {
 header .popup #lang_frm fieldset .lang_sel {display: flex; justify-content: space-between; align-items: center;}
 header .popup #lang_frm fieldset .lang_sel .lang_left {}
 header .popup #lang_frm fieldset .lang_sel .lang_left > a {
-    margin-right: 15px; padding: 8px 40px;
+    padding: 8px 40px;
     display: flex; align-items: center;
     font-size: 0.875rem; font-weight: 700;
     border-radius: 5px;
@@ -46,7 +46,10 @@ header .popup #lang_frm fieldset .lang_sel .lang_left .lang {display: none;}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a img {}
-header .popup #lang_frm fieldset .lang_sel span {color: #fff; margin-right: 15px;}
+header .popup #lang_frm fieldset .lang_sel span {
+    width: 50px; text-align: center;
+    color: #fff;
+}
 header .popup #lang_frm fieldset .lang_sel .lang_right {}
 header .popup #lang_frm fieldset .lang_sel .lang_right a {
     margin-right: 30px; padding: 8px 40px;
@@ -116,7 +119,10 @@ header .bottom h1 a {
 }
 header .bottom h1 a img {width: 100%;}
 /* nav */
-header .bottom nav {position: absolute; right: 800px;}
+header .bottom nav {
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+}
 header .bottom nav .gnb {}
 header .bottom nav .gnb > li {display: inline-block;}
 header .bottom nav .gnb > li > a {

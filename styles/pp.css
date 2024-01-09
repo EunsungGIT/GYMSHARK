@@ -1,8 +1,7 @@
 @media screen and (max-width:1440px){
     header .bottom .right_icon .search_box {display: none;}
     header .bottom .right_icon .search {
-        display: block;
-        margin: 0 12px;
+        display: block; margin: 0 12px;
     }
     header .bottom .right_icon .search img {width: 23px;}
 }
@@ -11,11 +10,25 @@
     /* header */
     header .popup {
         height: 151px;
-        flex-flow: column nowrap; justify-content: space-between; align-items: flex-start;
+        flex-flow: column nowrap; align-items: flex-start;
     }
-    header .popup #lang_frm fieldset {flex-flow: column nowrap;}
-    header .popup #lang_frm fieldset .lang_sel {}
+    header .popup #lang_frm {width: 100%;}
+    header .popup #lang_frm fieldset {
+        flex-flow: column nowrap; align-items: flex-start;
+    }
+    header .popup #lang_frm fieldset p {margin: 0 0 20px;}
+    header .popup #lang_frm fieldset .lang_sel {width: 100%; margin-bottom: 20px;}
+    header .popup #lang_frm fieldset .lang_sel .lang_left {width: calc(50% - 50px);}
+    header .popup #lang_frm fieldset .lang_sel .lang_left a {justify-content: center;}
+    header .popup #lang_frm fieldset .lang_sel .lang_right {width: calc(50% - 50px);}
+    header .popup #lang_frm fieldset .lang_sel .lang_right a {
+        margin: 0; justify-content: center;
+    }
     header .popup #lang_frm fieldset #lang_sub {width: 100%;}
+    header .popup .close {
+        width: 24px;
+        position: absolute; top: 10px;
+    }
     header .top {display: none; position: relative;}
     header .bottom .left_icon {display: flex;}
     header .bottom .left_icon a {margin: 0 12px;}
@@ -23,9 +36,6 @@
     header .bottom nav {display: none;}
     header .bottom .right_icon .search {display: none;}
     header .bottom .right_icon .wishlist {display: none;}
-    header .event {
-        width: 100%;
-    }
     /* 장바구니 페이지 */
     header .bottom .right_icon .cart_bg {display: none;}
 }

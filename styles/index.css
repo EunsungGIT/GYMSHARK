@@ -4,7 +4,9 @@ main {font-family: 'Roboto';}
 main .visual {
     height: 608px; width: 100%;
     position: relative;
-    background-image: url(/images/visual.jpg);
+    background-image: url(../images/visual.jpg);
+    background-position: center;
+    background-size: cover;
 }
 main .visual .text_button {position: absolute; left: 60px; top: 208px;}
 main .visual .text_button h2 {
