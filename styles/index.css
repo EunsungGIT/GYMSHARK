@@ -104,7 +104,7 @@ main .bnr .text_button {position: absolute; left: 60px; top: 208px;}
 main .bnr .text_button h2 {margin-bottom: 20px;}
 main .bnr .text_button h2 img {}
 main .bnr .text_button p {margin-bottom: 20px; color: #fff;}
-main .bnr .text_buttoncommend_second a {
+main .bnr .text_button a {
     display: inline-block;
     padding: 10px 30px; border-radius: 20px;
     background-color: #fff; color: #000;
