@@ -459,7 +459,8 @@ footer .bottom .bottom_info .lang_sel > a {
     font-size: 0.875rem; color: #53565a; font-weight: 700; letter-spacing: -0.5px;
     border-left: 1px solid #ddd;
 }
-footer .bottom .bottom_info .lang_sel a img {width: 16px;}
+footer .bottom .bottom_info .lang_sel > a img {width: 16px; margin-right: 5px;}
+footer .bottom .bottom_info .lang_sel > a .more {margin-left: 5px;}
 /* ROW 클릭 시 언어 선택 창 나옴 */
 footer .bottom .bottom_info .lang_sel .lang {
     display: none;
