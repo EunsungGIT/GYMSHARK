@@ -3,7 +3,6 @@
     header .bottom .right_icon .search {
         display: block; margin: 0 12px;
     }
-    header .bottom .right_icon .search img {width: 23px;}
 }
 
 @media screen and (max-width:1024px){
@@ -31,13 +30,14 @@
     }
     header .top {display: none; position: relative;}
     header .bottom .left_icon {display: flex;}
-    header .bottom .left_icon a {margin: 0 12px;}
-    header .bottom .left_icon a img {width: 23px;}
     header .bottom nav {display: none;}
     header .bottom .right_icon .search {display: none;}
     header .bottom .right_icon .wishlist {display: none;}
     /* 장바구니 페이지 */
     header .bottom .right_icon .cart_bg {display: none;}
+
+    /* main */
+    main .visual .text_button h2 {font-size: 1.563rem;}
 }
 
 @media screen and (max-width:768px){

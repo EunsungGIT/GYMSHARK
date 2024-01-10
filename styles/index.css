@@ -1,8 +1,8 @@
 /* main */
-main {font-family: 'Roboto';}
+main {}
 /* main visual */
 main .visual {
-    height: 608px; width: 100%;
+    height: 608px;
     position: relative;
     background-image: url(../images/visual.jpg);
     background-position: center;
@@ -45,8 +45,14 @@ main .recommend .title .title_sub .move a:last-child {
     background-color: #000;
 }
 main .recommend .title .title_sub .move a img {width: 13px;}
-main .recommend .recommend_product {padding: 0 0 30px 60px;}
-main .recommend .recommend_product li {position: relative; width: 326px;}
+main .recommend .recommend_product {
+    padding: 0 0 30px 60px;
+    display: flex;
+}
+main .recommend .recommend_product li {
+    width: calc(25% - 60px); margin-right: 10px;
+    position: relative;
+}
 main .recommend .recommend_product li .photo {}
 main .recommend .recommend_product li .photo img {width: 100%;}
 main .recommend .recommend_product li .icon {}
@@ -77,11 +83,10 @@ main .recommend .recommend_product li .info .name_review {
 }
 main .recommend .recommend_product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
 main .recommend .recommend_product li .info .name_review span {
-    width: 15px;
     display: flex; align-items: center;
-    font-size: 0.75rem; color: font-weight: 700; #6e6e6e;
+    font-size: 0.75rem; color: #6e6e6e; font-weight: 700;
 }
-main .recommend .recommend_product li .info .name_review span img {width: 100%;}
+main .recommend .recommend_product li .info .name_review span img {width: 15px;}
 main .recommend .recommend_product li .info p {
     margin-bottom: 2px;
     font-size: 0.875rem; color: #6e6e6e;
@@ -92,12 +97,14 @@ main .bnr {
     margin-top: 80px; height: 608px;
     position: relative;
     background-image: url(../images/bnr.jpg);
+    background-position: center;
+    background-size: cover;
 }
 main .bnr .text_button {position: absolute; left: 60px; top: 208px;}
 main .bnr .text_button h2 {margin-bottom: 20px;}
 main .bnr .text_button h2 img {}
 main .bnr .text_button p {margin-bottom: 20px; color: #fff;}
-main .bnr .text_button a {
+main .bnr .text_buttoncommend_second a {
     display: inline-block;
     padding: 10px 30px; border-radius: 20px;
     background-color: #fff; color: #000;
@@ -108,20 +115,29 @@ main .bnr .text_button a:hover {background-color: #f5f5f5;}
 main .bnr .text_button a:last-child:hover {background-color: #6e6e6e;}
 /* main recommend second */
 main .recommend_second {padding-top: 80px;}
-main .recommend_second .title {
-    margin: 0 60px 24px;
-    display: flex; justify-content: space-between; align-items: center;
+main .recommend_second .title {margin: 0 60px 24px;}
+main .recommend_second .title .title_sub {display: flex; justify-content: space-between; align-items: center;}
+main .recommend_second .title .title_sub .title_view {display: flex; align-items: center;}
+main .recommend_second .title .title_sub .title_view h2 {font-size: 1.5rem; font-weight: 700; margin-right: 20px;}
+main .recommend_second .title .title_sub .title_view a {
+    font-weight: 700; border-bottom: 1px solid #000;
 }
-main .recommend_second .title h2 {font-size: 1.5rem; font-weight: 700;}
-main .recommend_second .title > a {font-weight: 700;}
-main .recommend_second .title .move {}
-main .recommend_second .title .move a {
-    width: 32px; height: 32px;
+main .recommend_second .title .title_sub .title_view a:hover {color: #444; border-bottom: 1px solid #222;}
+main .recommend_second .title .title_sub .move {
+    display: flex;
+}
+main .recommend_second .title .title_sub .move a {
+    display: flex; justify-content: center; align-items: center;
+    width: 32px; height: 32px; margin-right: 10px;
     background-color: #e7e7e7; border-radius: 50%;
 }
-main .recommend_second .title .move a img {width: 13px;}
+main .recommend_second .title .title_sub .move a:last-child {
+    margin: 0;
+    background-color: #000;
+}
+main .recommend_second .title .title_sub .move a img {width: 13px;}
 main .recommend_second .recommend_product {padding: 0 0 30px 60px;}
-main .recommend_second .recommend_product li {position: relative; width: 326px;}
+main .recommend_second .recommend_product li {width: calc(25% - 60px); position: relative;}
 main .recommend_second .recommend_product li .photo {}
 main .recommend_second .recommend_product li .photo img {width: 100%;}
 main .recommend_second .recommend_product li .icon {}
@@ -158,6 +174,8 @@ main .bnr_second {
     height: 608px;
     position: relative;
     background-image: url(../images/bnr_02.jpg);
+    background-position: center;
+    background-size: cover;
 }
 main .bnr_second .text_button {position: absolute; left: 60px; top: 208px;}
 main .bnr_second .text_button h2 {
@@ -174,20 +192,29 @@ main .bnr_second .text_button a {
 main .bnr_second .text_button a:hover {background-color: #f5f5f5;}
 /* main recommend third */
 main .recommend_third {padding-top: 80px;}
-main .recommend_third .title {
-    margin: 0 60px 24px;
-    display: flex; justify-content: space-between; align-items: center;
+main .recommend_third .title {margin: 0 60px 24px;}
+main .recommend_third .title .title_sub {display: flex; justify-content: space-between; align-items: center;}
+main .recommend_third .title .title_sub .title_view {display: flex; align-items: center;}
+main .recommend_third .title .title_sub .title_view h2 {font-size: 1.5rem; font-weight: 700; margin-right: 20px;}
+main .recommend_third .title .title_sub .title_view a {
+    font-weight: 700; border-bottom: 1px solid #000;
 }
-main .recommend_third .title h2 {font-size: 1.5rem; font-weight: 700;}
-main .recommend_third .title > a {font-weight: 700;}
-main .recommend_third .title .move {}
-main .recommend_third .title .move a {
-    width: 32px; height: 32px;
+main .recommend_third .title .title_sub .title_view a:hover {color: #444; border-bottom: 1px solid #222;}
+main .recommend_third .title .title_sub .move {
+    display: flex;
+}
+main .recommend_third .title .title_sub .move a {
+    display: flex; justify-content: center; align-items: center;
+    width: 32px; height: 32px; margin-right: 10px;
     background-color: #e7e7e7; border-radius: 50%;
 }
-main .recommend_third .title .move a img {width: 13px;}
+main .recommend_third .title .title_sub .move a:last-child {
+    margin: 0;
+    background-color: #000;
+}
+main .recommend_third .title .title_sub .move a img {width: 13px;}
 main .recommend_third .recommend_product {padding: 0 0 30px 60px;}
-main .recommend_third .recommend_product li {position: relative; width: 326px;}
+main .recommend_third .recommend_product li {width: calc(25% - 60px); position: relative;}
 main .recommend_third .recommend_product li .photo {}
 main .recommend_third .recommend_product li .photo img {width: 100%;}
 main .recommend_third .recommend_product li .icon {}
@@ -224,6 +251,8 @@ main .bnr_third {
     height: 608px;
     position: relative;
     background-image: url(../images/bnr_03.jpg);
+    background-position: center;
+    background-size: cover;
 }
 main .bnr_third .text_button {position: absolute; left: 60px; top: 208px;}
 main .bnr_third .text_button h2 {
@@ -242,20 +271,29 @@ main .bnr_third .text_button a:hover {background-color: #f5f5f5;}
 main .bnr_third .text_button a:last-child:hover {background-color: #6e6e6e;}
 /* main recommend fourth */
 main .recommend_fourth {padding-top: 80px;}
-main .recommend_fourth .title {
-    margin: 0 60px 24px;
-    display: flex; justify-content: space-between; align-items: center;
+main .recommend_fourth .title {margin: 0 60px 24px;}
+main .recommend_fourth .title .title_sub {display: flex; justify-content: space-between; align-items: center;}
+main .recommend_fourth .title .title_sub .title_view {display: flex; align-items: center;}
+main .recommend_fourth .title .title_sub .title_view h2 {font-size: 1.5rem; font-weight: 700; margin-right: 20px;}
+main .recommend_fourth .title .title_sub .title_view a {
+    font-weight: 700; border-bottom: 1px solid #000;
 }
-main .recommend_fourth .title h2 {font-size: 1.5rem; font-weight: 700;}
-main .recommend_fourth .title > a {font-weight: 700;}
-main .recommend_fourth .title .move {}
-main .recommend_fourth .title .move a {
-    width: 32px; height: 32px;
+main .recommend_fourth .title .title_sub .title_view a:hover {color: #444; border-bottom: 1px solid #222;}
+main .recommend_fourth .title .title_sub .move {
+    display: flex;
+}
+main .recommend_fourth .title .title_sub .move a {
+    display: flex; justify-content: center; align-items: center;
+    width: 32px; height: 32px; margin-right: 10px;
     background-color: #e7e7e7; border-radius: 50%;
 }
-main .recommend_fourth .title .move a img {width: 13px;}
+main .recommend_fourth .title .title_sub .move a:last-child {
+    margin: 0;
+    background-color: #000;
+}
+main .recommend_fourth .title .title_sub .move a img {width: 13px;}
 main .recommend_fourth .recommend_product {padding: 0 0 30px 60px;}
-main .recommend_fourth .recommend_product li {position: relative; width: 326px;}
+main .recommend_fourth .recommend_product li {width: calc(25% - 60px); position: relative;}
 main .recommend_fourth .recommend_product li .photo {}
 main .recommend_fourth .recommend_product li .photo img {width: 100%;}
 main .recommend_fourth .recommend_product li .icon {}
@@ -292,6 +330,8 @@ main .bnr_fourth {
     height: 570px;
     position: relative;
     background-image: url(../images/bnr_04.jpg);
+    background-position: center;
+    background-size: cover;
 }
 main .bnr_fourth .text_button {
     text-align: center;
@@ -313,20 +353,29 @@ main .bnr_fourth .text_button a:hover {background-color: #222;}
 main .bnr_fourth .text_button a:last-child:hover {background-color: #6e6e6e;}
 /* recommend fifth */
 main .recommend_fifth {padding-top: 80px;}
-main .recommend_fifth .title {
-    margin: 0 60px 24px;
-    display: flex; justify-content: space-between; align-items: center;
+main .recommend_fifth .title {margin: 0 60px 24px;}
+main .recommend_fifth .title .title_sub {display: flex; justify-content: space-between; align-items: center;}
+main .recommend_fifth .title .title_sub .title_view {display: flex; align-items: center;}
+main .recommend_fifth .title .title_sub .title_view h2 {font-size: 1.5rem; font-weight: 700; margin-right: 20px;}
+main .recommend_fifth .title .title_sub .title_view a {
+    font-weight: 700; border-bottom: 1px solid #000;
 }
-main .recommend_fifth .title h2 {font-size: 1.5rem; font-weight: 700;}
-main .recommend_fifth .title > a {font-weight: 700;}
-main .recommend_fifth .title .move {}
-main .recommend_fifth .title .move a {
-    width: 32px; height: 32px;
+main .recommend_fifth .title .title_sub .title_view a:hover {color: #444; border-bottom: 1px solid #222;}
+main .recommend_fifth .title .title_sub .move {
+    display: flex;
+}
+main .recommend_fifth .title .title_sub .move a {
+    display: flex; justify-content: center; align-items: center;
+    width: 32px; height: 32px; margin-right: 10px;
     background-color: #e7e7e7; border-radius: 50%;
 }
-main .recommend_fifth .title .move a img {width: 13px;}
+main .recommend_fifth .title .title_sub .move a:last-child {
+    margin: 0;
+    background-color: #000;
+}
+main .recommend_fifth .title .title_sub .move a img {width: 13px;}
 main .recommend_fifth .recommend_product {padding: 0 0 30px 60px;}
-main .recommend_fifth .recommend_product li {position: relative; width: 326px;}
+main .recommend_fifth .recommend_product li {width: calc(25% - 60px); position: relative;}
 main .recommend_fifth .recommend_product li .photo {}
 main .recommend_fifth .recommend_product li .photo img {width: 100%;}
 main .recommend_fifth .recommend_product li .icon {}
@@ -362,6 +411,8 @@ main .recommend_fifth .recommend_product li .info .price {}
 main .bnr_fifth {
     height: 608px;
     background-image: url(../images/gymshark66_01.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
 }
 main .bnr_fifth p {margin-bottom: 20px;}
@@ -433,7 +484,7 @@ main .trending_collections {
     padding: 80px 60px 40px;
     display: flex; justify-content: space-between;
 }
-main .trending_collections li {width: 314px;}
+main .trending_collections li {width: 314px; margin-bottom: 10px;}
 main .trending_collections li h3 {
     font-size: 1.125rem; font-weight: 700;
     margin-bottom: 16px;
