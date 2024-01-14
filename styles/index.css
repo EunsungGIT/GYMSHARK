@@ -96,7 +96,7 @@ main .recommend .recommend_product li .info .price {}
 main .bnr {
     margin-top: 80px; height: 608px;
     position: relative;
-    background-image: url(../images/bnr.jpg);
+    background-image: url(../images/bnr_01.jpg);
     background-position: center;
     background-size: cover;
 }
