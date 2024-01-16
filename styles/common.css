@@ -1,5 +1,5 @@
 /* body */
-body {position: relative; font-family: 'Roboto';}
+body {position: relative; font-family: "Montserrat", sans-serif;}
 
 /* chat */
 #chat {
@@ -34,9 +34,9 @@ header .popup #lang_frm fieldset .lang_sel .lang_left {}
 header .popup #lang_frm fieldset .lang_sel .lang_left > a {
     padding: 8px 40px;
     display: flex; align-items: center;
-    font-size: 0.875rem; font-weight: 700;
+    font-size: 0.875rem; font-family: 'Roboto';
     border-radius: 5px;
-    background-color: #2c2c2e; color: #fff;
+    background-color: #2c2c2e; color: #fff; border: 1px solid #000;
 }
 header .popup #lang_frm fieldset .lang_sel .lang_left > a:hover {border: 1px solid #fff;}
 header .popup #lang_frm fieldset .lang_sel .lang_left > a img {margin-right: 10px;}
@@ -48,13 +48,13 @@ header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a {}
 header .popup #lang_frm fieldset .lang_sel .lang_left .lang li a img {}
 header .popup #lang_frm fieldset .lang_sel span {
     width: 50px; text-align: center;
-    color: #fff;
+    color: #fff; font-weight: 500;
 }
 header .popup #lang_frm fieldset .lang_sel .lang_right {}
 header .popup #lang_frm fieldset .lang_sel .lang_right a {
     margin-right: 30px; padding: 8px 40px;
     display: flex; align-items: center;
-    font-size: 0.875rem; font-weight: 700;
+    font-size: 0.875rem; font-family: 'Roboto';
     border-radius: 5px;
     background-color: #2c2c2e; color: #fff; border: 1px solid #000;
 }
@@ -64,7 +64,7 @@ header .popup #lang_frm fieldset .lang_sel .lang_right a img {margin-right: 10px
 header .popup #lang_frm fieldset .lang_sel .lang_right span {display: none;}
 header .popup #lang_frm fieldset #lang_sub {
     padding: 8px 15px;
-    font-size: 0.875rem; font-weight: 700; color: #53565a;
+    font-size: 0.875rem; font-weight: 700; color: #6e6e6e;
     border: none; border-radius: 20px;
 }
 header .popup .close {
@@ -82,7 +82,7 @@ header .top {
 header .top > a {
     height: 100%; padding: 0 10px;
     display: flex; align-items: center;
-    font-size: 0.875rem; color: #53565a;
+    font-size: 0.875rem; color: #53565a; font-family: 'Roboto';
     border-right: 1px solid #aaa;
 }
 header .top > a:hover {color: #000;}
@@ -159,7 +159,7 @@ header .bottom .lnb_category_wrap .women_bg .women_category .left ul {margin-rig
 header .bottom .lnb_category_wrap .women_bg .women_category .left ul li {margin-bottom: 5px;}
 header .bottom .lnb_category_wrap .women_bg .women_category .left ul li h3 {font-size: 0.875rem; font-weight: 700;}
 header .bottom .lnb_category_wrap .women_bg .women_category .left ul li a {
-    font-size: 0.875rem; color: #6e6e6e; font-weight: 700;
+    font-size: 0.875rem; color: #6e6e6e; font-weight: 500; font-family: 'Roboto';
 }
 header .bottom .lnb_category_wrap .women_bg .women_category .left ul li a:hover {color: #000;}
 header .bottom .lnb_category_wrap .women_bg .women_category .right {
@@ -203,7 +203,7 @@ header .bottom .lnb_category_wrap .men_category .left ul {margin-right: 50px;}
 header .bottom .lnb_category_wrap .men_category .left ul li {margin-bottom: 5px;}
 header .bottom .lnb_category_wrap .men_category .left ul li h3 {font-size: 0.875rem; font-weight: 700;}
 header .bottom .lnb_category_wrap .men_category .left ul li a {
-    font-size: 0.875rem; color: #6e6e6e; font-weight: 700;
+    font-size: 0.875rem; color: #6e6e6e; font-weight: 500; font-family: 'Roboto';
 }
 header .bottom .lnb_category_wrap .men_category .left ul li a:hover {color: #000;}
 header .bottom .lnb_category_wrap .men_category .right {
@@ -247,7 +247,7 @@ header .bottom .lnb_category_wrap .acc_category .left ul {margin-right: 50px;}
 header .bottom .lnb_category_wrap .acc_category .left ul li {margin-bottom: 5px;}
 header .bottom .lnb_category_wrap .acc_category .left ul li h3 {font-size: 0.875rem; font-weight: 700;}
 header .bottom .lnb_category_wrap .acc_category .left ul li a {
-    font-size: 0.875rem; color: #6e6e6e; font-weight: 700;
+    font-size: 0.875rem; color: #6e6e6e; font-weight: 500; font-family: 'Roboto';
 }
 header .bottom .lnb_category_wrap .acc_category .left ul li a:hover {color: #000;}
 header .bottom .lnb_category_wrap .acc_category .right {
@@ -270,7 +270,7 @@ header .bottom .right_icon {display: flex; align-items: center;}
 header .bottom .right_icon .search_box {
     width: 250px; padding: 12px 16px; margin-right: 16px;
     display: flex; align-items: center;
-    font-size: 0.875rem; border-radius: 5px;
+    font-size: 0.875rem; border-radius: 5px; font-family: 'Roboto';
     background-color: #f5f5f5; color: #6e6e6e;
 }
 header .bottom .right_icon .search_box:hover {background-color: #e7e7e7;}
@@ -304,7 +304,7 @@ header .bottom .right_icon .search_page .icon_search #search_frm fieldset .user_
 }
 header .bottom .right_icon .search_page .icon_search .close {
     width: 27px;
-    position: absolute; right: 16px;
+    position: absolute; right: 60px;
 }
 header .bottom .right_icon .search_page .icon_search .close img {width: 100%;}
 header .bottom .right_icon .search_page .trending_searches {
@@ -319,7 +319,7 @@ header .bottom .right_icon .search_page .trending_searches .algorithm {display: 
 header .bottom .right_icon .search_page .trending_searches .algorithm img {width: 30px; margin: 0 8px 8px 0;}
 header .bottom .right_icon .search_page .trending_searches .algorithm a {
     padding: 10px; margin: 0 8px 8px 0;
-    font-size: 0.75rem; font-weight: 700;
+    font-size: 0.75rem; font-weight: 700; font-family: 'Roboto';
     background-color: #f5f5f5; border-radius: 5px;
 }
 /* wishlist, mypage, cart */
@@ -350,8 +350,8 @@ header .bottom .right_icon .cart_bg .cart_info h2 {
     font-weight: 700;
 }
 header .bottom .right_icon .cart_bg .cart_info p {
-    margin-bottom: 16px;
-    font-size: 0.875rem;
+    margin-bottom: 16px; color: #6e6e6e;
+    font-size: 0.875rem; font-weight: 500; font-family: 'Roboto';
 }
 header .bottom .right_icon .cart_bg .cart_info a {
     width: 230px; padding: 15px 30px; margin: 0 auto 8px;
@@ -476,7 +476,7 @@ footer .top .help_blog .help dl dt {
 }
 footer .top .help_blog .help dl dd {margin-bottom: 10px;}
 footer .top .help_blog .help dl dd a {
-    font-size: 0.875rem; color: #53565a; font-weight: 700;
+    font-size: 0.875rem; color: #53565a; font-weight: 500; font-family: 'Roboto';
 }
 footer .top .help_blog .help dl dd a:hover {color: #000;}
 /* mobile dl */
@@ -513,19 +513,22 @@ footer .bottom {
     display: flex; justify-content: space-between; align-items: center;
     border-top: 1px solid #ddd;
 }
-footer .bottom .copyright {font-size: 0.875rem; color: #444; letter-spacing: -0.5px;}
+footer .bottom .copyright {
+    font-size: 0.875rem; color: #444;
+    letter-spacing: -0.5px; font-family: 'Roboto';
+}
 footer .bottom .bottom_info {display: flex;}
 footer .bottom .bottom_info > a {
-    margin-right: 10px;
-    font-size: 0.875rem; color: #53565a; font-weight: 700; letter-spacing: -0.5px;
+    margin-right: 20px; font-family: 'Roboto';
+    font-size: 0.875rem; color: #53565a; font-weight: 500; letter-spacing: -0.5px;
 }
 footer .bottom .bottom_info > a:hover {color: #000;}
 footer .bottom .bottom_info .lang_sel {position: relative;}
 footer .bottom .bottom_info .lang_sel > a {
     margin: 0; padding-left: 10px;
     display: flex; align-items: center;
-    font-size: 0.875rem; color: #53565a; font-weight: 700; letter-spacing: -0.5px;
-    border-left: 1px solid #ddd;
+    font-size: 0.875rem; color: #53565a; font-weight: 500; letter-spacing: -0.5px;
+    border-left: 1px solid #ddd; font-family: 'Roboto';
 }
 footer .bottom .bottom_info .lang_sel > a:hover {color: #000;}
 footer .bottom .bottom_info .lang_sel > a img {width: 16px; margin-right: 5px;}

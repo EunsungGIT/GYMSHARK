@@ -29,6 +29,7 @@
         position: absolute; top: 10px;
     }
     header .top {display: none; position: relative;}
+    header .bottom {padding: 0 24px;}
     header .bottom .left_icon {display: flex;}
     header .bottom nav {display: none;}
     header .bottom .right_icon .search {display: none;}
@@ -37,9 +38,40 @@
     header .bottom .right_icon .cart_bg {display: none;}
 
     /* main */
+
     main .visual .text_button h2 {font-size: 1.563rem;}
 }
 
 @media screen and (max-width:768px){
+    /* main */
+    main .visual {
+        height: 850px; padding: 0 20px;
+        background-image: url(../images/visual_m.jpg);
+    }
+    main .visual .text_button {
+        width: 100%;
+    }
+    main .visual .text_button h2 {color: #fff;}
+    main .visual .text_button p {color: #fff;}
+    main .visual .text_button a {
+        width: 100%; text-align: center;
+        background-color: #fff; color: #000;
+    }
 
+    main .bnr_second {height: 850px; padding: 0 20px;}
+    main .bnr_second .text_button {width: 100%;}
+    main .bnr_second .text_button a {
+        width: 100%; text-align: center;
+        background-color: #fff; color: #000;
+    }
+
+    main .bnr_third {
+        height: 850px; padding: 0 20px;
+        background-image: url(../images/bnr_03_m.jpg);
+    }
+    main .bnr_third .text_button {width: 100%;}
+    main .bnr_third .text_button a {
+        width: 100%; text-align: center; margin-bottom: 10px;
+        background-color: #fff; color: #000;
+    }
 }
