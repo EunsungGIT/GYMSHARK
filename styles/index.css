@@ -71,7 +71,7 @@ main .recommend .recommend_product_wrap .recommend_product li .icon a:first-chil
 main .recommend .recommend_product_wrap .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
 main .recommend .recommend_product_wrap .recommend_product li .icon a img {width: 16px;}
 main .recommend .recommend_product_wrap .recommend_product li .size {
-    width: 100%; height: 150px;
+    width: 100%; height: 40%px;
     display: flex; flex-flow: row wrap; align-items: center;
     position: absolute; bottom: 95px;
     background-color: #f5f5f5; padding: 10px 10px;
@@ -547,10 +547,10 @@ main .photo_cat .photo_button a {
 main .photo_cat .photo_button a:hover {background-color: #f5f5f5;}
 /* main trending collections */
 main .trending_collections {
-    padding: 80px 60px 40px;
+    padding: 80px 60px 40px 60px;
     display: flex; justify-content: space-between;
 }
-main .trending_collections li {width: 314px; margin-bottom: 10px;}
+main .trending_collections li {width: 25%; margin-bottom: 10px;}
 main .trending_collections li h3 {
     font-size: 1.125rem; font-weight: 700;
     margin-bottom: 16px;

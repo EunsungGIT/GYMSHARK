@@ -5,6 +5,11 @@
     }
 }
 
+@media screen and (max-width:1200px){
+    footer .bottom .copyright {font-size: 0.75rem;}
+    footer .bottom .bottom_info > a {font-size: 0.75rem;}
+}
+
 @media screen and (max-width:1024px){
     /* header */
     header .popup {
@@ -38,8 +43,8 @@
     header .bottom .right_icon .cart_bg {display: none;}
 
     /* main */
-
     main .visual .text_button h2 {font-size: 1.563rem;}
+    main .recommend .recommend_product_wrap .recommend_product li .size {display: none;}
 }
 
 @media screen and (max-width:768px){
@@ -74,4 +79,30 @@
         width: 100%; text-align: center; margin-bottom: 10px;
         background-color: #fff; color: #000;
     }
+    main .bnr_fourth {
+        height: 850px; padding: 0 20px;
+        background-image: url(../images/bnr_04_m.jpg);
+    }
+    main .bnr_fourth .text_button {width: 100%;}
+    main .bnr_fourth .text_button h2 {color: #fff;}
+    main .bnr_fourth .text_button p {color: #fff;}
+    main .bnr_fourth .text_button a {
+        width: 100%; text-align: center; margin-bottom: 10px;
+    }
+    main .bnr_fifth {
+        height: 850px; padding: 0 20px 40px;
+        background-image: url(../images/gymshark66_02.jpg);
+        justify-content: flex-end;
+    }
+    main .bnr_fifth p {color: #fff;}
+    main .bnr_fifth a {
+        width: 100%; text-align: center; margin-bottom: 10px;
+    }
+    main .app .app_link {flex-flow: column nowrap;}
+    main .photo_cat {flex-flow: column nowrap;}
+    main .trending_collections {flex-flow: column nowrap;}
+
+    /* footer */
+    footer .top .help_blog .help {display: none;}
+    footer .top .help_blog .help_m {display: block;}
 }
