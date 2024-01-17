@@ -44,17 +44,37 @@
 
     /* main */
     main .visual .text_button h2 {font-size: 1.563rem;}
+    main .recommend .recommend_product_wrap .recommend_product {width: calc(25% * 12);}
     main .recommend .recommend_product_wrap .recommend_product li .size {display: none;}
+    main .company_info {border: none;}
+
+    /* footer */
+    footer .top {padding: 30px 30px;}
+    footer .top .help_blog {flex-flow: column nowrap;}
+    footer .top .help_blog .help {flex-flow: column nowrap;}
+    footer .top .help_blog .help dl {
+        width: 100%; margin: 0; padding: 20px;
+        border-top: 1px solid #ddd;
+    }
+    footer .top .help_blog .help dl dt {margin: 0;}
+    footer .top .help_blog .help dl dd {display: none;}
+    footer .top .help_blog .blog_email h3 {margin: 0; padding: 20px;}
+    footer .top .help_blog .blog_email .blog_email_link {justify-content: center;}
+    footer .top .help_blog .blog_email .blog_email_link a {width: 33%;}
+    footer .top .card_contents {flex-flow: column-reverse nowrap;}
+    footer .bottom {flex-flow: column-reverse nowrap;}
 }
 
 @media screen and (max-width:768px){
     /* main */
     main .visual {
         height: 850px; padding: 0 20px;
+        position: relative;
         background-image: url(../images/visual_m.jpg);
     }
     main .visual .text_button {
-        width: 100%;
+        width: calc(100% - 40px);
+        position: absolute; bottom: 50px;
     }
     main .visual .text_button h2 {color: #fff;}
     main .visual .text_button p {color: #fff;}
@@ -62,9 +82,27 @@
         width: 100%; text-align: center;
         background-color: #fff; color: #000;
     }
-
-    main .bnr_second {height: 850px; padding: 0 20px;}
-    main .bnr_second .text_button {width: 100%;}
+    main .bnr {
+        height: 608px; padding: 0 20px;
+        position: relative;
+        background-image: url(../images/bnr_01_m.jpg);
+    }
+    main .bnr .text_button {
+        width: calc(100% - 40px);
+        position: absolute; bottom: 50px;
+    }
+    main .bnr .text_button a {
+        width: 100%; text-align: center; margin-bottom: 10px;
+    }
+    main .bnr_second {
+        height: 850px; padding: 0 20px;
+        position: relative;
+        background-image: url(../images/bnr_02_m.jpg);
+    }
+    main .bnr_second .text_button {
+        width: calc(100% - 40px);
+        position: absolute; bottom: 50px;
+    }
     main .bnr_second .text_button a {
         width: 100%; text-align: center;
         background-color: #fff; color: #000;
@@ -72,18 +110,26 @@
 
     main .bnr_third {
         height: 850px; padding: 0 20px;
+        position: relative;
         background-image: url(../images/bnr_03_m.jpg);
     }
-    main .bnr_third .text_button {width: 100%;}
+    main .bnr_third .text_button {
+        width: calc(100% - 40px);
+        position: absolute; bottom: 50px;
+    }
     main .bnr_third .text_button a {
         width: 100%; text-align: center; margin-bottom: 10px;
         background-color: #fff; color: #000;
     }
     main .bnr_fourth {
         height: 850px; padding: 0 20px;
+        position: relative;
         background-image: url(../images/bnr_04_m.jpg);
     }
-    main .bnr_fourth .text_button {width: 100%;}
+    main .bnr_fourth .text_button {
+        width: calc(100% - 40px);
+        position: absolute; bottom: 50px;
+    }
     main .bnr_fourth .text_button h2 {color: #fff;}
     main .bnr_fourth .text_button p {color: #fff;}
     main .bnr_fourth .text_button a {

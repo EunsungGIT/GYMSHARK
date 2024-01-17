@@ -52,7 +52,7 @@ main .recommend .recommend_product_wrap {
     overflow-y: hidden; overflow-x: auto; font-family: 'Roboto';
 }
 main .recommend .recommend_product_wrap .recommend_product {
-    padding: 0 0 30px 60px;  width: 120%;
+    padding: 0 0 30px 60px;  width: calc(25% * 9);
     display: flex;
 }
 main .recommend .recommend_product_wrap .recommend_product li {
@@ -71,14 +71,14 @@ main .recommend .recommend_product_wrap .recommend_product li .icon a:first-chil
 main .recommend .recommend_product_wrap .recommend_product li .icon a:last-child{position: absolute; top: 10px; right: 10px;}
 main .recommend .recommend_product_wrap .recommend_product li .icon a img {width: 16px;}
 main .recommend .recommend_product_wrap .recommend_product li .size {
-    width: 100%; height: 40%px;
+    width: 100%; height: 30%;
     display: flex; flex-flow: row wrap; align-items: center;
     position: absolute; bottom: 95px;
     background-color: #f5f5f5; padding: 10px 10px;
 }
 main .recommend .recommend_product_wrap .recommend_product li .size a {
     display: inline-block; text-align: center;
-    width: 55px; padding: 15px 0; margin: 5px;
+    width: 20%; padding: 10px 10px; margin: 5px;
     background-color: #fff; font-size: 0.875rem;
 }
 main .recommend .recommend_product_wrap .recommend_product li .size a:hover {background-color: #000; color: #fff;}

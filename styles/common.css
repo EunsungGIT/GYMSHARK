@@ -128,13 +128,14 @@ header .bottom nav {
 header .bottom nav .gnb {}
 header .bottom nav .gnb > li {display: inline-block;}
 header .bottom nav .gnb > li > a {
-    margin: 0 20px;
+    padding: 0 20px; line-height: 69px;
     font-weight: 700; font-size: 0.875rem;
+    display: inline-block;
 }
 /* nav 라인 생성 */
 header .bottom nav .gnb > li > a::after {
     content: ''; background: #000;
-    display: block; width: 80%; height: 2px;
+    display: block; width: 100%; height: 2px;
     transition: transform 0.2s; transform: scaleX(0);
 }
 header .bottom nav .gnb > li > a:hover::after {transform: scaleX(1);}
@@ -479,23 +480,17 @@ footer .top .help_blog .help dl dd a {
     font-size: 0.875rem; color: #53565a; font-weight: 500; font-family: 'Roboto';
 }
 footer .top .help_blog .help dl dd a:hover {color: #000;}
-/* mobile dl */
-footer .top .help_blog .help_m {display: none;}
-footer .top .help_blog .help_m dt {font-size: 0.875rem; font-weight: 700;}
-footer .top .help_blog .help_m dt img {}
-footer .top .help_blog .help_m dd {}
-footer .top .help_blog .help_m dd a {}
 footer .top .help_blog .blog_email {}
 footer .top .help_blog .blog_email h3 {
     margin-bottom: 15px;
     font-size: 0.875rem; font-weight: 700;
 }
-footer .top .help_blog .blog_email .blog_email_link {display: flex; flex-flow: row nowrap;}
+footer .top .help_blog .blog_email .blog_email_link {display: flex;}
 footer .top .help_blog .blog_email .blog_email_link a {
-    margin-right: 10px;
+    margin-right: 10px; width: 33%;
     display: flex; flex-flow: column nowrap;
 }
-footer .top .help_blog .blog_email .blog_email_link a img {width: 175px;}
+footer .top .help_blog .blog_email .blog_email_link a img {width: 100%;}
 footer .top .help_blog .blog_email .blog_email_link a span {
     width: 100%; padding: 6px 12px;
     background-color: #e7e7e7;
