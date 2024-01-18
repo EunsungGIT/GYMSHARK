@@ -46,6 +46,10 @@
     main .visual .text_button h2 {font-size: 1.563rem;}
     main .recommend .recommend_product_wrap .recommend_product {width: calc(25% * 12);}
     main .recommend .recommend_product_wrap .recommend_product li .size {display: none;}
+    main .recommend_second .recommend_product_wrap .recommend_product li .size {display: none;}
+    main .recommend_third .recommend_product_wrap .recommend_product li .size {display: none;}
+    main .recommend_fourth .recommend_product_wrap .recommend_product li .size {display: none;}
+    main .recommend_fifth .recommend_product_wrap .recommend_product li .size {display: none;}
     main .company_info {border: none;}
 
     /* footer */

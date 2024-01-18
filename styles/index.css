@@ -1,3 +1,14 @@
+/* scroll bar */
+/* Firefox */
+html {scrollbar-width: 10px; height: 8px; scrollbar-color: #aaa #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px; height: 8px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #aaa;border-radius: 5px;}/*스크롤 드래그바*/
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px; height: 8px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #aaa;border-radius: 5px;}/*스크롤 드래그바*/
+
 /* main */
 main {}
 /* main visual */
