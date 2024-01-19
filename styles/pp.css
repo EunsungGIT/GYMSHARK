@@ -44,11 +44,36 @@
 
     /* main */
     main .visual .text_button h2 {font-size: 1.563rem;}
-    main .recommend .recommend_product_wrap .recommend_product {width: calc(25% * 12);}
-    main .recommend .recommend_product_wrap .recommend_product li .size {display: none;}
-    main .recommend_second .recommend_product_wrap .recommend_product li .size {display: none;}
-    main .recommend_third .recommend_product_wrap .recommend_product li .size {display: none;}
-    main .recommend_fourth .recommend_product_wrap .recommend_product li .size {display: none;}
+    /* view 오른쪽 배치 */
+    main .recommend .title .title_sub,
+    main .recommend_second .title .title_sub,
+    main .recommend_third .title .title_sub,
+    main .recommend_fourth .title .title_sub,
+    main .recommend_fifth .title .title_sub {position: relative;}
+    main .recommend .title .title_sub .title_view a,
+    main .recommend_second .title .title_sub .title_view a,
+    main .recommend_third .title .title_sub .title_view a,
+    main .recommend_fourth .title .title_sub .title_view a,
+    main .recommend_fifth .title .title_sub .title_view a {position: absolute; right: 0;}
+    /* 이동 버튼 제거 */
+    main .recommend .title .title_sub .move,
+    main .recommend_second .title .title_sub .move,
+    main .recommend_third .title .title_sub .move,
+    main .recommend_fourth .title .title_sub .move,
+    main .recommend_fifth .title .title_sub .move {display: none;}
+    /* 상품 표시 3개 */
+    main .recommend .recommend_product_wrap .recommend_product,
+    main .recommend_second .recommend_product_wrap .recommend_product,
+    main .recommend_third .recommend_product_wrap .recommend_product,
+    main .recommend_fourth .recommend_product_wrap .recommend_product,
+    main .recommend_fifth .recommend_product_wrap .recommend_product {width: calc(25% * 12);}
+    /* 장바구니 버튼 표시 */
+    main .recommend .recommend_product_wrap .recommend_product li .icon a:first-child {display: flex;}
+    /* 사이즈 선택 제거 */
+    main .recommend .recommend_product_wrap .recommend_product li .size,
+    main .recommend_second .recommend_product_wrap .recommend_product li .size,
+    main .recommend_third .recommend_product_wrap .recommend_product li .size,
+    main .recommend_fourth .recommend_product_wrap .recommend_product li .size,
     main .recommend_fifth .recommend_product_wrap .recommend_product li .size {display: none;}
     main .company_info {border: none;}
 
@@ -148,11 +173,17 @@
     main .bnr_fifth a {
         width: 100%; text-align: center; margin-bottom: 10px;
     }
+    /* 상품 표시 1개 */
+    main .recommend .recommend_product_wrap .recommend_product,
+    main .recommend_second .recommend_product_wrap .recommend_product,
+    main .recommend_third .recommend_product_wrap .recommend_product,
+    main .recommend_fourth .recommend_product_wrap .recommend_product,
+    main .recommend_fifth .recommend_product_wrap .recommend_product {width: calc(25% * 30);}
+    main .app {padding: 40px 0;}
     main .app .app_link {flex-flow: column nowrap;}
-    main .photo_cat {flex-flow: column nowrap;}
+    main .app .app_link .app_left,
+    main .app .app_link .app_right {width: 100%;}
+    main .photo_cat {padding: 40px 0; flex-flow: column nowrap;}
+    main .photo_cat .photo_button {width: 100%;}
     main .trending_collections {flex-flow: column nowrap;}
-
-    /* footer */
-    footer .top .help_blog .help {display: none;}
-    footer .top .help_blog .help_m {display: block;}
-}
+} 
