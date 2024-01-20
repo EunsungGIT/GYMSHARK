@@ -1,0 +1,143 @@
+* {font-family: 'Montserrat';}
+main {display: flex;}
+/* 이미지 배경 */
+main .bg{
+    background: url(../images/login/auth-img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex; align-items: center;
+    width: 50%; height: 100vh;
+}
+main .bg .text {padding: 48px;}
+main .bg .text p:nth-child(1) {font-size: 0.75rem; color: #bbbcbc;}
+main .bg .text p {color: #fff; font-family: 'Roboto'; font-size: 1rem;}
+main .bg .text h2 {
+    margin: 16px 0;
+    color: #fff; font-size: 2.813rem; font-weight: 700;
+}
+main .bg .text .scroll {margin-top: 16px;}
+main .bg .text .scroll a {
+    content: ''; display: inline-block;
+    width: 8px; height: 8px; margin-right: 5px;
+    background-color: #bbbcbc; border-radius: 50%;
+}
+/* 로그인 배경 */
+main .login_bg {
+    background-color: #fff;
+    width: 50%; height: 100vh;
+    display: flex; align-items: center;
+}
+main .login_bg .login {
+    width: 375px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
+/* 메인 로고 */
+main .login_bg .login h1 {width: 64px;}
+main .login_bg .login h1 a {width: 100%;}
+main .login_bg .login h1 a img {width: 100%;}
+main .login_bg .login h2 {
+    font-size: 1.25rem; font-weight: 700;
+    margin: 24px 0;
+}
+/* 선택 상자 */
+main .login_bg .login .select_bg {
+    position: relative;
+    display: flex; justify-content: space-between;
+    width: 244px; height: 44px; margin-bottom: 48px;
+    background-color: #e7e7e7; border-radius: 50px;
+}
+main .login_bg .login .select_bg a {
+    z-index: 999; width: 50%;
+    font-size: 0.75rem; font-weight: 700;
+    display: flex; justify-content: center; align-items: center;
+}
+main .login_bg .login .select_bg .select_ball {
+    width: 120px; height: 36px;
+    background-color: #fff; border-radius: 50px;
+    position: absolute; left: 4px; top: 4px;
+
+}
+/* 로그인 양식 */
+main .login_bg .login #loginFrm {}
+main .login_bg .login #loginFrm fieldset {
+    border: none;
+    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
+main .login_bg .login #loginFrm fieldset input {
+    width: 375px; height: 42px; padding: 8px 12px;
+    border: 1px solid #bbbcbc; border-radius: 5px;
+    font-family: 'Roboto';
+}
+main .login_bg .login #loginFrm fieldset .email {margin-bottom: 24px;}
+main .login_bg .login #loginFrm fieldset .password {}
+main .login_bg .login #loginFrm fieldset p {
+    margin-bottom: 4px;
+    font-size: 0.875rem; font-weight: 700; font-family: 'Roboto';
+}
+main .login_bg .login #loginFrm fieldset input::placeholder {color: #bbbcbc;}
+main .login_bg .login #loginFrm fieldset .email p {}
+main .login_bg .login #loginFrm fieldset .email #user_email {}
+main .login_bg .login #loginFrm fieldset .password p {}
+main .login_bg .login #loginFrm fieldset .password #user_pw {}
+main .login_bg .login #loginFrm fieldset a {
+    text-decoration: underline; margin: 24px 0;
+    font-size: 0.875rem; font-weight: 700; font-family: 'Roboto';
+}
+main .login_bg .login #loginFrm fieldset #loginBtn {
+    width: 100%; padding: 12px; border: none;
+    background-color: #000; color: #fff; border-radius: 50px;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .login_bg .login #loginFrm fieldset #loginBtn:hover {
+    background-color: #222;
+}
+/* 회원가입 양식 */
+main .login_bg .login #joinFrm {}
+main .login_bg .login #joinFrm fieldset {border: none;}
+main .login_bg .login #joinFrm fieldset input::placeholder {color: #bbbcbc;}
+main .login_bg .login #joinFrm fieldset .first {}
+main .login_bg .login #joinFrm fieldset .first p,
+main .login_bg .login #joinFrm fieldset .last p,
+main .login_bg .login #joinFrm fieldset .email p,
+main .login_bg .login #joinFrm fieldset .password p {
+    margin-bottom: 4px; color: #444;
+    font-size: 0.875rem; font-weight: 700; font-family: 'Roboto';
+}
+main .login_bg .login #joinFrm fieldset .first #user_first,
+main .login_bg .login #joinFrm fieldset .last #user_last,
+main .login_bg .login #joinFrm fieldset .email #join_email,
+main .login_bg .login #joinFrm fieldset .password #join_pw {
+    width: 375px; height: 42px; padding: 8px 12px; margin-bottom: 24px;
+    border: 1px solid #bbbcbc; border-radius: 5px;
+    font-family: 'Roboto';
+}
+main .login_bg .login #joinFrm fieldset .last {}
+main .login_bg .login #joinFrm fieldset .email {}
+main .login_bg .login #joinFrm fieldset .password {}
+main .login_bg .login #joinFrm fieldset .agree {}
+main .login_bg .login #joinFrm fieldset .agree #user_agree {}
+main .login_bg .login #joinFrm fieldset .agree label {
+    color: #444;
+    font-family: 'Roboto'; font-size: 0.875rem;
+}
+main .login_bg .login #joinFrm fieldset > p {
+    color: #444; padding-top: 24px;
+    font-family: 'Roboto'; font-size: 0.875rem; font-weight: 400;
+}
+main .login_bg .login #joinFrm fieldset > p a {
+    text-decoration: underline;
+    font-family: 'Roboto'; font-size: 0.875rem; font-weight: 700;
+}
+main .login_bg .login #joinFrm fieldset #joinBtn {
+    width: 100%; padding: 12px; margin-top: 16px; border: none;
+    background-color: #000; color: #fff; border-radius: 50px;
+    font-size: 0.875rem; font-weight: 700;
+}
+main .login_bg .login #joinFrm fieldset #joinBtn:hover {
+    background-color: #222;
+}
+/* 반응형 */
+@media screen and (max-width:1024px){
+    main .bg {display: none;}
+    main .login_bg {width: 100%;}
+}

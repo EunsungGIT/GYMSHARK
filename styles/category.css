@@ -1,0 +1,30 @@
+/* 메인 */
+main {}
+main .title {padding: 24px 60px;}
+main .title .cat {
+    font-size: 0.625rem; color: #444;
+    font-weight: 700;
+}
+main .title .title_quantity {display: flex; align-items: center;}
+main .title .title_quantity h2 {
+    margin-right: 8px;
+    font-size: 2.25rem; font-weight: 700;
+}
+main .title .title_quantity span {
+    color: #6e6e6e;
+    font-size: 0.75rem; font-family: 'Roboto';
+}
+main .title .content {
+    margin-top: 20px;
+    font-family: 'Roboto'; color: #444; font-size: 0.875rem;
+}
+main .title .others {margin-top: 20px;}
+main .title .others a {
+    font-weight: 700; text-decoration: underline;
+    font-family: 'Roboto'; font-size: 0.875rem;
+}
+main .title .others a::after {
+    content: ''; display: inline-block;
+    background: #000; height: 14px; width: 1px;
+    margin: 0 3px;
+}
