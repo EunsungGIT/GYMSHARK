@@ -462,7 +462,7 @@ header .menu_m .main_m nav .bottom_m a {
 }
 
 /* footer */
-footer {}
+footer {border-top: 1px solid #e7e7e7;}
 /* footer top */
 footer .top {
     display: flex; flex-flow: column nowrap; justify-content: space-between;

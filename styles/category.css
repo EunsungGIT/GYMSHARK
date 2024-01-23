@@ -1,3 +1,4 @@
+* {font-family: 'Montserrat';}
 /* 메인 */
 main {}
 /* 타이틀 */
@@ -29,75 +30,227 @@ main .title .others a::after {
     background: #000; height: 14px; width: 1px;
     margin: 0 3px;
 }
-/* 상품 */
+main .title .others a:last-child::after {background: none;}
+main .title .others a:hover{color: #444;}
+/* 상품 페이지 */
 main .product_page {
     display: flex; justify-content: space-between;
     padding: 0 60px;
 }
-main .product_page .filter {width: 240px; height: 807px;}
+/* 필터 */
+main .product_page .filter {
+    width: 240px; height: 807px;
+    overflow-y: scroll;
+}
 main .product_page .filter > a {
     width: 190px; padding: 26px 0;
-    display: flex;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
 }
-main .product_page .filter > a h2 {}
-main .product_page .filter > a span {}
-main .product_page .filter .sort_by {display: flex;}
+main .product_page .filter > a h2 {font-size: 0.875rem; font-weight: 700;}
+main .product_page .filter > a span {
+    font-family: 'Roboto';
+    font-size: 0.875rem; color: #bbbcbc;
+}
+main .product_page .filter .sort_by {}
 main .product_page .filter .sort_by > a {
     width: 190px; padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
 }
-main .product_page .filter .sort_by a h2 {}
+main .product_page .filter .sort_by a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .sort_by a img {}
 main .product_page .filter .sort_by .select_sort {display: none;}
 main .product_page .filter .sort_by .select_sort #sort_01 {}
-main .product_page .filter .product_type {width: 190px; padding: 24px 0;}
-main .product_page .filter .product_type a:first-child {display: flex;}
-main .product_page .filter .product_type a h2 {}
+main .product_page .filter .product_type {width: 190px;}
+main .product_page .filter .product_type a:first-child {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .product_type a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .product_type a img {}
-main .product_page .filter .product_type a:last-child {}
-main .product_page .filter .size {width: 190px; padding: 24px 0;}
-main .product_page .filter .size > a {display: flex;}
-main .product_page .filter .size a h2 {}
+main .product_page .filter .product_type a:last-child {
+    margin-bottom: 32px; height: 43px; border: 1px solid #bbbcbc;
+    display: none; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .size {width: 190px;}
+main .product_page .filter .size > a {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .size a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .size a img {}
-main .product_page .filter .size .select_size {display: none;}
-main .product_page .filter .size .select_size a {}
-main .product_page .filter .features {width: 190px; padding: 24px 0;}
-main .product_page .filter .features a:first-child {display: flex;}
-main .product_page .filter .features a h2 {}
+main .product_page .filter .size .select_size {
+    display: none; flex-flow: row wrap; justify-content: space-between;
+}
+main .product_page .filter .size .select_size a {
+    margin-bottom: 8px; width: calc(33% - 5px); height: 43px;
+    border: 1px solid #bbbcbc;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .features {width: 190px;}
+main .product_page .filter .features a:first-child {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .features a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .features a img {}
-main .product_page .filter .features a:last-child {}
-main .product_page .filter .fit {width: 190px; padding: 24px 0;}
-main .product_page .filter .fit > a {display: flex;}
-main .product_page .filter .fit a h2 {}
+main .product_page .filter .features a:last-child {
+    margin-bottom: 32px; height: 43px; border: 1px solid #bbbcbc;
+    display: none; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .fit {width: 190px;}
+main .product_page .filter .fit > a {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .fit a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .fit a img {}
-main .product_page .filter .fit .select_fit {display: none;}
-main .product_page .filter .fit .select_fit a {}
-main .product_page .filter .collection {width: 190px; padding: 24px 0;}
-main .product_page .filter .collection > a {display: flex;}
-main .product_page .filter .collection a h2 {}
+main .product_page .filter .fit .select_fit {}
+main .product_page .filter .fit .select_fit a {
+    margin-bottom: 8px; height: 43px; border: 1px solid #bbbcbc;
+    display: none; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .fit .select_fit a:last-child {margin-bottom: 32px;}
+main .product_page .filter .collection {width: 190px;}
+main .product_page .filter .collection > a {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .collection a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .collection a img {}
-main .product_page .filter .collection .select_collection {display: none;}
-main .product_page .filter .collection .select_collection a {}
-main .product_page .filter .color {width: 190px; padding: 24px 0;}
-main .product_page .filter .color > a {display: flex;}
-main .product_page .filter .color a h2 {}
+main .product_page .filter .collection .select_collection {}
+main .product_page .filter .collection .select_collection a {
+    margin-bottom: 8px; height: 43px; border: 1px solid #bbbcbc;
+    display: none; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .collection .select_collection a:last-child {margin-bottom: 32px;}
+main .product_page .filter .color {width: 190px;}
+main .product_page .filter .color > a {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .color a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .color a img {}
 main .product_page .filter .color .select_color {display: none;}
 main .product_page .filter .color .select_color a {}
-main .product_page .filter .pattern {width: 190px; padding: 24px 0;}
-main .product_page .filter .pattern a:first-child {display: flex;}
-main .product_page .filter .pattern a h2 {}
+main .product_page .filter .pattern {width: 190px;}
+main .product_page .filter .pattern a:first-child {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .pattern a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .pattern a img {}
 main .product_page .filter .pattern a:last-child {}
-main .product_page .filter .discount {width: 190px; padding: 24px 0;}
-main .product_page .filter .discount > a {display: flex;}
-main .product_page .filter .discount a h2 {}
+main .product_page .filter .discount {width: 190px;}
+main .product_page .filter .discount > a {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+main .product_page .filter .discount a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .discount a img {}
-main .product_page .filter .discount .select_discount {display: none;}
-main .product_page .filter .discount .select_discount a {}
-main .product_page .filter .price {width: 190px; padding: 24px 0;}
-main .product_page .filter .price > a {display: flex;}
-main .product_page .filter .price a h2 {}
+main .product_page .filter .discount .select_discount {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+main .product_page .filter .discount .select_discount a {
+    margin-bottom: 8px; width: calc(50% - 5px); height: 43px;
+    border: 1px solid #bbbcbc;
+    display: none; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .discount .select_discount a:last-child {margin-bottom: 32px;}
+main .product_page .filter .price {width: 190px;}
+main .product_page .filter .price > a {
+    padding: 24px 0;
+    display: flex; justify-content: space-between;
+}
+main .product_page .filter .price a h2 {font-size: 0.875rem; font-weight: 700;}
 main .product_page .filter .price a img {}
-main .product_page .filter .price .select_price {display: none;}
-main .product_page .filter .price .select_price a {}
-main .product_page .product {}
+main .product_page .filter .price .select_price {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+main .product_page .filter .price .select_price a {
+    margin-bottom: 8px; width: calc(50% - 5px); height: 43px;
+    border: 1px solid #bbbcbc; text-align: center;
+    display: none; justify-content: center; align-items: center;
+    font-size: 0.875rem; font-family: 'Roboto'; color: #444;
+}
+main .product_page .filter .price .select_price a:last-child {margin-bottom: 32px;}
+/* 상품 */
+main .product_page .product {
+    font-family: 'Roboto';
+    display: flex; flex-flow: row wrap;
+}
+main .product_page .product li {
+    width: 320px; margin-right: 10px;
+    position: relative;
+}
+main .product_page .product li .photo {}
+main .product_page .product li .photo img {width: 100%;}
+main .product_page .product li .icon {}
+main .product_page .product li .icon a {
+    width: 32px; height: 32px;
+    background-color: #fff; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+}
+main .product_page .product li .icon a:first-child {
+    display: none;
+    position: absolute; top: 10px; left: 10px;
+}
+main .product_page .product li .icon a:last-child {position: absolute; top: 10px; right: 10px;}
+main .product_page .product li .icon a img {width: 16px;}
+main .product_page .product li .size {
+    width: 100%; height: 20%;
+    display: flex; flex-flow: row wrap; align-items: center;
+    position: absolute; top: 220px;
+    background-color: #f5f5f5; padding: 10px 10px;
+}
+main .product_page .product li .size a {
+    display: inline-block; text-align: center;
+    width: 20%; padding: 10px 10px; margin: 5px;
+    background-color: #fff; font-size: 0.875rem;
+}
+main .product_page .product li .size a:hover {background-color: #000; color: #fff;}
+main .product_page .product li .info {padding: 8px;}
+main .product_page .product li .info .name_review {
+    margin-bottom: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+main .product_page .product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
+main .product_page .product li .info .name_review span {
+    display: flex; align-items: center;
+    font-size: 0.75rem; color: #6e6e6e; font-weight: 700;
+}
+main .product_page .product li .info .name_review span img {width: 15px;}
+main .product_page .product li .info p {
+    margin-bottom: 2px;
+    font-size: 0.875rem; color: #6e6e6e;
+}
+main .product_page .product li .info .price {}
+/* 부제목 */
+main .sub_title {
+    margin: 10px 60px 56px; padding: 40px 0 32px;
+    border-top: 1px solid #bbbcbc;
+}
+main .sub_title h2 {margin-bottom: 16px; font-weight: 700;}
+main .sub_title p {
+    color: #444; margin-bottom: 16px;
+    font-family: 'Roboto'; font-size: 0.875rem;
+}
+main .sub_title a {
+    text-decoration: underline; font-weight: 700;
+    font-family: 'Roboto'; font-size: 0.875rem;
+}
