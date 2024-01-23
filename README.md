@@ -51,3 +51,8 @@
 3. login 페이지 css 완료
 4. login 페이지 반응형 완료
 5. category 페이지 html 시작
+# 24.01.23
+1. category 페이지 html 완료
+2. category 페이지 상품 제외 css 완료
+3. product 페이지 html 완료
+4. product 페이지 사진 제외 css 작업
