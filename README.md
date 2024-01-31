@@ -56,3 +56,6 @@
 2. category 페이지 상품 제외 css 완료
 3. product 페이지 html 완료
 4. product 페이지 사진 제외 css 작업
+# 24.01.31
+1. product 페이지 이미지 추가 (크기 조정 필요)
+2. product 페이지 추천 상품 섹션 추가

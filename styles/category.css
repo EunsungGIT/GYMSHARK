@@ -190,56 +190,63 @@ main .product_page .filter .price .select_price a {
 }
 main .product_page .filter .price .select_price a:last-child {margin-bottom: 32px;}
 /* 상품 */
-main .product_page .product {
+main .product_page .product_wrap {
     font-family: 'Roboto';
-    display: flex; flex-flow: row wrap;
 }
-main .product_page .product li {
-    width: 320px; margin-right: 10px;
+main .product_page .product_wrap .product {
+    display: flex; flex-flow: row wrap; justify-content: flex-end;
+}
+main .product_page .product_wrap .product li {
+    width: 20%; margin-right: 10px;
     position: relative;
 }
-main .product_page .product li .photo {}
-main .product_page .product li .photo img {width: 100%;}
-main .product_page .product li .icon {}
-main .product_page .product li .icon a {
+main .product_page .product_wrap .product li .photo {}
+main .product_page .product_wrap .product li .photo img {width: 100%;}
+main .product_page .product_wrap .product li .icon {}
+main .product_page .product_wrap .product li .icon a {
     width: 32px; height: 32px;
     background-color: #fff; border-radius: 50%;
     display: flex; justify-content: center; align-items: center;
 }
-main .product_page .product li .icon a:first-child {
+main .product_page .product_wrap .product li .icon a:first-child {
     display: none;
     position: absolute; top: 10px; left: 10px;
 }
-main .product_page .product li .icon a:last-child {position: absolute; top: 10px; right: 10px;}
-main .product_page .product li .icon a img {width: 16px;}
-main .product_page .product li .size {
-    width: 100%; height: 20%;
+main .product_page .product_wrap .product li .icon a:last-child {position: absolute; top: 10px; right: 10px;}
+main .product_page .product_wrap .product li .icon a img {width: 16px;}
+main .product_page .product_wrap .product li .size {
+    width: 100%; height: 30%;
     display: flex; flex-flow: row wrap; align-items: center;
-    position: absolute; top: 220px;
+    position: absolute; bottom: 95px;
     background-color: #f5f5f5; padding: 10px 10px;
 }
-main .product_page .product li .size a {
+main .product_page .product_wrap .product li .size a {
+    font-family: 'Roboto';
     display: inline-block; text-align: center;
     width: 20%; padding: 10px 10px; margin: 5px;
     background-color: #fff; font-size: 0.875rem;
 }
-main .product_page .product li .size a:hover {background-color: #000; color: #fff;}
-main .product_page .product li .info {padding: 8px;}
-main .product_page .product li .info .name_review {
+main .product_page .product_wrap .product li .size a:hover {background-color: #000; color: #fff;}
+main .product_page .product_wrap .product li .info {padding: 8px;}
+main .product_page .product_wrap .product li .info .name_review {
     margin-bottom: 2px;
     display: flex; justify-content: space-between; align-items: center;
 }
-main .product_page .product li .info .name_review h3 {font-size: 0.875rem; color: #1b1b1b;}
-main .product_page .product li .info .name_review span {
+main .product_page .product_wrap .product li .info .name_review h3 {
+    font-family: 'Roboto';
+    font-size: 0.875rem; color: #1b1b1b;
+}
+main .product_page .product_wrap .product li .info .name_review span {
+    font-family: 'Roboto';
     display: flex; align-items: center;
     font-size: 0.75rem; color: #6e6e6e; font-weight: 700;
 }
-main .product_page .product li .info .name_review span img {width: 15px;}
-main .product_page .product li .info p {
-    margin-bottom: 2px;
+main .product_page .product_wrap .product li .info .name_review span img {width: 15px;}
+main .product_page .product_wrap .product li .info p {
+    margin-bottom: 2px; font-family: 'Roboto';
     font-size: 0.875rem; color: #6e6e6e;
 }
-main .product_page .product li .info .price {}
+main .product_page .product_wrap .product li .info .price {}
 /* 부제목 */
 main .sub_title {
     margin: 10px 60px 56px; padding: 40px 0 32px;
@@ -254,3 +261,4 @@ main .sub_title a {
     text-decoration: underline; font-weight: 700;
     font-family: 'Roboto'; font-size: 0.875rem;
 }
+main .sub_title a:hover {color: #444;}

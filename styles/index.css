@@ -1,4 +1,4 @@
-/* scroll bar */
+/* 스크롤 바 */
 /* Firefox */
 html {scrollbar-width: 10px; height: 7px; scrollbar-color: #bbb #f1f1f1;}
 /* Opera */
@@ -46,24 +46,19 @@ main .recommend .title .title_sub .title_view a {
     border-bottom: 1px solid #000;
 }
 main .recommend .title .title_sub .title_view a:hover {color: #444; border-bottom: 1px solid #222;}
-main .recommend .title .title_sub .move {
-    display: flex;
-}
+main .recommend .title .title_sub .move {display: flex;}
 main .recommend .title .title_sub .move a {
     display: flex; justify-content: center; align-items: center;
     width: 32px; height: 32px; margin-right: 10px;
     background-color: #e7e7e7; border-radius: 50%;
 }
-main .recommend .title .title_sub .move a:last-child {
-    margin: 0;
-    background-color: #000;
-}
+main .recommend .title .title_sub .move a:last-child {margin: 0; background-color: #000;}
 main .recommend .title .title_sub .move a img {width: 13px;}
 main .recommend .recommend_product_wrap {
     overflow-y: hidden; overflow-x: auto; font-family: 'Roboto';
 }
 main .recommend .recommend_product_wrap .recommend_product {
-    padding: 0 0 30px 60px;  width: calc(25% * 9);
+    padding: 0 0 30px 60px;  width: calc(20% * 9);
     display: flex;
 }
 main .recommend .recommend_product_wrap .recommend_product li {
