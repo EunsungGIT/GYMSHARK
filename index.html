@@ -11,52 +11,52 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/pp.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <!-- 채팅 -->
     <a href="#" id="chat"><img src="./images/icon/icon_chat.png" alt="chat"></a>
-    <header>
-        <!-- popup 태블릿 및 모바일 세로 정렬 -->
-        <div class="popup">
-            <form action="#" method="get" id="lang_frm">
-                <fieldset>
-                    <legend class="skip">언어 양식</legend>
-                    <p>ARE YOU IN THE RIGHT PLACE?</p>
-                    <div class="lang_sel">
-                        <div class="lang_left">
-                            <!-- ROW 클릭 시 우측에 more 아이콘 생김 -->
-                            <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" class="more" alt="more"></a>
-                            <ul class="lang">
-                                <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
-                                <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
-                                <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
-                                <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
-                                <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
-                                <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
-                                <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
-                                <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
-                                <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
-                                <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
-                                <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
-                                <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
-                                <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
-                                <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
-                            </ul>
-                        </div>
-                        <!-- ROW 클릭 시 or 사라짐 -->
-                        <span>or</span>
-                        <!-- ROW 클릭 시 ENGLISH로 변함 -->
-                        <div class="lang_right">
-                            <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW</a>
-                            <span>ENGLISH</span>
-                        </div>
+    <!-- popup 태블릿 및 모바일 세로 정렬 -->
+    <div class="popup">
+        <form action="#" method="get" id="lang_frm">
+            <fieldset>
+                <legend class="skip">언어 양식</legend>
+                <p>ARE YOU IN THE RIGHT PLACE?</p>
+                <div class="lang_sel">
+                    <div class="lang_left">
+                        <!-- ROW 클릭 시 우측에 more 아이콘 생김 -->
+                        <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" class="more" alt="more"></a>
+                        <ul class="lang">
+                            <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
+                            <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
+                            <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
+                            <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
+                            <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
+                            <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
+                            <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
+                            <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
+                            <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
+                            <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
+                            <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
+                            <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
+                            <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
+                            <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
+                        </ul>
                     </div>
-                    <button type="submit" value="lang_sub" id="lang_sub">CONFIRM</button>
-                </fieldset>
-            </form>
-            <a href="#" class="close"><img src="./images/icon/icon_close_w.png" alt="close"></a>
-        </div>
+                    <!-- ROW 클릭 시 or 사라짐 -->
+                    <span>or</span>
+                    <!-- ROW 클릭 시 ENGLISH로 변함 -->
+                    <div class="lang_right">
+                        <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW</a>
+                        <span>ENGLISH</span>
+                    </div>
+                </div>
+                <button type="submit" value="lang_sub" id="lang_sub">CONFIRM</button>
+            </fieldset>
+        </form>
+        <a href="#" class="close"><img src="./images/icon/icon_close_w.png" alt="close"></a>
+    </div>
+    <header>
         <!-- top 태블릿 및 모바일에서 메뉴 안으로 들어감 -->
         <div class="top">
             <a href="#"><img src="./images/icon/icon_mypage.png" class="account" alt="account">Account</a>

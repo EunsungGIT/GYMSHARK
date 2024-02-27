@@ -22,9 +22,9 @@
     }
     header .popup #lang_frm fieldset p {margin: 0 0 20px;}
     header .popup #lang_frm fieldset .lang_sel {width: 100%; margin-bottom: 20px;}
-    header .popup #lang_frm fieldset .lang_sel .lang_left {width: calc(50% - 50px);}
+    header .popup #lang_frm fieldset .lang_sel .lang_left {width: calc(50% - 20px);}
     header .popup #lang_frm fieldset .lang_sel .lang_left a {justify-content: center;}
-    header .popup #lang_frm fieldset .lang_sel .lang_right {width: calc(50% - 50px);}
+    header .popup #lang_frm fieldset .lang_sel .lang_right {width: calc(50% - 20px);}
     header .popup #lang_frm fieldset .lang_sel .lang_right a {
         margin: 0; justify-content: center;
     }

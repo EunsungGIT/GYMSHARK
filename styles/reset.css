@@ -9,7 +9,7 @@ address,details,mark,time,video,img,summary,iframe,div {
     margin: 0; padding: 0;
     font-size: 1.0rem; font-style: normal; font-weight: normal;
     line-height: 1.2; color: #000;
-    text-decoration: none;
+    text-decoration: none; font-family: "Montserrat", sans-serif;
 }
 ul,ol,li {list-style: none;}
 button {cursor: pointer;}
