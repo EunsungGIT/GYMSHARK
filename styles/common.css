@@ -1,6 +1,6 @@
 /* 채팅 */
 #chat {
-    width: 50px; height: 50px; z-index: 9999;
+    width: 50px; height: 50px; z-index: 9997;
     display: flex; justify-content: center; align-items: center;
     background-color: #000; border-radius: 50%;
     position: fixed; right: 60px; bottom: 60px;
@@ -86,7 +86,9 @@ header .top > a {
     border-right: 1px solid #aaa;
 }
 header .top > a:hover {color: #000;}
-header .top > a:nth-of-type(6) {border: none;}
+header .top > a:nth-of-type(6) {
+    border: none;
+}
 header .top > a .account {width: 13px; margin-right: 8px;}
 header .top > a img {width: 16px; margin-right: 5px;}
 header .top > a .more {width: 12px; margin-left: 5px;}
@@ -131,7 +133,7 @@ header .bottom nav {
 header .bottom nav .gnb {}
 header .bottom nav .gnb > li {display: inline-block;}
 header .bottom nav .gnb > li > a {
-    padding: 0 20px; line-height: 69px;
+    padding: 0 20px; line-height: 68px;
     font-weight: 700; font-size: 0.875rem;
     display: inline-block;
 }
@@ -146,10 +148,10 @@ header .bottom nav .gnb > li > a:hover::after {transform: scaleX(1);}
 header .bottom .lnb_category_wrap {z-index: 9999;}
 /* nav women category */
 header .bottom .lnb_category_wrap .women_bg{
-    display: none;
-    width: 100%; height: 100vh;
+    width: 100%; height: 100vh; opacity: 0;
     position: absolute; top: 69px; left: 0;
     background-color: rgba(1, 1, 1, 0.8);
+    transition: 0.5s;
 }
 header .bottom .lnb_category_wrap .women_bg .women_category {
     background-color: #fff; height: 500px;
@@ -190,10 +192,10 @@ header .bottom .lnb_category_wrap .women_bg .women_category .right .featured .f_
 }
 /* nav men category */
 header .bottom .lnb_category_wrap .men_bg{
-    display: none;
-    width: 100%; height: 100vh;
+    width: 100%; height: 100vh; opacity: 0;
     position: absolute; top: 69px; left: 0;
     background-color: rgba(1, 1, 1, 0.8);
+    transition: 0.5s;
 }
 header .bottom .lnb_category_wrap .men_bg .men_category {
     background-color: #fff; height: 500px;
@@ -234,10 +236,10 @@ header .bottom .lnb_category_wrap .men_category .right .featured .f_bottom span 
 }
 /* nav acc category */
 header .bottom .lnb_category_wrap .acc_bg{
-    display: none;
-    width: 100%; height: 100vh;
+    width: 100%; height: 100vh; opacity: 0;
     position: absolute; top: 69px; left: 0;
     background-color: rgba(1, 1, 1, 0.8);
+    transition: 0.5s;
 }
 header .bottom .lnb_category_wrap .acc_bg .acc_category {
     background-color: #fff; height: 500px;
@@ -284,7 +286,6 @@ header .bottom .right_icon .search {display: none;}
 header .bottom .right_icon .search img {width: 23px;}
 /* 검색 페이지 */
 header .bottom .right_icon .search_bg {
-    display: none;
     width: 100%; height: 100vh; z-index: 1;
     position: fixed; left: 0; top: 100px;
     background-color: rgba(1, 1, 1, 0.8);
@@ -305,6 +306,10 @@ header .bottom .right_icon .search_page .icon_search #search_frm fieldset .user_
     width: 100%; padding: 15px 36px 15px 43px;
     border: none; background: none;
     color: #6e6e6e; font-size: 0.875rem;
+    font-family: 'Roboto'; border-radius: 10px;
+}
+header .bottom .right_icon .search_page .icon_search #search_frm fieldset .user_search:hover {
+    background-color: #e7e7e7;
 }
 header .bottom .right_icon .search_page .icon_search .close {
     width: 27px;
@@ -335,16 +340,17 @@ header .bottom .right_icon .cart {margin: 0 12px;}
 header .bottom .right_icon .cart img {width: 23px;}
 /* 장바구니 페이지 */
 header .bottom .right_icon .cart_bg {
-    display: none;
-    width: 100%; height: 100vh; z-index: 1;
+    width: 100%; height: 100vh; z-index: 9998;
     position: fixed; left: 0; top: 65px;
     background-color: rgba(1, 1, 1, 0.8);
+    opacity: 0; transition: 0.5s;
 }
 header .bottom .right_icon .cart_bg .cart_page {
     width: 500px; height: 100vh; text-align: center;
-    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
-    background-color: #fff;
-    position: absolute; right: 0;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+    background-color: #fff; transition: 0.5s;
+    position: absolute; right: -500px;
 }
 header .bottom .right_icon .cart_bg .cart_photo {margin-bottom: 20px;}
 header .bottom .right_icon .cart_bg .cart_photo img {}
@@ -533,7 +539,6 @@ footer .bottom .bottom_info .lang_sel > a img {width: 16px; margin-right: 5px;}
 footer .bottom .bottom_info .lang_sel > a .more {margin-left: 5px;}
 /* ROW 클릭 시 언어 선택 창 나옴 */
 footer .bottom .bottom_info .lang_sel .lang {
-    display: none;
     width: 250px; height: 300px;
     background-color: #fff; border-radius: 10px;
     position: absolute; bottom: 35px; right: 0;
@@ -545,6 +550,7 @@ footer .bottom .bottom_info .lang_sel .lang li:hover a {color: #fff;}
 footer .bottom .bottom_info .lang_sel .lang li a {
     display: flex; align-items: center;
     font-size: 0.875rem;
+    font-family: 'Roboto';
 }
 footer .bottom .bottom_info .lang_sel .lang li a:hover {}
 footer .bottom .bottom_info .lang_sel .lang li a img {width: 16px; margin-right: 10px;}
