@@ -22,19 +22,27 @@
     }
     .popup #lang_frm fieldset p {margin: 0 0 20px;}
     .popup #lang_frm fieldset .lang_sel {width: 100%; margin-bottom: 20px;}
-    .popup #lang_frm fieldset .lang_sel .lang_left {width: calc(50% - 20px);}
-    .popup #lang_frm fieldset .lang_sel .lang_left a {justify-content: center;}
-    .popup #lang_frm fieldset .lang_sel .lang_right {width: calc(50% - 20px);}
-    .popup #lang_frm fieldset .lang_sel .lang_right a {
-        margin: 0; justify-content: center;
+    .popup #lang_frm fieldset .lang_sel .lang_left {width: 50% !important;}
+    .popup #lang_frm fieldset .lang_sel .lang_left a {
+        justify-content: center;
     }
-    .popup #lang_frm fieldset #lang_sub {width: 100%;}
+    .popup #lang_frm fieldset .lang_sel .lang_right {width: 50% !important;}
+    .popup #lang_frm fieldset .lang_sel .lang_right a {
+        justify-content: center;
+    }
+    .popup #lang_frm fieldset #lang_sub {
+        width: 100%; margin: 0;
+    }
     .popup .close {
         width: 24px;
         position: absolute; top: 10px;
     }
     header .top {display: none; position: relative;}
     header .bottom {padding: 0 24px;}
+    header .bottom h1 {
+        position: absolute; left: 50%;
+        transform: translateX(-50%);
+    }
     header .bottom .left_icon {display: flex;}
     header .bottom nav {display: none;}
     header .bottom .right_icon .search {display: none;}
@@ -44,53 +52,35 @@
 
     /* main */
     main .visual .text_button h2 {font-size: 1.563rem;}
-    /* view 오른쪽 배치 */
-    main .recommend .title .title_sub,
-    main .recommend_second .title .title_sub,
-    main .recommend_third .title .title_sub,
-    main .recommend_fourth .title .title_sub,
-    main .recommend_fifth .title .title_sub {position: relative;}
-    main .recommend .title .title_sub .title_view a,
-    main .recommend_second .title .title_sub .title_view a,
-    main .recommend_third .title .title_sub .title_view a,
-    main .recommend_fourth .title .title_sub .title_view a,
-    main .recommend_fifth .title .title_sub .title_view a {position: absolute; right: 0;}
-    /* 이동 버튼 제거 */
-    main .recommend .title .title_sub .move,
-    main .recommend_second .title .title_sub .move,
-    main .recommend_third .title .title_sub .move,
-    main .recommend_fourth .title .title_sub .move,
-    main .recommend_fifth .title .title_sub .move {display: none;}
-    /* 상품 표시 3개 */
-    main .recommend .recommend_product_wrap .recommend_product,
-    main .recommend_second .recommend_product_wrap .recommend_product,
-    main .recommend_third .recommend_product_wrap .recommend_product,
-    main .recommend_fourth .recommend_product_wrap .recommend_product,
-    main .recommend_fifth .recommend_product_wrap .recommend_product {width: calc(25% * 12);}
-    /* 장바구니 버튼 표시 */
-    main .recommend .recommend_product_wrap .recommend_product li .icon a:first-child {display: flex;}
-    /* 사이즈 선택 제거 */
-    main .recommend .recommend_product_wrap .recommend_product li .size,
-    main .recommend_second .recommend_product_wrap .recommend_product li .size,
-    main .recommend_third .recommend_product_wrap .recommend_product li .size,
-    main .recommend_fourth .recommend_product_wrap .recommend_product li .size,
-    main .recommend_fifth .recommend_product_wrap .recommend_product li .size {display: none;}
+    main .recommend .title {
+        position: relative;
+    }
+    main .recommend .title h2 a {
+        position: absolute; right: 30px;
+    }
+    main .recommend .recommend_swiper .move {
+        display: none;
+    }
     main .company_info {border: none;}
 
     /* footer */
-    footer .top {padding: 30px 30px;}
+    footer .top {
+        padding: 0 30px 30px; height: auto;
+    }
     footer .top .help_blog {flex-flow: column nowrap;}
     footer .top .help_blog .help {flex-flow: column nowrap;}
     footer .top .help_blog .help dl {
-        width: 100%; margin: 0; padding: 20px;
-        border-top: 1px solid #ddd;
+        width: 100%; margin: 0; padding: 16px 0;
+        border-bottom: 1px solid #ddd;
     }
     footer .top .help_blog .help dl dt {margin: 0;}
     footer .top .help_blog .help dl dd {display: none;}
-    footer .top .help_blog .blog_email h3 {margin: 0; padding: 20px;}
+    footer .top .help_blog .blog_email h3 {margin: 0; padding: 16px 0;}
     footer .top .help_blog .blog_email .blog_email_link {justify-content: center;}
     footer .top .help_blog .blog_email .blog_email_link a {width: 33%;}
-    footer .top .card_contents {flex-flow: column-reverse nowrap;}
+    footer .top .card_contents {
+        margin-top: 20px;
+    }
     footer .bottom {flex-flow: column-reverse nowrap;}
 }
 
@@ -110,6 +100,9 @@
     main .visual .text_button a {
         width: 100%; text-align: center;
         background-color: #fff; color: #000;
+    }
+    main .visual .text_button a:hover {
+        background: #f5f5f5;
     }
     main .bnr {
         height: 608px; padding: 0 20px;
@@ -173,12 +166,10 @@
     main .bnr_fifth a {
         width: 100%; text-align: center; margin-bottom: 10px;
     }
-    /* 상품 표시 1개 */
-    main .recommend .recommend_product_wrap .recommend_product,
-    main .recommend_second .recommend_product_wrap .recommend_product,
-    main .recommend_third .recommend_product_wrap .recommend_product,
-    main .recommend_fourth .recommend_product_wrap .recommend_product,
-    main .recommend_fifth .recommend_product_wrap .recommend_product {width: calc(25% * 30);}
+    /* recommend */
+    main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a:nth-of-type(1) {
+        display: flex;
+    }
     main .app {padding: 40px 0;}
     main .app .app_link {flex-flow: column nowrap;}
     main .app .app_link .app_left,
@@ -186,4 +177,12 @@
     main .photo_cat {padding: 40px 0; flex-flow: column nowrap;}
     main .photo_cat .photo_button {width: 100%;}
     main .trending_collections {flex-flow: column nowrap;}
+
+    /* footer */
+    footer .top .card_contents {
+        flex-flow: column-reverse nowrap;
+    }
+    footer .top .card_contents .contents {
+        margin-bottom: 10px;
+    }
 } 

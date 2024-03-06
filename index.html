@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymshark Official Store - Shop Gym Clothes & Workout Clothes</title>
+    <!-- swiper -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon/faviconV2.png" type="image/x-icon">
     <link rel="icon" href="images/favicon/faviconV2.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
@@ -25,7 +34,7 @@
                 <div class="lang_sel">
                     <div class="lang_left">
                         <!-- ROW 클릭 시 우측에 more 아이콘 생김 -->
-                        <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" class="more" alt="more"></a>
+                        <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more_white.png" class="more" alt="more"></a>
                         <ul class="lang">
                             <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
                             <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
@@ -55,6 +64,80 @@
             </fieldset>
         </form>
         <a href="#" class="close"><img src="./images/icon/icon_close_w.png" alt="close"></a>
+    </div>
+    <!-- 태블릿 및 모바일 메뉴 창 -->
+    <div class="menu_m">
+        <div class="header_m">
+            <div class="top_m">
+                <div class="left_m">
+                    <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                    <div class="lang_m">
+                        <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
+                        <ul class="lang">
+                            <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
+                            <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
+                            <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
+                            <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
+                            <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
+                            <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
+                            <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
+                            <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
+                            <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
+                            <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
+                            <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
+                            <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
+                            <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
+                            <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#"><img src="./images/icon/icon_close.png" alt="close"></a>
+            </div>
+            <h2>SHOP</h2>
+            <!-- 검색 창 이동안함으로 수정 -->
+            <form action="#" method="get" id="search_frm_m">
+                <fieldset>
+                    <legend class="skip">검색 양식</legend>
+                    <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
+                </fieldset>
+            </form>
+        </div>
+        <div class="main_m">
+            <nav>
+                <ul class="gnb_m">
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                </ul>
+                <div class="image">
+                    <div class="photo">
+                        <a href="#"><img src="images/nav.jpg" alt="lift seamless"></a>
+                        <span>LIFT SEAMLESS</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <a href="#">TRENDING<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">PRODUCTS<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">COLLECTIONS<img src="./images/icon/icon_more.png" alt="more"></a>
+                </div>
+                <div class="category_acc">
+                    <a href="#">TRENDING<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">FOOTWEAR<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">SOCKS<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">BAGS<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">UNDERWEAR<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">HEADWEAR<img src="./images/icon/icon_more.png" alt="more"></a>
+                    <a href="#">EQUIPMENT<img src="./images/icon/icon_more.png" alt="more"></a>
+                </div>
+                <div class="bottom_m">
+                    <h3>MORE</h3>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Help</a>
+                    <a href="#">Email Sign Up</a>
+                    <a href="#">Blog</a>
+                </div>
+            </nav>
+        </div>
     </div>
     <!-- header -->
     <header>
@@ -345,7 +428,7 @@
                 </div>
                 <!-- .wishlist 태블릿 및 모바일에서 숨김 -->
                 <a href="#" class="wishlist"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                <a href="#" class="mypage"><img src="./images/icon/icon_mypage.png" alt="mypage"></a>
+                <a href="./login.html" class="mypage"><img src="./images/icon/icon_mypage.png" alt="mypage"></a>
                 <!-- 장바구니 버튼을 누르면 장바구니 페이지로 이동 -->
                 <a href="#" class="cart"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                 <!-- 장바구니 페이지 -->
@@ -366,88 +449,6 @@
         </div>
         <!-- .event 태블릿은 상단으로 옮기고 모바일은 숨김 -->
         <p class="event">10% STUDENT DISCOUNT</p>
-        <!-- 태블릿 및 모바일 메뉴 창 -->
-        <div class="menu_m">
-            <div class="header_m">
-                <div class="top_m">
-                    <div class="left_m">
-                        <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        <div class="lang_m">
-                            <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
-                            <ul class="lang">
-                                <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
-                                <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
-                                <li><a href="#"><img src="./images/lang_03.svg" alt="Danmark">Danmark</a></li>
-                                <li><a href="#"><img src="./images/lang_04.svg" alt="Finland">Finland</a></li>
-                                <li><a href="#"><img src="./images/lang_05.svg" alt="France">France</a></li>
-                                <li><a href="#"><img src="./images/lang_06.svg" alt="Deutschland & Osterreich">Deutschland & Osterreich</a></li>
-                                <li><a href="#"><img src="./images/lang_07.svg" alt="Nederland">Nederland</a></li>
-                                <li><a href="#"><img src="./images/lang_08.svg" alt="Norge">Norge</a></li>
-                                <li><a href="#"><img src="./images/lang_09.svg" alt="Sverige">Sverige</a></li>
-                                <li><a href="#"><img src="./images/lang_10.svg" alt="Schweiz">Schweiz</a></li>
-                                <li><a href="#"><img src="./images/lang_11.svg" alt="United Kingdom">United Kingdom</a></li>
-                                <li><a href="#"><img src="./images/lang_12.svg" alt="United States">United States</a></li>
-                                <li><a href="#"><img src="./images/lang_13.svg" alt="Europe">Europe</a></li>
-                                <li><a href="#"><img src="./images/icon_row.svg" alt="Rest of World">Rest of World</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#"><img src="./images/icon/icon_close.png" alt="close"></a>
-                </div>
-                <h2>SHOP</h2>
-                <!-- 검색 창 이동안함으로 수정 -->
-                <form action="#" method="get" id="search_frm_m">
-                    <fieldset>
-                        <legend class="skip">검색 양식</legend>
-                        <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
-                    </fieldset>
-                </form>
-            </div>
-            <div class="main_m">
-                <nav>
-                    <ul class="gnb_m">
-                        <li><a href="#">WOMEN</a></li>
-                        <li><a href="#">MEN</a></li>
-                        <li><a href="#">ACCESSORIES</a></li>
-                    </ul>
-                    <div class="image">
-                        <div class="photo">
-                            <a href="#"><img src="images/nav.jpg" alt="lift seamless"></a>
-                            <span>LIFT SEAMLESS</span>
-                        </div>
-                        <div class="photo">
-                            <a href="#"><img src="images/nav.jpg" alt="lift seamless"></a>
-                            <span>LIFT SEAMLESS</span>
-                        </div>
-                        <div class="photo">
-                            <a href="#"><img src="images/nav.jpg" alt="lift seamless"></a>
-                            <span>TRAINING APP</span>
-                        </div>
-                    </div>
-                    <div class="category">
-                        <a href="#">TRENDING<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">PRODUCTS<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">COLLECTIONS<img src="./images/icon/icon_more.png" alt="more"></a>
-                    </div>
-                    <div class="category_acc">
-                        <a href="#">TRENDING<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">FOOTWEAR<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">SOCKS<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">BAGS<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">UNDERWEAR<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">HEADWEAR<img src="./images/icon/icon_more.png" alt="more"></a>
-                        <a href="#">EQUIPMENT<img src="./images/icon/icon_more.png" alt="more"></a>
-                    </div>
-                    <div class="bottom_m">
-                        <h3>MORE</h3>
-                        <a href="#">Accessibility Statement</a>
-                        <a href="#">Help</a>
-                        <a href="#">Email Sign Up</a>
-                        <a href="#">Blog</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
     </header>
     <!-- main -->
     <main>
@@ -465,284 +466,280 @@
         </section>
         <section class="recommend">
             <div class="title">
-                <p class="cat">WOMENS</p>
-                <div class="title_sub">
-                    <div class="title_view">
-                        <h2>LIFT SEAMLESS</h2>
-                        <!-- View All 태블릿과 모바일에서 우측 이동 -->
-                        <a href="#">View All</a>
-                    </div>
-                    <!-- .move 태블릿 및 모바일에서 숨김 -->
-                    <div class="move">
-                        <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
-                        <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
-                    </div>
-                </div>
+                <p class="category">WOMENS</p>
+                <h2>LIFT SEAMLESS<a href="#">View All</a></h2>
             </div>
-            <!-- 데스크탑 4개 / 태블릿 3개 / 모바일 1개 노출 -->
-            <div class="recommend_product_wrap">
-                <ul class="recommend_product">
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+            <div class="swiper-container recommend_swiper">
+                <ul class="swiper-wrapper recommend_wrapper">
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_1_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Lift Contour Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="review">4.3</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Slate Teal/White Marl</p>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
                             <p class="price">US$70</p>
-                        </a>
+                        </div>
                     </li>
                 </ul>
+                <div class="move">
+                    <div class="swiper-button-prev product_prev">
+                        <img src="./images/icon/icon_left.png" alt="prev">
+                    </div>
+                    <div class="swiper-button-next product_next">
+                        <img src="./images/icon/icon_right.png" alt="next">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- .bnr 태블릿에서 배경 이미지 사이즈 축소, 모바일은 이미지 축소와 텍스트가 하단으로 내려가며 흰색 컬러 변경 -->
@@ -755,294 +752,282 @@
                 <a href="#">SHOP MEN</a>
             </div>
         </section>
-        <section class="recommend_second">
+        <section class="recommend">
             <div class="title">
-                <div class="title_sub">
-                    <div class="title_view">
-                        <h2>COSY SEASON</h2>
-                        <!-- View All 태블릿과 모바일에서 우측 이동 -->
-                        <a href="#">View All</a>
-                    </div>
-                    <!-- .move 태블릿 및 모바일에서 숨김 -->
-                    <div class="move">
-                        <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
-                        <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
-                    </div>
-                </div>
+                <p class="category">WOMENS</p>
+                <h2>LIFT SEAMLESS<a href="#">View All</a></h2>
             </div>
-            <div class="recommend_product_wrap">
-                <ul class="recommend_product">
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+            <div class="swiper-container recommend_swiper">
+                <ul class="swiper-wrapper recommend_wrapper">
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="photo"><img src="./images/product_2_01.jpg" alt="photo"></a>
-                        <div class="icon">
-                            <!-- cart 테스크탑에서 숨김 -->
-                            <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
-                            <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
-                        </div>
-                        <!-- .size 태블릿 및 모바일에서 숨김 -->
-                        <div class="size">
-                            <a href="#">XS</a>
-                            <a href="#">S</a>
-                            <a href="#">M</a>
-                            <a href="#">L</a>
-                            <a href="#">XL</a>
-                            <a href="#">XXL</a>
-                        </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Built Oversized Sweatshirt</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">5</span>
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$55</p>
-                        </a>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
                 </ul>
+                <div class="move">
+                    <div class="swiper-button-prev product_prev">
+                        <img src="./images/icon/icon_left.png" alt="prev">
+                    </div>
+                    <div class="swiper-button-next product_next">
+                        <img src="./images/icon/icon_right.png" alt="next">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="bnr_second">
@@ -1056,33 +1041,22 @@
                 <a href="#">EXPLORE GIFTS</a>
             </div>
         </section>
-        <section class="recommend_third">
+        <section class="recommend">
             <div class="title">
-                <div class="title_sub">
-                    <div class="title_view">
-                        <h2>GIFTING</h2>
-                        <!-- View All 태블릿과 모바일에서 우측 이동 -->
-                        <a href="#">View All</a>
-                    </div>
-                    <!-- .move 태블릿 및 모바일에서 숨김 -->
-                    <div class="move">
-                        <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
-                        <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
-                    </div>
-                </div>
+                <p class="category">WOMENS</p>
+                <h2>LIFT SEAMLESS<a href="#">View All</a></h2>
             </div>
-            <div class="recommend_product_wrap">
-                <ul class="recommend_product">
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+            <div class="swiper-container recommend_swiper">
+                <ul class="swiper-wrapper recommend_wrapper">
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1091,27 +1065,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1120,27 +1091,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1149,27 +1117,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1178,27 +1143,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1207,27 +1169,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1236,27 +1195,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1265,27 +1221,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1294,27 +1247,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1323,27 +1273,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_3_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1352,18 +1299,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Everyday Seamless Leggings</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">3.4</span>
-                            </div>
-                            <p>Body Fit</p>
-                            <p>Black</p>
-                            <p class="price">US$50</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
                 </ul>
+                <div class="move">
+                    <div class="swiper-button-prev product_prev">
+                        <img src="./images/icon/icon_left.png" alt="prev">
+                    </div>
+                    <div class="swiper-button-next product_next">
+                        <img src="./images/icon/icon_right.png" alt="next">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="bnr_third">
@@ -1377,33 +1330,22 @@
                 </div>
             </div>
         </section>
-        <section class="recommend_fourth">
+        <section class="recommend">
             <div class="title">
-                <div class="title_sub">
-                    <div class="title_view">
-                        <h2>TRAINING READY</h2>
-                        <!-- View All 태블릿과 모바일에서 우측 이동 -->
-                        <a href="#">View All</a>
-                    </div>
-                    <!-- .move 태블릿 및 모바일에서 숨김 -->
-                    <div class="move">
-                        <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
-                        <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
-                    </div>
-                </div>
+                <p class="category">WOMENS</p>
+                <h2>LIFT SEAMLESS<a href="#">View All</a></h2>
             </div>
-            <div class="recommend_product_wrap">
-                <ul class="recommend_product">
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+            <div class="swiper-container recommend_swiper">
+                <ul class="swiper-wrapper recommend_wrapper">
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1412,27 +1354,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1441,27 +1380,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1470,27 +1406,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1499,27 +1432,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1528,27 +1458,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1557,27 +1484,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1586,27 +1510,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1615,27 +1536,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1644,27 +1562,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_4_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1673,18 +1588,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Sport 7" Short</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                                <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Regular Fit</p>
-                            <p>Linen Brown/Black</p>
-                            <p class="price">US$40</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
                 </ul>
+                <div class="move">
+                    <div class="swiper-button-prev product_prev">
+                        <img src="./images/icon/icon_left.png" alt="prev">
+                    </div>
+                    <div class="swiper-button-next product_next">
+                        <img src="./images/icon/icon_right.png" alt="next">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="bnr_fourth">
@@ -1695,33 +1616,22 @@
                 <a href="#">SHOP MEN</a>
             </div>
         </section>
-        <section class="recommend_fifth">
+        <section class="recommend">
             <div class="title">
-                <div class="title_sub">
-                    <div class="title_view">
-                        <h2>GRAPHICS</h2>
-                        <!-- View All 태블릿과 모바일에서 우측 이동 -->
-                        <a href="#">View All</a>
-                    </div>
-                    <!-- .move 태블릿 및 모바일에서 숨김 -->
-                    <div class="move">
-                        <a href="#"><img src="./images/icon/icon_left.png" alt="move left"></a>
-                        <a href="#"><img src="./images/icon/icon_right.png" alt="move right"></a>
-                    </div>
-                </div>
+                <p class="category">WOMENS</p>
+                <h2>LIFT SEAMLESS<a href="#">View All</a></h2>
             </div>
-            <div class="recommend_product_wrap">
-                <ul class="recommend_product">
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+            <div class="swiper-container recommend_swiper">
+                <ul class="swiper-wrapper recommend_wrapper">
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1730,27 +1640,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1759,27 +1666,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1788,27 +1692,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1817,27 +1718,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1846,27 +1744,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1875,27 +1770,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1904,27 +1796,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1933,27 +1822,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1962,27 +1848,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
-                    <li>
-                        <div class="product">
-                            <a href="#" class="photo"><img src="./images/product_5_01.jpg" alt="photo"></a>
-                            <!-- cart 테스크탑에서 숨김 -->
+                    <li class="swiper-slide product_slide">
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                             </div>
-                            <!-- .size 태블릿 및 모바일에서 숨김 -->
                             <div class="size">
+                                <a href="#">XXS</a>
                                 <a href="#">XS</a>
                                 <a href="#">S</a>
                                 <a href="#">M</a>
@@ -1991,18 +1874,24 @@
                                 <a href="#">XXL</a>
                             </div>
                         </div>
-                        <a href="#" class="info">
-                            <div class="name_review">
-                                <h3>Weightlifting Club Joggers</h3>
-                                <!-- 평점 태블릿과 모바일에서 왼쪽 상단으로 이동 -->
-                            <span><img src="./images/icon/icon_star.png" alt="">4.2</span>
-                            </div>
-                            <p>Oversized Fit</p>
-                            <p>Black</p><br>
-                            <p class="price">US$54</p>
-                        </a>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
                     </li>
                 </ul>
+                <div class="move">
+                    <div class="swiper-button-prev product_prev">
+                        <img src="./images/icon/icon_left.png" alt="prev">
+                    </div>
+                    <div class="swiper-button-next product_next">
+                        <img src="./images/icon/icon_right.png" alt="next">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- 모바일에서 백그라운드 이미지 변경 -->
