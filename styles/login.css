@@ -51,11 +51,14 @@ main .login_bg .login .select_bg a {
     font-size: 0.75rem; font-weight: 700;
     display: flex; justify-content: center; align-items: center;
 }
+main .login_bg .login .select_bg a:hover {
+    color: #000;
+}
 main .login_bg .login .select_bg .select_ball {
     width: 120px; height: 36px;
     background-color: #fff; border-radius: 50px;
     position: absolute; left: 4px; top: 4px;
-
+    transition: 0.5s;
 }
 /* 로그인 양식 */
 main .login_bg .login #loginFrm {}
