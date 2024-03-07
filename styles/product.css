@@ -1,30 +1,43 @@
-* {font-family: 'Montserrat';}
+/* main */
 main {}
 main .product {
-    margin: 0 161px; padding: 32px 50px 50px;
+    max-width: 1320px;
+    margin: 0 auto; padding: 32px 50px 50px;
     display: flex; justify-content: space-between;
 }
-main .product .product_photo {width: 800px;}
+main .product .product_photo {
+    width: 800px; position: relative;
+}
 main .product .product_photo .first_photo {
-    display: flex; margin-bottom: 10px;
+    display: flex; justify-content: space-between;
+    margin-bottom: 10px;
 }
 main .product .product_photo .first_photo img {
-    margin-right: 10px; width: 30%;
+    width: calc(100% / 3 - 10px);
+}
+main .product .product_photo .first_photo img:last-child {
+    margin: 0;
 }
 main .product .product_photo .main_photo { display: flex;margin-bottom: 10px;}
-main .product .product_photo .main_photo img {width: 90%;}
+main .product .product_photo .main_photo img {width: 100%;}
 main .product .product_photo .last_photo {
-    display: flex; margin-bottom: 10px;
+    display: flex; justify-content: space-between;
+    margin-bottom: 10px;
 }
 main .product .product_photo .last_photo img {
-    margin-right: 10px; width: 45%;
+    width: calc(100% / 2 - 10px);
+}
+main .product .product_photo .last_photo img:last-child {
+    margin: 0;
 }
 main .product .product_photo .more_photo {}
-main .product .product_photo .more_photo img {width: 90%;}
-main .product .product_photo a {
+main .product .product_photo .more_photo img {width: 100%;}
+main .product .product_photo > a {
     font-family: 'Roboto'; font-weight: 700;
     color: #fff; background: #000; font-size: 0.875rem;
     border-radius: 20px; padding: 12.5px 30px;
+    position: absolute; left: 50%; bottom: -5px;
+    transform: translateX(-50%);
 }
 main .product .product_photo a:hover {background: #444;}
 main .product .product_photo img {width: 400px;}
@@ -70,9 +83,16 @@ main .product .product_info .new_sale p {
     color: #444;
     font-family: 'Roboto'; font-size: 0.875rem;
 }
-main .product .product_info .color_select {}
-main .product .product_info .color_select a {width: 20%;}
-main .product .product_info .color_select a img {width: 20%;}
+main .product .product_info .color_select {
+    width: 375px; display: flex;
+}
+main .product .product_info .color_select a {
+    width: calc(100% / 3); border: 2px solid #fff;
+}
+main .product .product_info .color_select a:hover {
+    border: 2px solid #000;
+}
+main .product .product_info .color_select a img {width: 100%;}
 main .product .product_info .size {
     margin-bottom: 21px; padding-top: 24px;
 }
@@ -160,73 +180,115 @@ main .product .product_info #shareBtn {
     font-family: 'Roboto'; font-weight: 700;
 }
 main .product .product_info #shareBtn:hover {color: #444;}
-main .might {width: 1330px; margin: 0 auto; padding-top: 50px;}
-main .might .might_title {
-    margin-bottom: 24px;
-    display: flex; justify-content: space-between;
-}
-main .might .might_title h2 {font-size: 1.5rem; font-weight: 700;}
-main .might .might_title .move {display: flex;}
-main .might .might_title .move a {
-    display: flex; justify-content: center; align-items: center;
-    width: 32px; height: 32px; margin-right: 10px;
-    background-color: #e7e7e7; border-radius: 50%;
-}
-main .might .might_title .move a:last-child {margin: 0; background-color: #000;}
-main .might .might_title .move a img {width: 13px;}
-main .might .might_product {
-    overflow-y: hidden; overflow-x: auto;
-    display: flex; margin-bottom: 70px;
-}
-main .might .might_product li {
-    width: 25%; margin-right: 10px;
+/* might */
+main .recommend {
+    max-width: 1320px; margin: 40px auto 100px;
     position: relative;
 }
-main .might .might_product li .photo {}
-main .might .might_product li .photo img {width: 100%;}
-main .might .might_product li .icon {}
-main .might .might_product li .icon a {
+main .recommend .title {
+    margin-bottom: 24px;
+}
+main .recommend .title h2 {
+    font-size: 1.5rem; font-weight: 700;
+}
+main .recommend .title h2 a:hover {
+    color: #333;
+}
+main .recommend .recommend_swiper {
+    padding-bottom: 60px; overflow-x: auto;
+}
+main .recommend .recommend_swiper .recommend_wrapper {}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide {
+    cursor: pointer;
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image {
+    position: relative; width: 100%;
+    overflow: hidden;
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image > img {
+    width: 100%;
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon {
+    padding: 0 10px;
+    position: absolute; top: 10px; width: 100%;
+    display: flex; justify-content: space-between;
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a {
     width: 32px; height: 32px;
-    background-color: #fff; border-radius: 50%;
     display: flex; justify-content: center; align-items: center;
+    border-radius: 50%; background: #fff;
 }
-main .might .might_product li .icon a:first-child {
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a:nth-of-type(1) {
     display: none;
-    position: absolute; top: 10px; left: 10px;
 }
-main .might .might_product li .icon a:last-child {
-    position: absolute; top: 10px; right: 10px;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a:nth-of-type(2) {
+    position: absolute; right: 10px;
 }
-main .might .might_product li .icon a img {width: 16px;}
-main .might .might_product li .size {
-    width: 100%; height: 30%;
-    display: flex; flex-flow: row wrap; align-items: center;
-    position: absolute; bottom: 95px;
-    background-color: #f5f5f5; padding: 10px 10px;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a img {
+    width: 16px;
 }
-main .might .might_product li .size a {
-    font-family: 'Roboto';
-    display: inline-block; text-align: center;
-    width: 20%; padding: 10px 10px; margin: 5px;
-    background-color: #fff; font-size: 0.875rem;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .size {
+    width: 100%; background: #f5f5f5;
+    height: 150px; padding: 20px; transition: 0.2s;
+    position: absolute; bottom: -150px;
+    display: flex; flex-flow: row wrap;
 }
-main .might .might_product li .size a:hover {background-color: #000; color: #fff;}
-main .might .might_product li .info {padding: 8px;}
-main .might .might_product li .info .name_review {
-    margin-bottom: 2px;
-    display: flex; justify-content: space-between; align-items: center;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .size a {
+    font-family: 'Roboto'; background: #fff;
+    width: 60px; height: 40px; font-size: 0.875rem;
+    display: flex; align-items: center;
+    justify-content: center; margin: 5px;
 }
-main .might .might_product li .info .name_review h3 {
-    font-family: 'Roboto';
-    font-size: 0.875rem; color: #1b1b1b;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .size a:hover {
+    background: #000; color: #fff;
 }
-main .might .might_product li .info .name_review span {
-    display: flex; align-items: center; font-family: 'Roboto';
-    font-size: 0.75rem; color: #6e6e6e; font-weight: 700;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_info {
+    padding: 8px;
 }
-main .might .might_product li .info .name_review span img {width: 15px;}
-main .might .might_product li .info p {
-    font-family: 'Roboto'; margin-bottom: 2px;
-    font-size: 0.875rem; color: #6e6e6e;
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_info h3 {
+    font-family: 'Roboto'; font-size: 0.875rem;
+    margin-top: 2px; display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-main .might .might_product li .info .price {}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_info h3 span {
+    font-size: 0.75rem; font-family: 'Roboto';
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_info h3 span img {
+    width: 15px;
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_info .color {
+    font-family: 'Roboto'; font-size: 0.875rem;
+    margin-top: 2px; color: #6e6e6e;
+}
+main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_info .price {
+    font-family: 'Roboto'; font-size: 0.875rem;
+    margin-top: 2px;
+}
+main .recommend .recommend_swiper .move {
+    position: absolute; top: 20px; right: 70px;
+}
+main .recommend .recommend_swiper .product_prev {
+    left: -90px;
+    background: #e7e7e7;
+    width: 32px; height: 32px; border-radius: 50%;
+}
+main .recommend .recommend_swiper .product_prev img {
+    width: 13px; display: flex;
+    justify-content: center; align-items: center;
+}
+main .recommend .recommend_swiper .product_prev:after {
+    display: none;
+}
+main .recommend .recommend_swiper .product_next {
+    background: #000;
+    width: 32px; height: 32px; border-radius: 50%;
+}
+main .recommend .recommend_swiper .product_next img {
+    width: 13px;
+    display: flex;
+    justify-content: center; align-items: center;
+}
+main .recommend .recommend_swiper .product_next:after {
+    display: none;
+}

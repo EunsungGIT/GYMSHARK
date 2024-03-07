@@ -24,7 +24,72 @@
 </head>
 <body>
     <!-- 채팅 -->
-    <a href="#" id="chat"><img src="./images/icon/icon_chat.png" alt="chat"></a>
+    <div class="chat">
+        <button type="button" id="chatBtn"><img src="./images/icon/icon_chat.png" alt="chat"></button>
+        <div class="chat_box">
+            <div class="home_box">
+                <div class="top">
+                    <div class="logo">
+                        <img src="./images/chat/gymshark.png" alt="gymshark">
+                    </div>
+                    <h2>Hi there 👋</h2>
+                    <p>How can we help?</p>
+                </div>
+                <div class="bottom">
+                    <div class="help">
+                        <button type="button" id="helpSearchBtn">
+                            Search for help
+                            <img src="./images/icon/icon_search.png" alt="search">
+                        </button>
+                        <div class="help_menu">
+                            <span>Discounts</span>
+                            <img src="./images/icon/icon_right.png" alt="right">
+                        </div>
+                        <div class="help_menu">
+                            <span>How do i return my items?</span>
+                            <img src="./images/icon/icon_right.png" alt="right">
+                        </div>
+                        <div class="help_menu">
+                            <span>I still haven't received my refund</span>
+                            <img src="./images/icon/icon_right.png" alt="right">
+                        </div>
+                        <div class="help_menu">
+                            <span>My order is wrong</span>
+                            <img src="./images/icon/icon_right.png" alt="right">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="left">
+                            <span>Send us message</span>
+                            <span>We typically reply in a few hours</span>
+                        </div>
+                        <div class="message_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message_box">
+                <h2>Messages</h2>
+                <div class="chat_message"></div>
+                <div class="user_message">
+                    <input type="text" name="user_text" class="user_text" placeholder="Please enter a message.">
+                    <button type="button" id="sendBtn">Send</button>
+                </div>
+            </div>
+            <div class="menu">
+                <button type="button" id="homeBtn">
+                    <img src="./images/chat/home_active.png" alt="home">
+                </button>
+                <button type="button" id="messageBtn">
+                    <img src="./images/chat/message.png" alt="message">
+                </button>
+                <button type="button" id="helpBtn">
+                    <img src="./images/chat/help.png" alt="help">
+                </button>
+            </div>
+        </div>
+    </div>
     <!-- popup 태블릿 및 모바일 세로 정렬 -->
     <div class="popup">
         <form action="#" method="get" id="lang_frm">
@@ -139,11 +204,49 @@
             </nav>
         </div>
     </div>
+    <!-- 장바구니 담김 페이지 -->
+    <div class="cart_bg_active">
+        <div class="cart_page">
+            <button type="button" id="closeBtn"><img src="./images/icon/icon_close.png" alt="close"></button>
+            <div class="cart_status">
+                <h2>YOUR BAG</h2>
+                <div class="status_bar"></div>
+                <p>⏳ You're US$40 away from Free Standard Shipping</p>
+                <div class="cart_product">
+                    <div class="photo">
+                        <img src="./images/product/color_01.jpg" alt="product">
+                    </div>
+                    <div class="product_info">
+                        <p class="new">20% OFF</p>
+                        <p class="name">Strappy All In One</p>
+                        <p class="fit">Body Fit</p>
+                        <p class="color">Black | S</p>
+                        <p class="price">US$48</p>
+                        <div class="icon_number">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="delete"></a>
+                            </div>
+                            <div class="number">
+                                <button type="button" id="minusBtn">-</button>
+                                <input type="number" id="numInput" value="1">
+                                <button type="button" id="plusBtn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_button">
+                <button type="button" id="buyBtn"><img src="./images/icon/icon_cart.png" alt="cart">CHECKOUT SECURELY</button>
+                <button type="button" id="viewBtn">VIEW FULL BAG</button>
+            </div>
+        </div>
+    </div>
     <!-- header -->
     <header>
         <!-- top 태블릿 및 모바일에서 메뉴 안으로 들어감 -->
         <div class="top">
-            <a href="#"><img src="./images/icon/icon_mypage.png" class="account" alt="account">Account</a>
+            <a href="./login.html"><img src="./images/icon/icon_mypage.png" class="account" alt="account">Account</a>
             <a href="#">Accessibility Statement</a>
             <a href="#">Help</a>
             <a href="#">Email Sign Up</a>
@@ -408,6 +511,7 @@
                             <form action="#" method="get" id="search_frm">
                                 <fieldset>
                                     <legend class="skip">검색 양식</legend>
+                                    <img src="./images/icon/icon_search.png" alt="search">
                                     <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
                                 </fieldset>
                             </form>
@@ -434,6 +538,7 @@
                 <!-- 장바구니 페이지 -->
                 <div class="cart_bg">
                     <div class="cart_page">
+                        <button type="button" id="closeBtn"><img src="./images/icon/icon_close.png" alt="close"></button>
                         <div class="cart_photo">
                             <img src="./images/cart.svg" alt="cart">
                         </div>
@@ -499,7 +604,7 @@
                     </li>
                     <li class="swiper-slide product_slide">
                         <div class="product_image">
-                            <img src="./images/product_1_01.jpg" alt="product">
+                            <img src="./images/product_1_03.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
@@ -525,7 +630,7 @@
                     </li>
                     <li class="swiper-slide product_slide">
                         <div class="product_image">
-                            <img src="./images/product_1_01.jpg" alt="product">
+                            <img src="./images/product_1_05.jpg" alt="product">
                             <div class="icon">
                                 <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
                                 <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>

@@ -30,33 +30,35 @@ product.forEach((t,i)=>{
         product_img[i].src = './images/product_1_01.jpg'
     })
 })
-product_icon[0].addEventListener('click',()=>{
-    cart_bg.style.display = 'block'
+product_icon[0].addEventListener('click',(e)=>{
+    e.preventDefault()
+    cart_bg_active.style.display = 'block'
     body_html.style.overflow = 'hidden'
     setTimeout(()=>{
-        cart_bg.style.opacity = '1'
+        cart_bg_active.style.opacity = '1'
     }, 10);
     setTimeout(()=>{
-        cart_page.style.right = '0'
+        cart_page_active.style.right = '0'
     }, 100);
 })
 for(let i of size_a){
-    i.addEventListener('click',()=>{
-        cart_bg.style.display = 'block'
+    i.addEventListener('click',(e)=>{
+        e.preventDefault()
+        cart_bg_active.style.display = 'block'
         body_html.style.overflow = 'hidden'
         setTimeout(()=>{
-            cart_bg.style.opacity = '1'
+            cart_bg_active.style.opacity = '1'
         }, 10);
         setTimeout(()=>{
-            cart_page.style.right = '0'
+            cart_page_active.style.right = '0'
         }, 100);
     })
 }
-cart_bg.addEventListener('click',()=>{
-    cart_bg.style.opacity = '0'
+cart_bg_active.addEventListener('click',()=>{
+    cart_bg_active.style.opacity = '0'
     body_html.style.overflow = 'auto'
-    cart_page.style.right = '-500px'
+    cart_page_active.style.right = '-500px'
     setTimeout(()=>{
-        cart_bg.style.display = 'none'
+        cart_bg_active.style.display = 'none'
     }, 500);
 })

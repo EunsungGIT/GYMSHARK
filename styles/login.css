@@ -51,6 +51,9 @@ main .login_bg .login .select_bg a {
     font-size: 0.75rem; font-weight: 700;
     display: flex; justify-content: center; align-items: center;
 }
+main .login_bg .login .select_bg a:nth-of-type(2) {
+    color: #6e6e6e;
+}
 main .login_bg .login .select_bg a:hover {
     color: #000;
 }

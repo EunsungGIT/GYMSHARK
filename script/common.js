@@ -1,3 +1,86 @@
+/* chat */
+const chat = document.querySelector ('.chat')
+const chat_icon = document.querySelector('#chatBtn')
+const chat_icon_img = document.querySelector('#chat_Btn img')
+const chat_box = document.querySelector('.chat_box')
+const chat_message = document.querySelector('.chat_message')
+const user_text = document.querySelector('.user_text')
+const sendBtn = document.querySelector('#sendBtn')
+const apiEndpoint = 'https://api.openai.com/v1/chat/completions'
+const apiKey = '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';
+
+let chatOpen = true
+
+chat_box.style.display = 'none'
+chat_icon.addEventListener('click', ()=>{
+    chatOpen = !chatOpen
+    if(chatOpen === false){
+        chat_box.style.display = 'block'
+        setTimeout(()=>{
+            chat_box.style.transform = 'scale(1)'
+        }, 10);
+    }else {
+        chat_box.style.transform = 'scale(0)'
+        setTimeout(()=>{
+            chat_box.style.display = 'none'
+        }, 500);
+    }
+})
+
+async function fetchAIResponse(prompt) {
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+            model: "gpt-3.5-turbo",
+            messages: [{
+                role: "user",
+                content: prompt
+            }, ],
+            temperature: 0.3,
+            max_tokens: 400,
+            top_p: 0.3,
+            frequency_penalty: 0.5,
+            presence_penalty: 0.5,
+            stop: ["Human"],
+        }),
+    };
+    try {
+        const response = await fetch(apiEndpoint, requestOptions);
+        const data = await response.json();
+        const aiResponse = data.choices[0].message.content;
+        return aiResponse;
+    } catch (error) {
+        console.error('OpenAI API 호출 중 오류 발생:', error);
+        return 'OpenAI API 호출 중 오류 발생';
+    }
+}
+
+sendBtn.addEventListener('click', async()=>{
+    let message = user_text.value
+    addMessage  ('YOU',message)
+    user_text.value = ''
+    //ai
+    let aiMessage = await fetchAIResponse(message)
+    addMessage('GYMSHARK', aiMessage);
+})
+
+user_text.addEventListener('keydown',(e)=>{
+    if(e.keyCode === 13){
+        sendBtn.click();
+    }
+})
+
+function addMessage(target, contents){
+    const messageElement = document.createElement('div')
+    messageElement.classList.add('message')
+    messageElement.innerHTML = `${target} : ${contents}`
+    chat_message.appendChild(messageElement)
+}
+
 /* popup */
 const popup_close = document.querySelector('.popup .close')
 const popup = document.querySelector('.popup')
@@ -9,11 +92,13 @@ const lang_right = document.querySelector('.lang_right')
 const lang_right_a = document.querySelector('.lang_right > a')
 const header = document.querySelector('header')
 
-popup_close.addEventListener('click',()=>{
+popup_close.addEventListener('click',(e)=>{
+    e.preventDefault()
     popup.style.display = 'none'
     header.style.top = '0'
 })
-lang_left.addEventListener('click',()=>{
+lang_left.addEventListener('click',(e)=>{
+    e.preventDefault()
     lang_right_a.innerHTML = 'English'
     lang_right.style.width = '150px'
     lang_left.style.width = '150px'
@@ -44,13 +129,15 @@ const menu_m = document.querySelector('.menu_m')
 const menu_m_close = document.querySelector('.top_m > a')
 
 menu_m.style.display = 'none'
-left_icon[0].addEventListener('click',()=>{
+left_icon[0].addEventListener('click',(e)=>{
+    e.preventDefault()
     menu_m.style.display = 'block'
     setTimeout(()=>{
         menu_m.style.left = '0'
     }, 10);
 })
-menu_m_close.addEventListener('click',()=>{
+menu_m_close.addEventListener('click',(e)=>{
+    e.preventDefault()
     menu_m.style.left = '-100%'
     setTimeout(()=>{
         menu_m.style.display = 'none'
@@ -114,9 +201,11 @@ search_close.addEventListener('click',()=>{
 const cart_icon = document.querySelector('.bottom .cart')
 const cart_bg = document.querySelector('.bottom .cart_bg')
 const cart_page = document.querySelector('.bottom .cart_bg .cart_page')
+const cart_close = document.querySelector('.cart_bg #closeBtn')
 
 cart_bg.style.display = 'none'
-cart_icon.addEventListener('click',()=>{
+cart_icon.addEventListener('click',(e)=>{
+    e.preventDefault()
     cart_bg.style.display = 'block'
     body_html.style.overflow = 'hidden'
     setTimeout(()=>{
@@ -132,6 +221,37 @@ cart_bg.addEventListener('click',()=>{
     cart_page.style.right = '-500px'
     setTimeout(()=>{
         cart_bg.style.display = 'none'
+    }, 500);
+})
+cart_close.addEventListener('click',()=>{
+    cart_bg.style.opacity = '0'
+    body_html.style.overflow = 'auto'
+    cart_page.style.right = '-500px'
+    setTimeout(()=>{
+        cart_bg.style.display = 'none'
+    }, 500);
+})
+
+/* cart active page */
+const cart_bg_active = document.querySelector('.cart_bg_active')
+const cart_page_active = document.querySelector('.cart_bg_active .cart_page')
+const cart_close_active = document.querySelector('.cart_bg_active #closeBtn')
+
+cart_bg_active.style.display = 'none'
+cart_bg_active.addEventListener('click',()=>{
+    cart_bg_active.style.opacity = '0'
+    body_html.style.overflow = 'auto'
+    cart_page_active.style.right = '-500px'
+    setTimeout(()=>{
+        cart_bg_active.style.display = 'none'
+    }, 500);
+})
+cart_close_active.addEventListener('click',()=>{
+    cart_bg_active.style.opacity = '0'
+    body_html.style.overflow = 'auto'
+    cart_page_active.style.right = '-500px'
+    setTimeout(()=>{
+        cart_bg_active.style.display = 'none'
     }, 500);
 })
 
