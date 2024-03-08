@@ -27,7 +27,7 @@
     <div class="chat">
         <button type="button" id="chatBtn"><img src="./images/icon/icon_chat.png" alt="chat"></button>
         <div class="chat_box">
-            <div class="home_box">
+            <div class="box home_box">
                 <div class="top">
                     <div class="logo">
                         <img src="./images/chat/gymshark.png" alt="gymshark">
@@ -43,19 +43,19 @@
                         </button>
                         <div class="help_menu">
                             <span>Discounts</span>
-                            <img src="./images/icon/icon_right.png" alt="right">
+                            <img src="./images/chat/arrow.png" alt="right">
                         </div>
                         <div class="help_menu">
                             <span>How do i return my items?</span>
-                            <img src="./images/icon/icon_right.png" alt="right">
+                            <img src="./images/chat/arrow.png" alt="right">
                         </div>
                         <div class="help_menu">
                             <span>I still haven't received my refund</span>
-                            <img src="./images/icon/icon_right.png" alt="right">
+                            <img src="./images/chat/arrow.png" alt="right">
                         </div>
                         <div class="help_menu">
                             <span>My order is wrong</span>
-                            <img src="./images/icon/icon_right.png" alt="right">
+                            <img src="./images/chat/arrow.png" alt="right">
                         </div>
                     </div>
                     <div class="message">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="message_box">
+            <div class="box message_box">
                 <h2>Messages</h2>
                 <div class="chat_message"></div>
                 <div class="user_message">
@@ -77,15 +77,81 @@
                     <button type="button" id="sendBtn">Send</button>
                 </div>
             </div>
+            <div class="box help_box">
+                <div class="top">
+                    <h2>help</h2>
+                    <input type="search" placeholder="Search for help">
+                </div>
+                <div class="bottom">
+                    <h3>6 collections</h3>
+                    <div class="collections">
+                        <div class="left">
+                            <span>General Information</span>
+                            <span>6 articles</span>
+                        </div>
+                        <div class="collections_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                    <div class="collections">
+                        <div class="left">
+                            <span>General Information</span>
+                            <span>6 articles</span>
+                        </div>
+                        <div class="collections_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                    <div class="collections">
+                        <div class="left">
+                            <span>General Information</span>
+                            <span>6 articles</span>
+                        </div>
+                        <div class="collections_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                    <div class="collections">
+                        <div class="left">
+                            <span>General Information</span>
+                            <span>6 articles</span>
+                        </div>
+                        <div class="collections_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                    <div class="collections">
+                        <div class="left">
+                            <span>General Information</span>
+                            <span>6 articles</span>
+                        </div>
+                        <div class="collections_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                    <div class="collections">
+                        <div class="left">
+                            <span>General Information</span>
+                            <span>6 articles</span>
+                        </div>
+                        <div class="collections_image">
+                            <img src="./images/chat/send.png" alt="send">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="menu">
                 <button type="button" id="homeBtn">
                     <img src="./images/chat/home_active.png" alt="home">
+                    <span>Home</span>
                 </button>
                 <button type="button" id="messageBtn">
                     <img src="./images/chat/message.png" alt="message">
+                    <span>Message</span>
                 </button>
                 <button type="button" id="helpBtn">
                     <img src="./images/chat/help.png" alt="help">
+                    <span>Help</span>
                 </button>
             </div>
         </div>
@@ -137,7 +203,7 @@
                 <div class="left_m">
                     <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
                     <div class="lang_m">
-                        <a href="#"><img src="/images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
+                        <a href="#"><img src="./images/icon_row.svg" alt="row"> ROW <img src="./images/icon/icon_more.png" alt="more"></a>
                         <ul class="lang">
                             <li><a href="#"><img src="./images/lang_01.svg" alt="Australia and New Zealand">Australia and New Zealand</a></li>
                             <li><a href="#"><img src="./images/lang_02.svg" alt="Canada">Canada</a></li>
@@ -202,6 +268,29 @@
                     <a href="#">Blog</a>
                 </div>
             </nav>
+        </div>
+    </div>
+    <!-- 태블릿 및 모바일 검색 페이지 -->
+    <div class="search_m">
+        <div class="search">
+            <a href="#"><img src="./images/icon/icon_left.png" alt="close"></a>
+            <form action="#" method="get" id="search_m_frm">
+                <fieldset>
+                    <legend class="skip">검색 양식</legend>
+                    <img src="./images/icon/icon_search.png" alt="search">
+                    <input type="search" placeholder="Search for a Product" name="user_search" class="user_search">
+                </fieldset>
+            </form>
+        </div>
+        <div class="trending_searches">
+            <h3>TRENDING SEARCHES</h3>
+            <div class="algorithm">
+                <img src="images/icon/icon_trend.png" alt="trend">
+                <a href="#">HOODIE</a>
+                <a href="#">SHORTS</a>
+                <a href="#">LEGGINGS</a>
+                <a href="#">T-SHIRT</a>
+            </div>
         </div>
     </div>
     <!-- 장바구니 담김 페이지 -->

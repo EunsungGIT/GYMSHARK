@@ -1,7 +1,7 @@
 /* chat */
 const chat = document.querySelector ('.chat')
 const chat_icon = document.querySelector('#chatBtn')
-const chat_icon_img = document.querySelector('#chat_Btn img')
+const chat_icon_img = document.querySelector('#chatBtn img')
 const chat_box = document.querySelector('.chat_box')
 const chat_message = document.querySelector('.chat_message')
 const user_text = document.querySelector('.user_text')
@@ -15,11 +15,15 @@ chat_box.style.display = 'none'
 chat_icon.addEventListener('click', ()=>{
     chatOpen = !chatOpen
     if(chatOpen === false){
+        chat_icon_img.src = './images/chat/chat_open.png'
+        chat_icon_img.style.transform = 'rotate(360deg)';
         chat_box.style.display = 'block'
         setTimeout(()=>{
             chat_box.style.transform = 'scale(1)'
         }, 10);
     }else {
+        chat_icon_img.src = './images/icon/icon_chat.png'
+        chat_icon_img.style.transform = 'rotate(0deg)';
         chat_box.style.transform = 'scale(0)'
         setTimeout(()=>{
             chat_box.style.display = 'none'
@@ -81,6 +85,40 @@ function addMessage(target, contents){
     chat_message.appendChild(messageElement)
 }
 
+// chat_box
+const menuBtn = document.querySelectorAll('.menu button')
+const box = document.querySelectorAll('.chat_box .box')
+const menuBtn_img = document.querySelectorAll('.menu button img')
+
+box[0].style.display = 'block'
+box[1].style.display = 'none'
+box[2].style.display = 'none'
+
+menuBtn[0].addEventListener('click',()=>{
+    box[0].style.display = 'block'
+    box[1].style.display = 'none'
+    box[2].style.display = 'none'
+    menuBtn_img[0].src = './images/chat/home_active.png'
+    menuBtn_img[1].src = './images/chat/message.png'
+    menuBtn_img[2].src = './images/chat/help.png'
+})
+menuBtn[1].addEventListener('click',()=>{
+    box[0].style.display = 'none'
+    box[1].style.display = 'block'
+    box[2].style.display = 'none'
+    menuBtn_img[0].src = './images/chat/home.png'
+    menuBtn_img[1].src = './images/chat/message_active.png'
+    menuBtn_img[2].src = './images/chat/help.png'
+})
+menuBtn[2].addEventListener('click',()=>{
+    box[0].style.display = 'none'
+    box[1].style.display = 'none'
+    box[2].style.display = 'block'
+    menuBtn_img[0].src = './images/chat/home.png'
+    menuBtn_img[1].src = './images/chat/message.png'
+    menuBtn_img[2].src = './images/chat/help_active.png'
+})
+
 /* popup */
 const popup_close = document.querySelector('.popup .close')
 const popup = document.querySelector('.popup')
@@ -108,6 +146,7 @@ lang_left.addEventListener('click',(e)=>{
 
 /* header top lang */
 const top_a = document.querySelectorAll('.top > a')
+const lang_more = document.querySelector('.top > a .more')
 const top_lang = document.querySelector('.top .lang')
 const lang_a = document.querySelectorAll('.top_lang li')
 
@@ -117,8 +156,10 @@ top_a[5].addEventListener('click',()=>{
     select = !select
     console.log(select)
     if(select === false){
+        lang_more.style.transform = 'rotate(180deg)'
         top_lang.style.display = 'block'
     }else{
+        lang_more.style.transform = 'rotate(0)'
         top_lang.style.display = 'none'
     }
 })
@@ -144,6 +185,26 @@ menu_m_close.addEventListener('click',(e)=>{
     }, 500);
 })
 
+/* header search_mobile */
+const search_m = document.querySelector('.search_m')
+const search_m_close = document.querySelector('.search_m .search > a')
+
+search_m.style.display = 'none'
+left_icon[1].addEventListener('click',(e)=>{
+    e.preventDefault()
+    search_m.style.display = 'block'
+    setTimeout(()=>{
+        search_m.style.left = '0'
+    }, 10);
+})
+search_m_close.addEventListener('click',(e)=>{
+    e.preventDefault()
+    search_m.style.left = '-100%'
+    setTimeout(()=>{
+        search_m.style.display = 'none'
+    }, 500);
+})
+
 /* header nav */
 const nav_a = document.querySelectorAll('.bottom nav .gnb li')
 const nav_category = document.querySelectorAll('.lnb_category_wrap .category_bg')
@@ -156,7 +217,19 @@ nav_a.forEach((t,i)=>{
             nav_category[i].style.opacity = '1'
         }, 10);
     })
+    nav_category[i].addEventListener('mouseover',()=>{
+        nav_category[i].style.display = 'block'
+        setTimeout(()=>{
+            nav_category[i].style.opacity = '1'
+        }, 10);
+    })
     t.addEventListener('mouseleave',()=>{
+        nav_category[i].style.opacity = '0'
+        setTimeout(()=>{
+            nav_category[i].style.display = 'none'
+        }, 500);
+    })
+    nav_category[i].addEventListener('mouseleave',()=>{
         nav_category[i].style.opacity = '0'
         setTimeout(()=>{
             nav_category[i].style.display = 'none'

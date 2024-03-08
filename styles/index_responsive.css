@@ -38,7 +38,9 @@
         position: absolute; top: 10px;
     }
     header .top {display: none; position: relative;}
-    header .bottom {padding: 0 24px;}
+    header .bottom {
+        padding: 0 24px;
+    }
     header .bottom h1 {
         position: absolute; left: 50%;
         transform: translateX(-50%);
@@ -49,7 +51,8 @@
     header .bottom .right_icon .wishlist {display: none;}
     /* 장바구니 페이지 */
     header .bottom .right_icon .cart_bg {display: none;}
-
+    /* 이벤트 */
+    header .event {}
     /* main */
     main .visual .text_button h2 {font-size: 1.563rem;}
     main .recommend .title {
