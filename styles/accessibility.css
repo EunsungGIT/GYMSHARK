@@ -1,0 +1,27 @@
+main {
+    padding: 60px 16px;
+}
+main h2 {
+    font-size: 2rem; font-weight: 700;
+    margin: 0 auto 16px; max-width: 800px;
+}
+main p {
+    font-family: 'Roboto'; margin: 0 auto 16px;
+    color: #444; max-width: 800px;
+}
+main p a {
+    text-decoration: underline;
+}
+main p:last-child {
+    font-weight: 700;
+}
+main #topBtn {
+    border: none; background: none;
+    font-family: 'Roboto'; font-weight: 700;
+    margin-top: 60px; font-size: 0.875rem;
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+}
+main #topBtn img {
+    width: 14px; margin-right: 8px;
+}

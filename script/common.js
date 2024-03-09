@@ -129,6 +129,7 @@ const lang_or = document.querySelector('.lang_sel > span')
 const lang_right = document.querySelector('.lang_right')
 const lang_right_a = document.querySelector('.lang_right > a')
 const header = document.querySelector('header')
+const lang_sub = document.querySelector('#lang_sub')
 
 popup_close.addEventListener('click',(e)=>{
     e.preventDefault()
@@ -142,6 +143,8 @@ lang_left.addEventListener('click',(e)=>{
     lang_left.style.width = '150px'
     lang_left_more.style.display = 'block'
     lang_or.style.display = 'none'
+    lang_sub.style.background = '#fff'
+    lang_sub.style.color = '#000'
 })
 
 /* header top lang */
@@ -334,7 +337,8 @@ const bottom_a = document.querySelector('footer .lang_sel > a')
 console.log(bottom_lang)
 
 bottom_lang.style.display = 'none'
-bottom_a.addEventListener('click',()=>{
+bottom_a.addEventListener('click',(e)=>{
+    e.preventDefault()
     select = !select
     if(select === false){
         bottom_lang.style.display = 'block'

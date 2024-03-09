@@ -292,7 +292,7 @@ main .app .app_link .app_right .app_info a {
 main .app .app_link .app_right .app_info a:hover {background-color: #f5f5f5;}
 /* main photo cat */
 main .photo_cat {
-    padding: 80px 60px 110px; height: 850px;
+    padding: 80px 60px 110px;
     display: flex; justify-content: center; align-items: center;
 }
 main .photo_cat .photo_button {
@@ -318,16 +318,20 @@ main .trending_collections li h3 {
     font-size: 1.125rem; font-weight: 700;
     margin-bottom: 16px;
 }
-main .trending_collections li ul {}
-main .trending_collections li ul li {}
+main .trending_collections li ul {
+    width: 100%;
+}
+main .trending_collections li ul li {
+    width: 100%;
+}
 main .trending_collections li ul li a {
+    width: 100%; display: inline-block;
     font-size: 0.875rem; color: #444;
     font-family: 'Roboto'; font-weight: 500;
 }
 /* main company info */
 main .company_info {
     padding: 40px 60px 80px;
-    border-bottom: 1px solid #ddd;
 }
 main .company_info p {
     font-size: 0.875rem; color: #444;

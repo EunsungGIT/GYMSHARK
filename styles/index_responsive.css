@@ -37,7 +37,7 @@
         width: 24px;
         position: absolute; top: 10px;
     }
-    header .top {display: none; position: relative;}
+    header .top {display: none;}
     header .bottom {
         padding: 0 24px;
     }
@@ -51,8 +51,6 @@
     header .bottom .right_icon .wishlist {display: none;}
     /* 장바구니 페이지 */
     header .bottom .right_icon .cart_bg {display: none;}
-    /* 이벤트 */
-    header .event {}
     /* main */
     main .visual .text_button h2 {font-size: 1.563rem;}
     main .recommend .title {
@@ -60,6 +58,9 @@
     }
     main .recommend .title h2 a {
         position: absolute; right: 30px;
+    }
+    main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a:nth-of-type(1) {
+        display: flex;
     }
     main .recommend .recommend_swiper .move {
         display: none;
@@ -169,17 +170,19 @@
     main .bnr_fifth a {
         width: 100%; text-align: center; margin-bottom: 10px;
     }
-    /* recommend */
-    main .recommend .recommend_swiper .recommend_wrapper .product_slide .product_image .icon a:nth-of-type(1) {
-        display: flex;
-    }
     main .app {padding: 40px 0;}
     main .app .app_link {flex-flow: column nowrap;}
     main .app .app_link .app_left,
     main .app .app_link .app_right {width: 100%;}
-    main .photo_cat {padding: 40px 0; flex-flow: column nowrap;}
+    main .photo_cat {padding: 40px 16px; flex-flow: column nowrap;}
     main .photo_cat .photo_button {width: 100%;}
-    main .trending_collections {flex-flow: column nowrap;}
+    main .trending_collections {
+        flex-flow: column nowrap;
+        padding: 40px 16px;
+    }
+    main .company_info {
+        padding: 40px 16px;
+    }
 
     /* footer */
     footer .top .card_contents {
