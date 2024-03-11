@@ -331,6 +331,14 @@ cart_close_active.addEventListener('click',()=>{
     }, 500);
 })
 
+/* event swiper */
+var swiper = new Swiper('.swiper_event', {
+    direction:'vertical',
+    autoplay:{delay:2000},
+    loop:true,
+    slidesPerView: 1,
+});
+
 /* footer bottom lang */
 const bottom_lang = document.querySelector('footer .lang')
 const bottom_a = document.querySelector('footer .lang_sel > a')

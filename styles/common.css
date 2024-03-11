@@ -917,10 +917,16 @@ header .bottom .right_icon .cart_bg .cart_info a {
 }
 header .bottom .right_icon .cart_bg .cart_info a:hover {background-color: #222;}
 /* 이벤트 */
-header .event {
-    height: 47px;
-    display: flex; justify-content: center; align-items: center;
-    background-color: #f5f5f5; font-size: 0.813rem; font-weight: 700;
+header .swiper_event {
+    height: 47px; overflow: hidden;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+header .swiper_event .event_wrap {}
+header .swiper_event .event_wrap a {
+    font-size: 0.813rem; font-weight: 700;
+    display: flex;
+    justify-content: center; align-items: center;
 }
 
 /* footer */
