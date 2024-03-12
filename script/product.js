@@ -50,6 +50,23 @@ var swiper = new Swiper('.recommend_swiper', {
     },
 });
 
+/* return */
+const returns_title = document.querySelector('.returns_title')
+const returns_info = document.querySelector('.returns_info')
+const returns_img = document.querySelector('.returns_title img')
+
+returns_info.style.display = 'none'
+returns_title.addEventListener('click',()=>{
+    hide = !hide
+    if(hide === false){
+        returns_img.style.transform = 'rotate(0deg)'
+        returns_info.style.display = 'none'
+    }else{
+        returns_info.style.display = 'block'
+        returns_img.style.transform = 'rotate(180deg)'
+    }
+})
+
 /* recommend */
 const product_icon = document.querySelectorAll('.product_image .icon a')
 const product = document.querySelectorAll('.product_slide')

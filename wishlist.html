@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | Gymshark</title>
+    <!-- swiper -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon/faviconV2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/wishlist.css">
+</head>
+<body>
+    <!-- main -->
+    <main>
+        <div class="title">
+            <h2>YOUR WISHLIST<span>2 Products</span></h2>
+        </div>
+        <section class="product_page">
+            <!-- 필터 -->
+            <div class="filter">
+                <a href="#">
+                    <h2>FILTER & SORT</h2>
+                    <span>Clear All</span>
+                </a>
+                <div class="sort_by">
+                    <a href="#">
+                        <h2>SORT BY</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_sort">
+                        <input type="radio" name="sort" id="sort_01">
+                        <label for="sort_01">Price: Low to High</label>
+                        <input type="radio" name="sort" id="sort_02">
+                        <label for="sort_02">Price: High to Low</label>
+                        <input type="radio" name="sort" id="sort_03">
+                        <label for="sort_03">Relevancy</label>
+                        <input type="radio" name="sort" id="sort_04">
+                        <label for="sort_04">Newest</label>
+                    </div>
+                </div>
+                <div class="product_type">
+                    <a href="#">
+                        <h2>PRODUCT TYPE</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <a href="#">Zip Hoodies</a>
+                </div>
+                <div class="size">
+                    <a href="#">
+                        <h2>SIZE</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_size">
+                        <a href="#">XS</a>
+                        <a href="#">S</a>
+                        <a href="#">M</a>
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                        <a href="#">XXL</a>
+                    </div>
+                </div>
+                <div class="features">
+                    <a href="#">
+                        <h2>FEATURES</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <a href="#">Pockets</a>
+                </div>
+                <div class="fit">
+                    <a href="#">
+                        <h2>FIT</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_fit">
+                        <a href="#">Oversized Fit</a>
+                        <a href="#">Regular Fit</a>
+                        <a href="#">Oversized</a>
+                    </div>
+                </div>
+                <div class="collection">
+                    <a href="#">
+                        <h2>COLLECTION</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_collection">
+                        <a href="#">Training</a>
+                        <a href="#">Rest Day Sweats</a>
+                        <a href="#">Gfx Strength Dept</a>
+                        <a href="#">Gymshark Power</a>
+                        <a href="#">Rest Day</a>
+                        <a href="#">Gfx Core</a>
+                        <a href="#">Gfx Freehand</a>
+                        <a href="#">Gfx Ironworks</a>
+                        <a href="#">Gfx Weightlifting Club</a>
+                        <a href="#">Crest</a>
+                    </div>
+                </div>
+                <div class="color">
+                    <a href="#">
+                        <h2>COLOR</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_color">
+                        <a href="#" class="black"></a>
+                    </div>
+                </div>
+                <div class="pattern">
+                    <a href="#">
+                        <h2>PATTERN</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <a href="#" class="black"></a>
+                </div>
+                <div class="discount">
+                    <a href="#">
+                        <h2>DISCOUNT</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_discount">
+                        <a href="#">10%</a>
+                        <a href="#">20%</a>
+                        <a href="#">50%</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <a href="#">
+                        <h2>PRICE</h2>
+                        <img src="./images/icon/icon_more.png" alt="more">
+                    </a>
+                    <div class="select_price">
+                        <a href="#">US$20 - US$30</a>
+                        <a href="#">US$20 - US$50</a>
+                        <a href="#">US$50 - US$75</a>
+                        <a href="#">US$75 - US$100</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 상품 -->
+            <div class="product_wrap">
+                <ul class="product">
+                    <li>
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                            <div class="size">
+                                <div class="size_select">
+                                    <div class="result_select">
+                                        <span>Size</span>
+                                        <img src="./images/icon/icon_more.png" alt="more">
+                                    </div>
+                                    <div class="select_box">
+                                        <a href="#">XXS</a>
+                                        <a href="#">XS</a>
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                        <a href="#">XL</a>
+                                        <a href="#">XXL</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="cart_icon">
+                                    <img src="./images/icon/icon_cart.png" alt="cart">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                            </div>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_image">
+                            <img src="./images/product_1_01.jpg" alt="product">
+                            <div class="icon">
+                                <a href="#"><img src="./images/icon/icon_cart.png" alt="cart"></a>
+                                <a href="#"><img src="./images/icon/icon_wishlist.png" alt="wishlist"></a>
+                            </div>
+                            <div class="size">
+                                <a href="#">XXS</a>
+                                <a href="#">XS</a>
+                                <a href="#">S</a>
+                                <a href="#">M</a>
+                                <a href="#">L</a>
+                                <a href="#">XL</a>
+                                <a href="#">XXL</a>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <h3>
+                                Lift Contour Seamless Leggings
+                                <span><img src="./images/icon/icon_star.png" alt="star">4.3</span>
+                            </h3>
+                            <p class="color">Slate Teal/White Marl</p>
+                            <p class="price">US$70</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

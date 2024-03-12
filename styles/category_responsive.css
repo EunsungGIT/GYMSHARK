@@ -1,0 +1,19 @@
+@media screen and (max-width:1440px){
+    main .product_page .product_wrap .product li {
+        width: calc(100% / 3 - 10px);
+    }
+}
+@media screen and (max-width:1024px){
+    main .product_page .filter {
+        display: none;
+    }
+    main .product_page .product_wrap {
+        width: 100%;
+    }
+    main .product_page .product_wrap .product li .product_image .icon a:nth-of-type(1) {
+        display: flex;
+    }
+    main .product_page .product_wrap .product li .product_image .size {
+        display: none;
+    }
+}

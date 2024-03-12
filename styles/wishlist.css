@@ -1,36 +1,15 @@
-/* 메인 */
+/* main */
 main {}
-/* 타이틀 */
-main .title {padding: 24px 60px;}
-main .title .cat {
-    font-size: 0.625rem; color: #444;
+main .title {
+    padding: 13px 60px;
+}
+main .title h2 {
     font-weight: 700;
 }
-main .title .title_quantity {display: flex; align-items: center;}
-main .title .title_quantity h2 {
-    margin-right: 8px;
-    font-size: 2.25rem; font-weight: 700;
-}
-main .title .title_quantity span {
-    color: #6e6e6e;
+main .title h2 span {
     font-size: 0.75rem; font-family: 'Roboto';
+    color: #6e6e6e; margin-left: 8px;
 }
-main .title .content {
-    margin-top: 20px;
-    font-family: 'Roboto'; color: #444; font-size: 0.875rem;
-}
-main .title .others {margin-top: 20px;}
-main .title .others a {
-    font-weight: 700; text-decoration: underline;
-    font-family: 'Roboto'; font-size: 0.875rem;
-}
-main .title .others a::after {
-    content: ''; display: inline-block;
-    background: #000; height: 14px; width: 1px;
-    margin: 0 3px;
-}
-main .title .others a:last-child::after {background: none;}
-main .title .others a:hover{color: #444;}
 /* 상품 페이지 */
 main .product_page {
     display: flex; justify-content: space-between;
@@ -226,28 +205,10 @@ main .product_page .product_wrap .product li .product_image .icon a {
     border-radius: 50%; background: #fff;
 }
 main .product_page .product_wrap .product li .product_image .icon a:nth-of-type(1) {
-    display: none;
-}
-main .product_page .product_wrap .product li .product_image .icon a:nth-of-type(2) {
     position: absolute; right: 10px;
 }
 main .product_page .product_wrap .product li .product_image .icon a img {
     width: 16px;
-}
-main .product_page .product_wrap .product li .product_image .size {
-    width: 100%; background: #f5f5f5;
-    height: 40%; padding: 20px; transition: 0.2s;
-    position: absolute; bottom: -150px;
-    display: flex; flex-flow: row wrap;
-}
-main .product_page .product_wrap .product li .product_image .size a {
-    font-family: 'Roboto'; background: #fff;
-    width: calc(100% / 5); height: 40px; font-size: 0.875rem;
-    display: flex; align-items: center;
-    justify-content: center; margin: 5px;
-}
-main .product_page .product_wrap .product li .product_image .size a:hover {
-    background: #000; color: #fff;
 }
 main .product_page .product_wrap .product li .product_info {
     padding: 8px;
@@ -273,18 +234,36 @@ main .product_page .product_wrap .product li .product_info .price {
     font-family: 'Roboto'; font-size: 0.875rem;
     margin-top: 2px; font-weight: 700;
 }
-/* 부제목 */
-main .sub_title {
-    margin: 10px 60px 56px; padding: 40px 0 32px;
-    border-top: 1px solid #bbbcbc;
+main .product_page .product_wrap .product li .product_info .size {
+    width: 100%; display: flex; justify-content: space-between;
+    position: relative; align-items: center;
 }
-main .sub_title h2 {margin-bottom: 16px; font-weight: 700;}
-main .sub_title p {
-    color: #444; margin-bottom: 16px;
+main .product_page .product_wrap .product li .product_info .size .size_select {
+    width: calc(100% - 54px); border-radius: 5px; height: 44px;
+    border: 1px solid #ccc; padding: 0 12px; display: flex;
+}
+main .product_page .product_wrap .product li .product_info .size .size_select .result_select {
+    display: flex; align-items: center; justify-content: space-between;
+}
+main .product_page .product_wrap .product li .product_info .size .size_select .result_select span {
     font-family: 'Roboto'; font-size: 0.875rem;
 }
-main .sub_title a {
-    text-decoration: underline; font-weight: 700;
-    font-family: 'Roboto'; font-size: 0.875rem;
+main .product_page .product_wrap .product li .product_info .size .size_select .result_select img {}
+main .product_page .product_wrap .product li .product_info .size .size_select .select_box {
+    width: 200px; height: 300px;
+    position: absolute; bottom: 50px; border-radius: 5px;
+    left: 0;
+    background: #fff; padding: 10px; overflow: scroll;
 }
-main .sub_title a:hover {color: #444;}
+main .product_page .product_wrap .product li .product_info .size .size_select .select_box a {
+    display: block; padding: 20px 10px; font-family: 'Roboto';
+    font-size: 0.875rem; border-radius: 5px;
+}
+main .product_page .product_wrap .product li .product_info .size .size_select .select_box a:hover {
+    background: #000; color: #fff;
+}
+main .product_page .product_wrap .product li .product_info .size .cart_icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #007db5; border: none;
+}
+main .product_page .product_wrap .product li .product_info .size .cart_icon img {}
