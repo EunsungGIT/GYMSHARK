@@ -1,0 +1,9 @@
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:768px){
+    main .product {
+        flex-flow: column nowrap;
+    }
+    main .product .product_info {width: 100%;}
+}

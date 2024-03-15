@@ -37,6 +37,9 @@
         width: 24px;
         position: absolute; top: 10px;
     }
+    header {
+        top: 151px;
+    }
     header .top {display: none;}
     header .bottom {
         padding: 0 24px;

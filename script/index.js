@@ -23,6 +23,9 @@ const size = document.querySelectorAll('.recommend_swiper .size')
 const size_a = document.querySelectorAll('.recommend_swiper .size a')
 
 product.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        window.location.href = './product.html'
+    })
     t.addEventListener('mouseover',()=>{
         size[i].style.bottom = '0'
         product_img[i].src = './images/product_1_02.jpg'
@@ -51,10 +54,7 @@ product_icon_wishlist.forEach((t,i)=>{
         product_icon_wishlist_img[i].src = './images/icon/icon_wishlist_active.png'
     })
 })
-/* product_icon[1].addEventListener('click',(e)=>{
-    e.preventDefault()
-    product_icon_img[1].src = './images/icon/icon_wishlist_active.png'
-}) */
+
 for(let i of size_a){
     i.addEventListener('click',(e)=>{
         e.preventDefault()

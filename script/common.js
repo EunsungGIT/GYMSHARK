@@ -135,6 +135,9 @@ popup_close.addEventListener('click',(e)=>{
     e.preventDefault()
     popup.style.display = 'none'
     header.style.top = '0'
+    menu_m.style.top = '0'
+    header_m.style.top = '0'
+    search_m.style.top = '0'
 })
 lang_left.addEventListener('click',(e)=>{
     e.preventDefault()
@@ -155,9 +158,9 @@ const lang_a = document.querySelectorAll('.top_lang li')
 
 let select = true
 top_lang.style.display = 'none'
-top_a[5].addEventListener('click',()=>{
+top_a[5].addEventListener('click',(e)=>{
+    e.preventDefault()
     select = !select
-    console.log(select)
     if(select === false){
         lang_more.style.transform = 'rotate(180deg)'
         top_lang.style.display = 'block'
@@ -171,6 +174,7 @@ top_a[5].addEventListener('click',()=>{
 const left_icon = document.querySelectorAll('.left_icon a')
 const menu_m = document.querySelector('.menu_m')
 const menu_m_close = document.querySelector('.top_m > a')
+const header_m = document.querySelector('.header_m')
 
 menu_m.style.display = 'none'
 left_icon[0].addEventListener('click',(e)=>{
@@ -186,6 +190,24 @@ menu_m_close.addEventListener('click',(e)=>{
     setTimeout(()=>{
         menu_m.style.display = 'none'
     }, 500);
+})
+
+// mobile menu lang
+const lang_m_a = document.querySelector('.lang_m > a')
+const lang_m_a_img = document.querySelector('.lang_m > a .more')
+const mobile_lang = document.querySelector('.lang_m .lang')
+
+mobile_lang.style.display = 'none'
+lang_m_a.addEventListener('click',(e)=>{
+    e.preventDefault()
+    select = !select
+    if(select === false){
+        lang_m_a_img.style.transform = 'rotate(180deg)'
+        mobile_lang.style.display = 'block'
+    }else{
+        lang_m_a_img.style.transform = 'rotate(0)'
+        mobile_lang.style.display = 'none'
+    }
 })
 
 /* header search_mobile */
@@ -211,6 +233,7 @@ search_m_close.addEventListener('click',(e)=>{
 /* header nav */
 const nav_a = document.querySelectorAll('.bottom nav .gnb li')
 const nav_category = document.querySelectorAll('.lnb_category_wrap .category_bg')
+const women_category = document.querySelectorAll('.women_category li')
 
 nav_a.forEach((t,i)=>{
     nav_category[i].style.display = 'none'
@@ -239,6 +262,12 @@ nav_a.forEach((t,i)=>{
         }, 500);
     })
 })
+
+for(let i of women_category){
+    i.addEventListener('click',()=>{
+        window.location.href = './category.html'
+    })
+}
 
 /* header search */
 const body_html = document.querySelector('body, html')
@@ -341,8 +370,8 @@ var swiper = new Swiper('.swiper_event', {
 
 /* footer bottom lang */
 const bottom_lang = document.querySelector('footer .lang')
+const bottom_a_img = document.querySelector('footer .lang_sel > a .more')
 const bottom_a = document.querySelector('footer .lang_sel > a')
-console.log(bottom_lang)
 
 bottom_lang.style.display = 'none'
 bottom_a.addEventListener('click',(e)=>{
@@ -350,7 +379,9 @@ bottom_a.addEventListener('click',(e)=>{
     select = !select
     if(select === false){
         bottom_lang.style.display = 'block'
+        bottom_a_img.style.transform = 'rotate(180deg)'
     }else{
         bottom_lang.style.display = 'none'
+        bottom_a_img.style.transform = 'rotate(0deg)'
     }
 })
