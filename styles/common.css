@@ -1044,3 +1044,15 @@ footer .bottom .bottom_info .lang_sel .lang li a {
     font-family: 'Roboto';
 }
 footer .bottom .bottom_info .lang_sel .lang li a img {width: 16px; margin-right: 10px;}
+
+/* 서브메뉴 JS */
+.hide {animation: hide 0.5s both;}
+.show {animation: show 0.5s both;}
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes hide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}

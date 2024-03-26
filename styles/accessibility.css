@@ -1,5 +1,6 @@
 main {
     padding: 60px 16px;
+    position: relative;
 }
 main h2 {
     font-size: 2rem; font-weight: 700;
@@ -20,7 +21,7 @@ main #topBtn {
     font-family: 'Roboto'; font-weight: 700;
     margin-top: 60px; font-size: 0.875rem;
     position: absolute; left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); bottom: 0;
 }
 main #topBtn img {
     width: 14px; margin-right: 8px;

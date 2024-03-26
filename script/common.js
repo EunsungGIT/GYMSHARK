@@ -231,36 +231,40 @@ search_m_close.addEventListener('click',(e)=>{
 })
 
 /* header nav */
+const nav = document.querySelector('nav')
 const nav_a = document.querySelectorAll('.bottom nav .gnb li')
-const nav_category = document.querySelectorAll('.lnb_category_wrap .category_bg')
+const nav_category = document.querySelectorAll('.category_bg')
+const category_box = document.querySelectorAll('.category_box')
 const women_category = document.querySelectorAll('.women_category li')
 
 nav_a.forEach((t,i)=>{
-    nav_category[i].style.display = 'none'
-    t.addEventListener('mouseover',()=>{
-        nav_category[i].style.display = 'block'
-        setTimeout(()=>{
-            nav_category[i].style.opacity = '1'
-        }, 10);
-    })
-    nav_category[i].addEventListener('mouseover',()=>{
-        nav_category[i].style.display = 'block'
-        setTimeout(()=>{
-            nav_category[i].style.opacity = '1'
-        }, 10);
-    })
-    t.addEventListener('mouseleave',()=>{
-        nav_category[i].style.opacity = '0'
-        setTimeout(()=>{
+    nav_category[i].style.opacity = '0';
+    nav_category[i].style.display = 'none';
+    t.addEventListener('mouseenter', () => {
+        nav_category[i].classList.add('show')
+        nav_category[i].classList.remove('hide')
+        setTimeout(() => {
+            nav_category[i].style.display = 'block'
+        }, 100);
+    });
+    category_box[i].addEventListener('mouseenter', () => {
+        nav_category[i].classList.add('show')
+        nav_category[i].classList.remove('hide')
+        setTimeout(() => {
+            nav_category[i].style.display = 'block'
+        }, 100);
+    });
+    t.addEventListener('mouseleave', () => {
+        nav_category[i].classList.add('hide')
+        nav_category[i].classList.remove('show')
+    });
+    category_box[i].addEventListener('mouseleave', () => {
+        nav_category[i].classList.add('hide')
+        nav_category[i].classList.remove('show')
+        setTimeout(() => {
             nav_category[i].style.display = 'none'
-        }, 500);
-    })
-    nav_category[i].addEventListener('mouseleave',()=>{
-        nav_category[i].style.opacity = '0'
-        setTimeout(()=>{
-            nav_category[i].style.display = 'none'
-        }, 500);
-    })
+        }, 300);
+    });
 })
 
 for(let i of women_category){
