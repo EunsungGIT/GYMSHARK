@@ -91,3 +91,4 @@
 2. nav js 문제 수정
 3. index product 부분 이미지 수정
 4. product 사이즈 및 아이콘 분리 (링크 오류)
+5. 페이지 별로 header 및 footer 연결
