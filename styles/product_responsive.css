@@ -4,6 +4,13 @@
 @media screen and (max-width:768px){
     main .product {
         flex-flow: column nowrap;
+        padding: 32px 10px 50px;
+    }
+    main .product .product_photo {
+        width: 100%;
+    }
+    main .product .product_photo > a {
+        display: none;
     }
     main .product .product_info {width: 100%;}
 }

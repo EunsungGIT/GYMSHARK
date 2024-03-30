@@ -28,7 +28,7 @@ const filter_a = document.querySelectorAll('.filter a')
 const sort_by = document.querySelector('.sort_by > a')
 const select_sort = document.querySelector('.select_sort')
 const product_type = document.querySelectorAll('.product_type > a')
-const size = document.querySelector('.size > a')
+const size_f = document.querySelector('.size > a')
 const select_size = document.querySelector('.select_size')
 const features = document.querySelectorAll('.features > a')
 const fit = document.querySelector('.fit > a')
@@ -77,14 +77,14 @@ product_type[0].addEventListener('click',(e)=>{
     }
 })
 select_size.style.display = 'none'
-size.addEventListener('click',(e)=>{
+size_f.addEventListener('click',(e)=>{
     e.preventDefault()
     open_m = !open_m
     if(open_m === false){
-        size.style.border = 'none'
+        size_f.style.border = 'none'
         select_size.style.display = 'flex'
     }else{
-        size.style.borderBottom = '1px solid #e7e7e7'
+        size_f.style.borderBottom = '1px solid #e7e7e7'
         select_size.style.display = 'none'
     }
 })
@@ -174,33 +174,57 @@ price.addEventListener('click',(e)=>{
 })
 
 /* 상품 */
-const product_icon = document.querySelectorAll('.product_image .icon a')
-const product = document.querySelectorAll('.product li')
+/* recommend */
+const product_icon_cart = document.querySelectorAll('.product_image .icon .cart_icon')
+const product_icon_wishlist = document.querySelectorAll('.product_image .icon .wishlist_icon')
+const product_icon_wishlist_img = document.querySelectorAll('.product_image .icon .wishlist_icon img')
+const product = document.querySelectorAll('.product_slide')
+const product_001 = document.querySelectorAll('.product_001')
+const product_002 = document.querySelectorAll('.product_002')
+const product_003 = document.querySelectorAll('.product_003')
 const product_img = document.querySelectorAll('.product_image > img')
-const size_box = document.querySelectorAll('.product .size')
-const size_a = document.querySelectorAll('.product .size a')
+const product_img_01 = document.querySelectorAll('.product_image_001 > img')
+const product_img_02 = document.querySelectorAll('.product_image_002 > img')
+const product_img_03 = document.querySelectorAll('.product_image_003 > img')
+const product_info = document.querySelectorAll('.product_slide .product_info')
+const size = document.querySelectorAll('.product_slide .size')
+const size_a = document.querySelectorAll('.product_slide .size a')
 
 product.forEach((t,i)=>{
+    product_img[i].addEventListener('click',()=>{
+        window.location.href = './product.html'
+    })
+    product_info[i].addEventListener('click',()=>{
+        window.location.href = './product.html'
+    })
     t.addEventListener('mouseover',()=>{
-        size_box[i].style.bottom = '0'
-        product_img[i].src = './images/product_1_02.jpg'
+        size[i].style.bottom = '0'
     })
     t.addEventListener('mouseleave',()=>{
-        size_box[i].style.bottom = '-150px'
-        product_img[i].src = './images/product_1_01.jpg'
+        size[i].style.bottom = '-150px'
     })
 })
-product_icon[0].addEventListener('click',(e)=>{
-    e.preventDefault()
-    cart_bg_active.style.display = 'block'
-    body_html.style.overflow = 'hidden'
-    setTimeout(()=>{
-        cart_bg_active.style.opacity = '1'
-    }, 10);
-    setTimeout(()=>{
-        cart_page_active.style.right = '0'
-    }, 100);
+
+for(let i of product_icon_cart){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault()
+        cart_bg_active.style.display = 'block'
+        body_html.style.overflow = 'hidden'
+        setTimeout(()=>{
+            cart_bg_active.style.opacity = '1'
+        }, 10);
+        setTimeout(()=>{
+            cart_page_active.style.right = '0'
+        }, 100);
+    })
+}
+product_icon_wishlist.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        e.preventDefault()
+        product_icon_wishlist_img[i].src = './images/icon/icon_wishlist_active.png'
+    })
 })
+
 for(let i of size_a){
     i.addEventListener('click',(e)=>{
         e.preventDefault()
@@ -214,11 +238,36 @@ for(let i of size_a){
         }, 100);
     })
 }
-cart_bg_active.addEventListener('click',()=>{
-    cart_bg_active.style.opacity = '0'
-    body_html.style.overflow = 'auto'
-    cart_page_active.style.right = '-500px'
-    setTimeout(()=>{
-        cart_bg_active.style.display = 'none'
-    }, 500);
+
+/* recommend 3 */
+const product_007 = document.querySelectorAll('.product_007')
+const product_008 = document.querySelectorAll('.product_008')
+const product_009 = document.querySelectorAll('.product_009')
+const product_img_07 = document.querySelectorAll('.product_image_007 > img')
+const product_img_08 = document.querySelectorAll('.product_image_008 > img')
+const product_img_09 = document.querySelectorAll('.product_image_009 > img')
+
+product_007.forEach((t,i)=>{
+    t.addEventListener('mouseover',()=>{
+        product_img_07[i].src = './images/product_1_14.jpg'
+    })
+    t.addEventListener('mouseleave',()=>{
+        product_img_07[i].src = './images/product_1_13.jpg'
+    })
+})
+product_008.forEach((t,i)=>{
+    t.addEventListener('mouseover',()=>{
+        product_img_08[i].src = './images/product_1_16.jpg'
+    })
+    t.addEventListener('mouseleave',()=>{
+        product_img_08[i].src = './images/product_1_15.jpg'
+    })
+})
+product_009.forEach((t,i)=>{
+    t.addEventListener('mouseover',()=>{
+        product_img_09[i].src = './images/product_1_18.jpg'
+    })
+    t.addEventListener('mouseleave',()=>{
+        product_img_09[i].src = './images/product_1_17.jpg'
+    })
 })

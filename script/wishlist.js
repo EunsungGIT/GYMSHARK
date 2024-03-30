@@ -197,6 +197,12 @@ const product = document.querySelectorAll('.product li')
 const product_img = document.querySelectorAll('.product_image > img')
 
 product.forEach((t,i)=>{
+    product_img[i].addEventListener('click',()=>{
+        window.location.href = './product.html'
+    })
+    product_info[i].addEventListener('click',()=>{
+        window.location.href = './product.html'
+    })
     t.addEventListener('mouseover',()=>{
         product_img[i].src = './images/product_1_02.jpg'
     })

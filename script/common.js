@@ -267,12 +267,6 @@ nav_a.forEach((t,i)=>{
     });
 })
 
-for(let i of women_category){
-    i.addEventListener('click',()=>{
-        window.location.href = './category.html'
-    })
-}
-
 /* header search */
 const body_html = document.querySelector('body, html')
 const search_box = document.querySelector('.right_icon .search_box')

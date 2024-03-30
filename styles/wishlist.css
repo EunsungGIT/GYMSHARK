@@ -254,11 +254,11 @@ main .product_page .filter .price .select_price a {
     font-size: 0.875rem; font-family: 'Roboto'; color: #444;
 }
 main .product_page .filter .price .select_price a:last-child {margin-bottom: 32px;}
-/* 상품 */
 
+/* 상품 */
 main .product_page .product_wrap {
     font-family: 'Roboto'; margin-left: 20px;
-    width: calc(100% - 240px);
+    width: 100%;
 }
 main .product_page .product_wrap .product {
     display: flex; flex-flow: row wrap;
@@ -315,6 +315,7 @@ main .product_page .product_wrap .product li .product_info .color {
 main .product_page .product_wrap .product li .product_info .price {
     font-family: 'Roboto'; font-size: 0.875rem;
     margin-top: 2px; font-weight: 700;
+    margin-bottom: 10px;
 }
 main .product_page .product_wrap .product li .product_info .size {
     width: 100%; display: flex; justify-content: space-between;
