@@ -92,3 +92,8 @@
 3. index product 부분 이미지 수정
 4. product 사이즈 및 아이콘 분리 (링크 오류)
 5. 페이지 별로 header 및 footer 연결
+# 24.03.27
+1. nav 링크 모두 연결
+2. product 반응형 완료
+3. category 이미지 변경
+4. wishlist 페이지 반응형 및 이미지 변경
